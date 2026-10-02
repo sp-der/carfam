@@ -38,11 +38,16 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - **Unknown values stay null.** No guessed body or fuel types, and no history badges taken from description text. The one allowed inference: a vehicle listed on Carfam's own single-criterion filter page (`/filter/fuel/X`, `/filter/bodytype/X`) takes that value, recorded in `fieldSources` and flagged. This only changed the 2017 Fusion Energi, to plug-in hybrid.
 - **Default sort ("recommended"):** featured vehicles first (by rank), then newest model year, then lowest sale price.
 - **Demo roles:** only the owner can "Reset demo data". Managers manage inventory and all leads. Sales can view inventory and work on leads assigned to them.
-- **Photos:** up to the first 6 per vehicle are copied into `public/vehicles/{sourceId}/`. Runtime never loads Carfam's photo server; vehicles without copied photos use the fallback image.
+- **Photos:** up to the first 6 per vehicle are copied into `public/vehicles/{sourceId}/` and committed (606 files for 101 vehicles, ~70 MB). Runtime never loads Carfam's photo server; vehicles without copied photos use the fallback image.
+- **Vehicles without photos** (26 in the snapshot) stay in inventory but always rank last in "recommended", even if featured. They are never used on the homepage or in featured slots (`selectFeaturedVehicles`), and never lead the chatbot's results when a comparable vehicle with photos exists (`preferPhotographed`). Explicit sorts like price still place them in order. Staff can't feature a vehicle without photos, and removing all photos un-features it. Similar-vehicle suggestions deprioritize them. Tests: `tests/photo-ranking.test.ts`.
 - **Canonical inventory URL:** `/pre-owned-cars`. Legacy paths are parsed into the shared filter schema (`src/lib/inventory/legacy-routes.ts`).
 - **Appraisal photos** are previewed in the browser only and never uploaded.
 - **Chatbot:** "show me X" starts a new search; "only/also/actually/and" refines the current one.
 - **Financing demo records** (post-approval) are visible to owner and manager. New leads start unassigned, and sales staff see only leads assigned to them.
+
+## Phase 2 requirements (recorded at Phase 1 approval)
+- **Payment calculator** starts from `salePriceCents`, not the internet price, and shows `calculatorDisclosure()` from `pricing.ts`: the sale price includes doc and smog fees. **Do not reuse Carfam's original calculator disclosure** saying dealer/doc/smog charges are excluded. APR is user-selected and illustrative; Carfam's old APR presets are not lender rates.
+- Homepage featured vehicles come from `selectFeaturedVehicles`. Inventory cards, lists and the detail page all use the same sale price via `toVehicleCard`/`priceBreakdown`.
 
 ## Open items
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).

@@ -71,6 +71,19 @@ export function feeSummary(p: VehiclePricing): string {
   return `Includes ${parts.join(" + ")} fees`;
 }
 
+/**
+ * Payment calculator disclosure. The calculator's starting price is always `salePriceCents`
+ * (fees included). Do not reuse Carfam's original calculator text saying doc/smog fees are excluded.
+ */
+export function calculatorDisclosure(p: VehiclePricing): string {
+  return (
+    `Illustrative estimate only, not a quote or offer of credit. Starts from the ${formatPrice(salePriceCents(p))} sale price, ` +
+    `which includes the ${formatPrice(p.docFeeCents)} doc fee and ${formatPrice(p.smogFeeCents)} smog fee` +
+    (p.otherFees.length ? ` and other listed fees` : "") +
+    `. Tax, registration and finance charges are not included. APR is chosen by you; actual terms depend on the lender.`
+  );
+}
+
 export interface PaymentEstimateInput {
   priceCents: number;
   downPaymentCents: number;

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  calculatorDisclosure,
   dollarsToCents,
   estimateMonthlyPayment,
   feeSummary,
@@ -38,6 +39,15 @@ describe("sale price", () => {
     const breakdown = priceBreakdown(pricing);
     expect(breakdown.lines.map((l) => l.label)).toEqual(["Internet price", "Doc fee", "Smog fee"]);
     expect(breakdown.lines.reduce((s, l) => s + l.cents, 0)).toBe(breakdown.salePriceCents);
+  });
+});
+
+describe("payment calculator disclosure", () => {
+  it("states the sale price includes doc and smog fees, never that they're excluded", () => {
+    const text = calculatorDisclosure(pricing);
+    expect(text).toContain("$20,134 sale price");
+    expect(text).toContain("includes the $85 doc fee and $50 smog fee");
+    expect(text).not.toMatch(/exclud\w* (dealer|doc|smog)/i);
   });
 });
 

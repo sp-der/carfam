@@ -5,7 +5,7 @@ import type { Repository } from "@/lib/data/repository";
 import type { InventoryFilters } from "@/lib/inventory/filters";
 import { resolveInventoryRoute, resolveVehicleRoute, type LegacyContext } from "@/lib/inventory/legacy-routes";
 import { cleanText, vehicleSlug } from "@/lib/inventory/normalize";
-import { searchInventory, similarVehicles, type SearchOptions } from "@/lib/inventory/search";
+import { hasPhotos, searchInventory, similarVehicles, type SearchOptions } from "@/lib/inventory/search";
 import {
   BODY_TYPES,
   DRIVETRAINS,
@@ -261,8 +261,14 @@ export async function updateVehicle(
     // Keep original slugs for imported vehicles so legacy URLs stay stable; route id is unchanged.
     if (!next.sourceId) next.slug = vehicleSlug(next.year, next.make, next.model);
   }
-  if (patch.featured === false) next.featuredRank = null;
   if (patch.images) next.hasPlaceholderImage = false;
+  // Featured slots only show vehicles with photos (see CLAUDE.md).
+  if (patch.featured === true && !hasPhotos(next))
+    throw new ValidationError("Add at least one photo before featuring this vehicle.", {
+      featured: ["Vehicle has no photos"],
+    });
+  if (patch.images && !hasPhotos(next)) next.featured = false;
+  if (!next.featured) next.featuredRank = null;
 
   const now = new Date().toISOString();
   if (next.publication === "published" && !next.firstPublishedAt) next.firstPublishedAt = now;

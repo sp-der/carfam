@@ -122,8 +122,14 @@ export function matchesFilters(v: Vehicle, filters: InventoryFilters): boolean {
 
 const collator = new Intl.Collator("en-US", { sensitivity: "base", numeric: true });
 
+/** A vehicle with at least one copied photo. Vehicles without one render the fallback image. */
+export function hasPhotos(v: Pick<Vehicle, "images">): boolean {
+  return v.images.length > 0;
+}
+
 function recommendedCompare(a: Vehicle, b: Vehicle): number {
-  // Featured first (by rank), then newest model year, then lowest sale price.
+  // Vehicles without photos always rank last; then featured (by rank), newest year, lowest sale price.
+  if (hasPhotos(a) !== hasPhotos(b)) return hasPhotos(a) ? -1 : 1;
   if (a.featured !== b.featured) return a.featured ? -1 : 1;
   if (a.featured && b.featured && a.featuredRank !== b.featuredRank)
     return (a.featuredRank ?? Number.MAX_SAFE_INTEGER) - (b.featuredRank ?? Number.MAX_SAFE_INTEGER);
@@ -268,7 +274,44 @@ export function searchInventory(
   };
 }
 
-/** Similar vehicles for detail pages and no-result suggestions: same body, then same make, nearest price. */
+/**
+ * Stable partition: vehicles with photos first, original order kept within each group.
+ * The chatbot uses this for its top results, so a vehicle without photos only leads when
+ * no matching vehicle has photos.
+ */
+export function preferPhotographed<T extends Pick<Vehicle, "images">>(vehicles: readonly T[]): T[] {
+  return [...vehicles.filter(hasPhotos), ...vehicles.filter((v) => !hasPhotos(v))];
+}
+
+/**
+ * Homepage / featured slots: shoppable vehicles with photos only. Staff-featured vehicles come
+ * first (by rank); remaining slots are filled round-robin across body types so the mix covers
+ * commuters, family vehicles, trucks and more, not one segment.
+ */
+export function selectFeaturedVehicles(all: readonly Vehicle[], limit = 8): Vehicle[] {
+  const eligible = all.filter((v) => isShoppable(v) && hasPhotos(v));
+  const featured = eligible.filter((v) => v.featured).sort(compareVehicles("recommended"));
+  const chosen = featured.slice(0, limit);
+  if (chosen.length >= limit) return chosen;
+
+  const taken = new Set(chosen.map((v) => v.id));
+  const groups = new Map<string, Vehicle[]>();
+  for (const v of [...eligible].sort(compareVehicles("recommended"))) {
+    if (taken.has(v.id)) continue;
+    const key = v.bodyType ?? "unknown";
+    groups.set(key, [...(groups.get(key) ?? []), v]);
+  }
+  const queues = [...groups.entries()].sort(([a], [b]) => collator.compare(a, b)).map(([, list]) => list);
+  while (chosen.length < limit && queues.some((q) => q.length)) {
+    for (const queue of queues) {
+      const next = queue.shift();
+      if (next && chosen.length < limit) chosen.push(next);
+    }
+  }
+  return chosen;
+}
+
+/** Similar vehicles for detail pages and no-result suggestions: photos, then same body, same make, nearest price. */
 export function similarVehicles(all: readonly Vehicle[], target: Vehicle, limit = 4): Vehicle[] {
   const price = salePriceCents(target.pricing);
   return all
@@ -276,6 +319,7 @@ export function similarVehicles(all: readonly Vehicle[], target: Vehicle, limit 
     .map((v) => ({
       v,
       score:
+        (hasPhotos(v) ? 0 : 4) +
         (target.bodyType && v.bodyType === target.bodyType ? 0 : 2) +
         (eqi(v.make, target.make) ? 0 : 1) +
         Math.abs(salePriceCents(v.pricing) - price) / Math.max(price, 1),

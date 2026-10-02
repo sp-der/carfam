@@ -88,9 +88,9 @@ describe("search over the recon snapshot", () => {
   });
 
   it("puts featured vehicles first in the recommended order", () => {
-    const accord = { ...vehicleBySource("1581060"), featured: true, featuredRank: 1 };
-    const others = seedVehicles.filter((v) => v.id !== accord.id);
-    expect(searchInventory([...others, accord], {}).vehicles[0].id).toBe(accord.id);
+    const rdx = { ...vehicleBySource("1567362"), featured: true, featuredRank: 1 };
+    const others = seedVehicles.filter((v) => v.id !== rdx.id);
+    expect(searchInventory([...others, rdx], {}).vehicles[0].id).toBe(rdx.id);
   });
 });
 
