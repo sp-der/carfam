@@ -1,0 +1,224 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "Select Language":
+  - /url: "#"
+  - generic: Select Language
+  - generic: ▼
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - list:
+    - link "Home":
+      - /url: /
+    - listitem: / Get Pre-Qualified with Capital One
+  - iframe [active] [id="capital-one-prequalification-embedded"]:
+    - banner:
+      - img "Capital One"
+      - button "How it works": How it works
+      - button "Participating lenders":
+        - generic: Participating lenders
+      - region "Sign in information":
+        - text: Sign in or
+        - button "look up your application"
+        - text: to pre-fill your information.
+        - button "Sign in":
+          - text: Sign in
+    - generic "Pre-qualify in minutes to see your real rates and payments":
+      - heading "Pre-qualify in minutes to see your real rates and payments" [level=1]
+      - paragraph: See if you're pre-qualified with Capital One. No impact to your credit score.
+    - generic: First Name
+    - textbox "First Name":
+      - /placeholder: ""
+    - generic: Last Name
+    - textbox "Last Name":
+      - /placeholder: ""
+    - generic: Email Address
+    - textbox "Email Address":
+      - /placeholder: ""
+    - generic: Confirm Email Address
+    - textbox "Confirm Email Address":
+      - /placeholder: ""
+    - paragraph: When you provide your email address, we may use it to send you important information about your application and account(s), as well as other useful products and services.
+    - generic: PHONE NUMBER
+    - textbox "PHONE NUMBER":
+      - /placeholder: ___-___-____
+    - button "+ Add a co-applicant's information":
+      - generic: + Add a co-applicant's information
+    - list:
+      - generic: "By clicking “Agree & continue” you understand and agree that: You're giving Capital One, dealers, and parties connected to dealers all the info you share, as well as any future cars or financing offers you save (including future interactions or preferences). The information you share may include any vehicle information, personal information and images provided by you, as well as any further information provided in connection with your vehicle. Dealers may have privacy policies that are different from Capital One. You can check the dealer's website to see how they use your info."
+      - generic: Capital One and dealers may contact you by call, text, voicemail and email at the phone number and email address you provided. These calls and messages will be about cars you view or other products and services. Calls and texts may be autodialed, and calls and voicemails may have an artificial or pre-recorded voice. You won't have to agree to this to purchase or finance a car. You can opt out at any time by calling Capital One and dealers.
+      - text: You've read and agree to Capital One's
+      - link "Privacy Policies":
+        - /url: https://www.capitalone.com/privacy/
+      - text: and
+      - link "eCommunications Disclosure":
+        - /url: https://www.capitalone.com/bank/disclosures/eddn/
+      - text: . The eCommunications Disclosure explains that Capital One will give you info about your car shopping experience electronically, not in writing.
+    - button "Agree & continue" [disabled]:
+      - generic: Agree & continue
+    - contentinfo:
+      - heading "We're here to help." [level=3]
+      - paragraph:
+        - generic: Questions about financing?
+        - link "Call 1-866-311-1261":
+          - /url: tel:1-866-311-1261
+      - paragraph:
+        - generic: Questions for Carfam about the offer?
+        - link "Call (909) 990-5043":
+          - /url: tel:(909) 990-5043
+        - generic: 9:00AM - 9:00PM
+        - generic: Monday - Saturday
+        - generic: 10:00AM - 7:00PM
+        - generic: Sunday
+      - heading "Important Disclosures and Requirements" [level=3]
+      - heading "How Capital One Pre-Qualification Works" [level=4]
+      - paragraph: Pre-qualify for auto financing with Capital One ("Capital One" or "We") prior to visiting a participating dealer. We review the information you provide to determine whether you pre-qualify with no impact to your credit score. If you pre-qualify, you will be able to see your monthly payments, APRs and offer summaries for vehicles you may be considering. Remember, your pre-qualification can only be used for the purchase of one, personal use vehicle. The offer summary will include an estimate of the financing terms you could qualify for when you apply for financing at the dealer. When you are ready to finance a vehicle, you can send your offer summary to a participating dealer. You can use your mobile phone to configure vehicles and compare your options at the dealer! If you have recently applied and funded another loan with Capital One, this might impact your eligibility for a new loan with this pre-qualification.
+      - heading "Provide Information to Capital One, the Dealership, and Participating Lenders" [level=4]
+      - paragraph:
+        - text: When you fill out your pre-qualification request, you are providing your information to Capital One. Capital One will use the information you provide in order to determine whether Capital One is able to pre-qualify you for financing and to send you important information about your pre-qualification request. Capital One will use the information you provide consistent with their privacy policies, which may be accessed at
+        - link "https://www.capitalone.com/privacy/":
+          - /url: https://www.capitalone.com/privacy/
+        - text: .
+      - paragraph: When you submit your pre-qualification request, you are also authorizing Capital One, upon confirming that you may be eligible to see if you pre-qualify for financing with a participating lender, to provide your information to participating lenders so that participating lenders may evaluate your pre-qualification request. Participating lenders may use the information you provide in order to determine whether you pre-qualify for financing and to send you important information about your pre-qualification request. For complete information, see each participating lender's privacy policies. Should you submit your pre-qualification request, you are also authorizing Capital One to share the information you input into your pre-qualification request, along with its and/or a Participating Lender’s response to your pre-qualification request, with the Dealer. When you share your information with the dealership, they may use the information consistent with their privacy policy.
+      - heading "* Monthly Payment, APR, and Product Terms" [level=4]
+      - paragraph: "* Monthly payment and Annual Percentage Rate (APR) terms are not final until your financing is completed at a participating dealer. These pre-qualified auto financing terms are based on information you provide and might change if you update any information in the Capital One experience, with a participating lender, or at the dealer, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing."
+      - paragraph: Pre-qualification does not guarantee that you will receive financing or any particular financing terms, which are subject to change based on our evaluation of your credit application submitted at the dealer and any required documents, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. Capital One pre-qualification terms expire 30 days from the date your pre-qualification request is received. All other financing offers are subject to the terms of the offering party.
+      - paragraph: To pre-qualify with Capital One, you must be at least 18 years old, have a valid street address within the contiguous United States or an APO/FPO address. Minimum monthly income required is $1,500. Any existing Capital One accounts must be in good standing (not over limit, past due, or delinquent).
+      - heading "Using Capital One Pre-Qualification at a Dealership" [level=4]
+      - paragraph: When you submit your request for pre-qualification, you are authorizing Capital One to share your information with the dealer, and you can begin working with the Dealership to find a vehicle that meets your needs. When you’re ready to do so, you will fill out a credit application with the Dealership and provide any information needed for review to complete your financing. The dealer may ask you to provide additional information to verify your identity and/or the accuracy of other details included in your application. A credit application at the Dealership will result in one or more inquiries posted to your credit file. After negotiating purchase terms and receiving Dealership credit approval, you will sign a contract with the Dealership reflecting both your purchase and financing terms. Your purchase will result in a retail installment contract with the Dealership as the original creditor.
+      - heading "Amount Financed Restrictions" [level=4]
+      - paragraph: For new and used vehicles, the minimum Amount Financed is $4,000. Your maximum Amount Financed may be based on income, key credit characteristics, the vehicle you are purchasing, the details of the financing deal, and/or the specific dealership from which you purchase the vehicle. The Amount Financed may include the vehicle sales price, tax, title, licensing fees, dealer fees, and any optional products like service contract and/or extended warranty that you choose to purchase from the dealer.
+      - heading "** APR" [level=4]
+      - paragraph: APR is the Annual Percentage Rate. Advertised rates depend on the individual's credit and key financing characteristics, including but not limited to the Amount Financed, term, loan-to-value (LTV) ratio, down payment amount, and vehicle characteristics, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. Cash down may be required in order to complete your purchase. Estimated rates are subject to change without notice.
+      - paragraph: Representative APR is based on the individual's credit and key financing characteristics, including but not limited to the amount financed, term, the loan-to-value (LTV) ratio, and vehicle mileage. Your actual APR will be based on your specific situation.
+      - heading "Participating Dealer Requirements" [level=4]
+      - paragraph: Capital One provides financing for new and used vehicles purchased from participating dealers and offers pre-qualification at participating dealers. Participating dealers are subject to change. We do not offer financing for vehicles purchased from non-participating dealers, auto brokers, or private party sellers. We do not offer financing for lease buyouts. Any pre-qualification submission to Capital One may be accessed for as long as the pre-qualification offer is available.
+      - heading "Vehicle Type Restrictions" [level=4]
+      - paragraph: "Your Capital One pre-qualification can only be used at participating dealers, but don’t worry, there are plenty to choose from. Here’s what is required to finance a vehicle:"
+      - paragraph:
+        - list:
+          - listitem: A new or used car, light truck, minivan, or SUV for personal use
+          - listitem: The vehicle must have fewer than 120,000 miles and its model year must be within the last 10 years.
+      - paragraph: In some instances, an older model year or higher mileage vehicle (up to 150,000 miles) may be eligible.
+      - paragraph: We want you to find a vehicle you really love, but Capital One Auto Finance doesn’t finance certain vehicle makes including but not limited to, Oldsmobile, Daewoo, Saab, Suzuki, or Isuzu vehicles. We don’t offer financing for commercial vehicles, motorcycles, recreational vehicles (RVs), ATVs, boats, camper vans, motor homes, vehicles with a history of chronic malfunctions and/or manufacturer or dealer buy back (also referred to as a lemon), branded title vehicles, or vehicles without a Vehicle Identification Number (VIN) or title issued. We may determine a vehicle to be commercial or otherwise ineligible based on the model and/or information provided to us.
+      - heading "Participating Lenders" [level=4]
+      - paragraph: Capital One has built relationships with the following participating lenders, which may provide auto financing pre-qualification offers to consumers in certain Capital One pre-qualification experiences:Eligibility for auto financing pre-qualification from participating lenders is determined by the information you submitted, along with the personal credit profile from credit reporting agencies that is obtained by Capital One through your pre-qualification request. Your request for pre-qualification may not be submitted to any or all participating lenders, and you may not receive a response from any or all participating lenders.Participating lenders may have their own eligibility restrictions, such as requiring that you be at least 18 years of age, live within the contiguous United States, meet minimum income requirements, and purchase a vehicle for personal use that meets specified year, make, model, and/or mileage restrictions.Pre-qualification does not guarantee that you will receive financing or any particular financing terms, which are subject to change based on the participating lender's evaluation of your credit application submitted at the dealer and any required documents, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. The expiration of your pre-qualification is subject to the lender's terms and may vary from Capital One. If you pre-qualified for auto financing with a participating lender and do not see that pre-qualification when you log into your account, you may access your pre-qualification at the website where you submitted that pre-qualification request.If you are pre-qualified with more than one participating lender, pre-qualified offers from the participating dealer's preferred participating lender will be displayed.Participating lenders pay Capital One if you finance with them.Your pre-qualification terms, including monthly payment and Annual Percentage Rate (APR), are not final until your financing is completed at a participating dealer with the lender offering auto financing. These pre-qualified auto financing terms are based on information you provide and might change if you update any information with a participating lender or at the dealer, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. Capital One and participating lenders do not guarantee that the dealer will provide you with all terms outlined in your pre-qualification offer. Capital One uses third parties to provide vehicle information, including, but not limited to, trade-in values, car images, dealer reported mileage, and dealer advertised price.
+      - list:
+        - text: "Westlake Services LLC :"
+        - link "https://www.westlakefinancial.com/privacy-policy/":
+          - /url: https://www.westlakefinancial.com/privacy-policy/
+        - text: "American Credit Acceptance, LLC :"
+        - link "https://americancreditacceptance.com/privacy-policy/":
+          - /url: https://americancreditacceptance.com/privacy-policy/
+        - text: "Global Lending Services LLC (GLS) :"
+        - link "https://www.glsauto.com/privacy-policy.html":
+          - /url: https://www.glsauto.com/privacy-policy.html
+        - text: "Exeter Finance LLC. :"
+        - link "https://www.exeterfinance.com/privacy":
+          - /url: https://www.exeterfinance.com/privacy
+      - paragraph: Participating lenders provide financing for new and used vehicles purchased from participating dealers. Participating dealers are subject to change, and may vary by participating lender. You should verify the accuracy of any third party information on your own.
+      - heading "Third Party Information and Additional Products" [level=4]
+      - paragraph: Capital One uses third party information, otherwise available, to enhance your auto financing experience. Third party information includes, but is not limited to, trade-in values, car images, dealer reported mileage, the price, description, and availability of optional products that may be able to be financed with the vehicle (e.g., service contracts, GAP, and protection products), dealer advertised price and car details. Please note that third parties, including participating dealers, provide this information and Capital One does not sell vehicles or any other optional products and does not make any express or implied representations or warranties with respect to the accuracy of the provided third party information. You should verify the accuracy of any third party information on your own. All trademarks are the property of their respective owners.
+      - paragraph: Vehicle images may not be representative of the dealer advertised vehicle. Cars are subject to prior sale and availability should be confirmed with the dealer. Dealer advertised prices for vehicles and other additional products are subject to change without notice.
+      - paragraph: † Dealer advertised prices for vehicles and other optional products may be negotiable and may not include tax, title, license, and other fees charged by the dealer. Other fees may include, but are not limited to, document fees, dealer preparation fees, and delivery charges. You should verify with the dealer what is included in the dealer advertised price. We provide an estimate of tax, title, and license fees based on the dealership address and allow for you to incorporate your desired purchase of any additional products from a participating dealer in order to show you how such charges may impact your financing terms. These estimates are provided for informational purposes only, and the actual cost associated with tax, title, and license fees, and optional additional products, if selected, may vary at the dealership.
+      - paragraph: Trade-in valuations are offered by select participating dealers to provide estimates of what you may be able to receive from the dealer by trading in your car. When utilizing the dealer provided trade experience, you will be routed to the dealer’s online trade experience for additional information on these services. Linked dealer sites are not maintained by Capital One and Capital One does not make any express or implied representations or warranties with respect to the accuracy of the information contained therein.
+      - button "+ Show All"
+      - navigation:
+        - list:
+          - link "Privacy":
+            - /url: https://www.capitalone.com/privacy
+          - link "Security":
+            - /url: https://www.capitalone.com/applications/identity-protection/commitment
+          - link "Accessibility":
+            - /url: https://www.capitalone.com/about/accessibility-commitment
+          - link "Terms & Conditions":
+            - /url: https://www.capitalone.com/legal/terms-conditions
+      - paragraph: © Capital One. Capital One is a federally registered trademark. All rights reserved.
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

@@ -1,0 +1,9 @@
+{
+  "json_files_valid": 17,
+  "source_records_valid": 431,
+  "unique_vehicle_records_and_vins": 127,
+  "pricing_arithmetic_passed": 127,
+  "downloaded_asset_files_valid": 146,
+  "screenshots_valid": 23,
+  "limitations_retained": true
+}

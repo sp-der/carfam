@@ -1,0 +1,83 @@
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: Barkrowler
+User-agent: BUbiNG
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Crawlspace
+User-agent: Diffbot
+User-agent: FriendlyCrawler
+User-agent: iaskspider/2.0
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: ISSCyberRiskCrawler
+User-agent: Kangaroo Bot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PanguBot
+User-agent: PetalBot
+User-agent: Scrapy
+User-agent: Sidetrade indexer bot
+User-agent: Timpibot
+User-agent: VelenPublicWebCrawler
+User-agent: Webzio-Extended
+User-agent: YouBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 30
+
+User-agent: SiteAuditBot
+Crawl-delay: 30
+
+User-agent: SemrushBot-SWA
+Disallow: /
+
+User-agent: SplitSignalBot
+Disallow: /
+
+User-agent: SemrushBot-OCOB
+Disallow: /
+
+User-agent: SemrushBot-FT
+Disallow: /
+
+User-agent: RyteBot
+Disallow: /
+
+User-agent: SemrushBot-ESI
+Disallow: /
+
+User-agent: *
+Disallow: */tel:
+Disallow: /*?*bodytype=*
+Disallow: /*?*citympg=*
+Disallow: /*?*color=*
+Disallow: /*?*dir=*
+Disallow: /*?*highwaympg=*
+Disallow: /*?*model=*
+Disallow: /*?*priceend=*
+Disallow: /*?*pricerange=*
+Disallow: /*?*pricestart=*
+Disallow: /*?*results=*
+Disallow: /*?*returnUrl=*
+Disallow: /*?*transmission=*
+Disallow: /*?*sort=*
+Disallow: /*?*_vsrefdom=*
+Disallow: /contact-us/submit
+Disallow: /ContactUs/Subscribe
+Disallow: /finance-your-car/pre-approved?vehicleId=*
+Disallow: /finance-your-car/pre-qualified?vehicleId=*
+Disallow: /find-my-car/*
+Disallow: /find-my-car?*
+Disallow: /inventory/compare
+Disallow: /sell-my-car/save
+Disallow: /service/detail/*/data-toggle*
+Disallow: /service-your-car/detail/*/data-toggle*
+Disallow: /widget/save-to-phone
+
+
+Sitemap: https://www.carfam.com/sitemap.xml

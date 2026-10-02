@@ -1,0 +1,236 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "Select Language":
+  - /url: "#"
+  - generic: Select Language
+  - generic: ▼
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - heading "Sell My CarWe Buy Your Car - Even If You Don’t Buy Ours" [level=1]
+  - list:
+    - link "Home":
+      - /url: /
+    - listitem: / Sell My Car
+  - iframe:
+    - generic "YouTube Video Player"
+    - button "Hide player controls"
+    - link "CarFam Car Dealership Commercial":
+      - /url: https://www.youtube.com/watch?v=K49v9drRQw8
+    - link "CarFam Dealer":
+      - /url: /channel/UCw8pBSj52t8c-ZqIwSPdwuQ
+      - generic: CarFam Dealer
+    - button "thumbnail-image":
+      - img "thumbnail-image"
+    - generic: CarFam Dealer
+    - generic: 224 subscribers
+    - button "Mute":
+      - img "Mute":
+    - button "Subtitles/CC turned on" [pressed]:
+    - button "Playback Settings":
+    - button "Rewind 10 seconds"
+    - button "Play video":
+    - button "Fast forward 10 seconds"
+    - text: 0:00
+    - generic: Time elapsed 0 seconds
+    - text: /
+    - text: 0:31
+    - generic: Time duration 31 seconds
+    - button "Enter full screen":
+    - slider "Seek slider"
+    - button "Share":
+    - button "More videos":
+      - generic: More videos
+    - link "Watch on YouTube":
+      - /url: https://www.youtube.com/watch?v=K49v9drRQw8
+    - link:
+      - /url: https://www.youtube.com/watch?v=WDwKfFV8eCU&feature=endscreen
+      - generic: 1:05:35
+    - link "“Prepare for War” - Tucker Confronts Britain’s Most Pro-War Advocate 3 hours ago":
+      - /url: https://www.youtube.com/watch?v=WDwKfFV8eCU&feature=endscreen
+      - heading "“Prepare for War” - Tucker Confronts Britain’s Most Pro-War Advocate" [level=3]
+      - generic: 3 hours ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=GvXZbBmzmWo&feature=endscreen
+      - generic: 31:29
+    - 'link "Caught in 4K! Funniest Security Camera Fails #23 😂 Instant Regret Fails Compilation 2 weeks ago"':
+      - /url: https://www.youtube.com/watch?v=GvXZbBmzmWo&feature=endscreen
+      - 'heading "Caught in 4K! Funniest Security Camera Fails #23 😂 Instant Regret Fails Compilation" [level=3]'
+      - generic: 2 weeks ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=6dwTWka1pKM&feature=endscreen
+      - generic: 28:21
+    - 'link "Smart Workers | Working with Talented Engineers #23 #tips #construction #workers 2 months ago"':
+      - /url: https://www.youtube.com/watch?v=6dwTWka1pKM&feature=endscreen
+      - 'heading "Smart Workers | Working with Talented Engineers #23 #tips #construction #workers" [level=3]'
+      - generic: 2 months ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=6hug4CSSkqk&feature=endscreen
+      - generic: 52:40
+    - link "He Said \"Don't Touch This Piano\" to Freddie Mercury — Then He Played One Note... Everything Changed 3 weeks ago":
+      - /url: https://www.youtube.com/watch?v=6hug4CSSkqk&feature=endscreen
+      - heading "He Said \"Don't Touch This Piano\" to Freddie Mercury — Then He Played One Note... Everything Changed" [level=3]
+      - generic: 3 weeks ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=4P4Gu5kxEmk&feature=endscreen
+      - generic: 0:39
+    - link "Car Dealership Commercial 8 years ago":
+      - /url: https://www.youtube.com/watch?v=4P4Gu5kxEmk&feature=endscreen
+      - heading "Car Dealership Commercial" [level=3]
+      - generic: 8 years ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=6RID7ytuyuc&feature=endscreen
+      - generic: 47:06
+    - link "Supernanny VS \"Violent Mob\" of Four Unruly Kids | Supernanny UK Series 2 Ep 1 2 months ago":
+      - /url: https://www.youtube.com/watch?v=6RID7ytuyuc&feature=endscreen
+      - heading "Supernanny VS \"Violent Mob\" of Four Unruly Kids | Supernanny UK Series 2 Ep 1" [level=3]
+      - generic: 2 months ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=BrCtnFYgb4Y&feature=endscreen
+      - generic: 21:42
+    - link "When Young TYSON Fought a Freak of Nature… 2 weeks ago":
+      - /url: https://www.youtube.com/watch?v=BrCtnFYgb4Y&feature=endscreen
+      - heading "When Young TYSON Fought a Freak of Nature…" [level=3]
+      - generic: 2 weeks ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=RTwXhe8gjMQ&feature=endscreen
+      - generic: 16:43
+    - link "Tesco Just Got Caught... And Brits Are Fighting Back! 2 days ago":
+      - /url: https://www.youtube.com/watch?v=RTwXhe8gjMQ&feature=endscreen
+      - heading "Tesco Just Got Caught... And Brits Are Fighting Back!" [level=3]
+      - generic: 2 days ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=5aZUDj_kFjo&feature=endscreen
+      - generic: 20:25
+    - link "At 62, Mike Brewer FINALLY Reveals What Really Happened Behind Wheeler Dealers 1 day ago":
+      - /url: https://www.youtube.com/watch?v=5aZUDj_kFjo&feature=endscreen
+      - heading "At 62, Mike Brewer FINALLY Reveals What Really Happened Behind Wheeler Dealers" [level=3]
+      - generic: 1 day ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=iXRsglnaJxo&feature=endscreen
+      - generic: 15:16
+    - link "Michael Caine is So Funny Without Even Trying, It's RIDICULOUS! 3 weeks ago":
+      - /url: https://www.youtube.com/watch?v=iXRsglnaJxo&feature=endscreen
+      - heading "Michael Caine is So Funny Without Even Trying, It's RIDICULOUS!" [level=3]
+      - generic: 3 weeks ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=QsLw0c1SiFQ&feature=endscreen
+      - generic: 27:50
+    - link "When Tyson Faced the Smash Machine 5 months ago":
+      - /url: https://www.youtube.com/watch?v=QsLw0c1SiFQ&feature=endscreen
+      - heading "When Tyson Faced the Smash Machine" [level=3]
+      - generic: 5 months ago
+    - link:
+      - /url: https://www.youtube.com/watch?v=8o1lGm4DlR4&feature=endscreen
+      - generic: 23:56
+    - 'link "''18 Soldiers Died'': Trump Clashes With Reporter, She Turns The Table With Iran War Question 3 weeks ago"':
+      - /url: https://www.youtube.com/watch?v=8o1lGm4DlR4&feature=endscreen
+      - 'heading "''18 Soldiers Died'': Trump Clashes With Reporter, She Turns The Table With Iran War Question" [level=3]'
+      - generic: 3 weeks ago
+  - generic: "1"
+  - generic: "2"
+  - generic: "3"
+  - heading "Step 1" [level=3]
+  - heading "Tell us about your vehicle" [level=3]
+  - heading "Do you know the Vehicle Identification Number (VIN) of your vehicle?" [level=5]
+  - radio "Yes"
+  - text: "Yes"
+  - radio "No" [checked] [active]
+  - text: "No"
+  - heading "Do you know your vehicle's license plate number?" [level=5]
+  - radio "Yes"
+  - text: "Yes"
+  - radio "No"
+  - text: "No"
+  - generic: 
+  - text:       
+  - button "Next >"
+  - text: Drop files here
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

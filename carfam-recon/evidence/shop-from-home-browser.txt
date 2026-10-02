@@ -1,0 +1,657 @@
+- button "CarFam":
+  - generic: CarFam
+- button "Sell my car"
+- button "Get pre-qualified"
+- button "Inventory Checkmark icon":
+  - generic: Inventory
+  - img "Checkmark icon"
+- generic: "(useSemanticSearch) ? Describe what you're looking for : Search cars for sale:"
+- 'combobox "(useSemanticSearch) ? Describe what you''re looking for : Search cars for sale:"'
+- button "search":
+  - img "search"
+- generic "Available Filters":
+  - heading "Filters" [level=2]
+  - button "Condition" [expanded]:
+    - heading "Condition" [level=3]:
+      - generic: Condition
+  - region "Condition":
+    - radiogroup "Toggle for vehicle condition options":
+      - radio "Used" [checked]
+      - generic: Used
+  - button "Price" [expanded]:
+    - heading "Price" [level=3]:
+      - generic: Price
+  - region "Price":
+    - generic "Price filters":
+      - generic: Min
+      - textbox "Min":
+        - /placeholder: ""
+        - text: $0
+      - generic: "-"
+      - generic: Max
+      - textbox "Max":
+        - /placeholder: ""
+        - text: $100,000
+      - group "Price":
+        - generic: Price minimum
+        - generic: Price maximum
+        - slider "Price minimum"
+        - slider "Price maximum"
+  - button "Year" [expanded]:
+    - heading "Year" [level=3]:
+      - generic: Year
+  - region "Year":
+    - generic "Year filters":
+      - generic: Min
+      - textbox "Min":
+        - /placeholder: ""
+        - text: "2011"
+      - generic: "-"
+      - generic: Max
+      - textbox "Max":
+        - /placeholder: ""
+        - text: "2027"
+      - group "Year":
+        - generic: Year minimum
+        - generic: Year maximum
+        - slider "Year minimum"
+        - slider "Year maximum"
+  - button "Mileage" [expanded]:
+    - heading "Mileage" [level=3]:
+      - generic: Mileage
+  - region "Mileage":
+    - generic "Mileage filters":
+      - generic: Min
+      - textbox "Min":
+        - /placeholder: ""
+        - text: "0"
+      - generic: "-"
+      - generic: Max
+      - textbox "Max":
+        - /placeholder: ""
+        - text: 150,000
+      - group "Mileage":
+        - generic: Mileage minimum
+        - generic: Mileage maximum
+        - slider "Mileage minimum"
+        - slider "Mileage maximum"
+  - button "Make" [expanded]:
+    - heading "Make" [level=3]:
+      - generic: Make
+  - region "Make":
+    - list:
+      - listitem "Acura":
+        - checkbox "Acura"
+        - generic: Acura
+      - listitem "Audi":
+        - checkbox "Audi"
+        - generic: Audi
+      - listitem "BMW":
+        - checkbox "BMW"
+        - generic: BMW
+      - listitem "Buick":
+        - checkbox "Buick"
+        - generic: Buick
+      - listitem "Cadillac":
+        - checkbox "Cadillac"
+        - generic: Cadillac
+      - listitem "Chevrolet":
+        - checkbox "Chevrolet"
+        - generic: Chevrolet
+      - listitem "Chrysler":
+        - checkbox "Chrysler"
+        - generic: Chrysler
+      - listitem "Dodge":
+        - checkbox "Dodge"
+        - generic: Dodge
+      - listitem "Ford":
+        - checkbox "Ford"
+        - generic: Ford
+      - listitem "GMC":
+        - checkbox "GMC"
+        - generic: GMC
+      - listitem "Honda":
+        - checkbox "Honda"
+        - generic: Honda
+      - listitem "Hyundai":
+        - checkbox "Hyundai"
+        - generic: Hyundai
+      - listitem "INFINITI":
+        - checkbox "INFINITI"
+        - generic: INFINITI
+      - listitem "Jeep":
+        - checkbox "Jeep"
+        - generic: Jeep
+      - listitem "Kia":
+        - checkbox "Kia"
+        - generic: Kia
+      - listitem "Lexus":
+        - checkbox "Lexus"
+        - generic: Lexus
+      - listitem "Mazda":
+        - checkbox "Mazda"
+        - generic: Mazda
+      - listitem "Mercedes-Benz":
+        - checkbox "Mercedes-Benz"
+        - generic: Mercedes-Benz
+      - listitem "Nissan":
+        - checkbox "Nissan"
+        - generic: Nissan
+      - listitem "Porsche":
+        - checkbox "Porsche"
+        - generic: Porsche
+      - listitem "Ram":
+        - checkbox "Ram"
+        - generic: Ram
+      - listitem "Subaru":
+        - checkbox "Subaru"
+        - generic: Subaru
+      - listitem "Tesla":
+        - checkbox "Tesla"
+        - generic: Tesla
+      - listitem "Toyota":
+        - checkbox "Toyota"
+        - generic: Toyota
+  - button "Model" [disabled]:
+    - heading "Model" [level=3]:
+      - generic: Model
+  - button "Trim" [disabled]:
+    - heading "Trim" [level=3]:
+      - generic: Trim
+  - button "Body Style" [expanded]:
+    - heading "Body Style" [level=3]:
+      - generic: Body Style
+  - region "Body Style":
+    - list:
+      - listitem "Convertible":
+        - checkbox "Convertible"
+        - generic: Convertible
+      - listitem "Coupe":
+        - checkbox "Coupe"
+        - generic: Coupe
+      - listitem "Hatchback":
+        - checkbox "Hatchback"
+        - generic: Hatchback
+      - listitem "Minivan":
+        - checkbox "Minivan"
+        - generic: Minivan
+      - listitem "Pickup":
+        - checkbox "Pickup"
+        - generic: Pickup
+      - listitem "SUV":
+        - checkbox "SUV"
+        - generic: SUV
+      - listitem "Sedan":
+        - checkbox "Sedan"
+        - generic: Sedan
+      - listitem "Van":
+        - checkbox "Van"
+        - generic: Van
+  - button "Key Features":
+    - heading "Key Features" [level=3]:
+      - generic: Key Features
+  - button "Drive Train":
+    - heading "Drive Train" [level=3]:
+      - generic: Drive Train
+  - button "Transmission":
+    - heading "Transmission" [level=3]:
+      - generic: Transmission
+  - button "Engine":
+    - heading "Engine" [level=3]:
+      - generic: Engine
+  - button "Fuel Type":
+    - heading "Fuel Type" [level=3]:
+      - generic: Fuel Type
+  - button "Exterior Color":
+    - heading "Exterior Color" [level=3]:
+      - generic: Exterior Color
+  - button "Interior Color":
+    - heading "Interior Color" [level=3]:
+      - generic: Interior Color
+  - button "MPG":
+    - heading "MPG" [level=3]:
+      - generic: MPG
+- heading "128 Used Cars for Sale" [level=1]
+- button "Toggle menu for sort-by":
+  - generic: "Sort: Default"
+- button "Remove Mileage filter":
+  - generic: under 150,000 miles
+- button "Clear All Filters":
+  - generic: Clear All Filters
+- region "Vehicle image carousel":
+  - generic: 1 of 12
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 12"
+- generic: 2017 Hyundai
+- generic: Elantra SE
+- generic: $7,777
+- button "Includes dealer fees"
+- generic: "Ext. Color: red"
+- generic "KMHD74LF5HU111843": VIN KMHD74LF5HU111843
+- generic: "Int. Color: gray"
+- generic: 127,317 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2017 Hyundai Elantra SE"
+- region "Vehicle image carousel":
+  - generic: 1 of 34
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 34"
+- generic: 2013 BMW
+- generic: 7 Series 740Li
+- generic: $7,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: black"
+- generic "WBAYE4C50DD137518": VIN WBAYE4C50DD137518
+- generic: "Int. Color: black"
+- generic: 92,780 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2013 BMW 7 Series 740Li"
+- region "Vehicle image carousel":
+  - generic: 1 of 12
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 12"
+- generic: 2014 Jeep
+- generic: Grand Cherokee Limited
+- generic: $7,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: gray"
+- generic "1C4RJEBG8EC241662": VIN 1C4RJEBG8EC241662
+- generic: "Int. Color: black"
+- generic: 136,660 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2014 Jeep Grand Cherokee Limited"
+- region "Vehicle image carousel":
+  - generic: 1 of 11
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 11"
+- generic: 2013 Hyundai
+- generic: Sonata GLS PZEV
+- generic: $8,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: gray"
+- generic "5NPEB4AC5DH624739": VIN 5NPEB4AC5DH624739
+- generic: "Int. Color: gray"
+- generic: 136,651 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2013 Hyundai Sonata GLS PZEV"
+- region "Vehicle image carousel":
+  - generic: 1 of 12
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 12"
+- generic: 2016 Kia
+- generic: Soul Plus
+- generic: $8,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: clear white"
+- generic "KNDJP3A59G7349557": VIN KNDJP3A59G7349557
+- generic: "Int. Color: black"
+- generic: 110,825 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2016 Kia Soul Plus"
+- region "Vehicle image carousel":
+  - generic: 1 of 24
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 24"
+- generic: 2005 Toyota
+- generic: Sienna LE
+- generic: $9,450
+- button "Includes dealer fees"
+- generic: "Ext. Color: white"
+- generic "5TDZA23C35S298134": VIN 5TDZA23C35S298134
+- generic: "Int. Color: taupe"
+- generic: 86,542 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2005 Toyota Sienna LE"
+- region "Vehicle image carousel":
+  - generic: 1 of 28
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 28"
+- generic: 2016 Dodge
+- generic: Dart GT Sport
+- generic: $9,450
+- button "Includes dealer fees"
+- generic: "Ext. Color: torred"
+- generic "1C3CDFGB4GD823534": VIN 1C3CDFGB4GD823534
+- generic: "Int. Color: black"
+- generic: 100,226 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2016 Dodge Dart GT Sport"
+- region "Vehicle image carousel":
+  - generic: 1 of 32
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 32"
+- generic: 2013 Buick
+- generic: Enclave Premium
+- generic: $9,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: gray"
+- generic "5GAKRDKD5DJ235842": VIN 5GAKRDKD5DJ235842
+- generic: "Int. Color: choccachino"
+- generic: 87,725 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2013 Buick Enclave Premium"
+- region "Vehicle image carousel":
+  - generic: 1 of 27
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 27"
+- generic: 2021 Chevrolet
+- generic: Spark 1LT
+- generic: $10,550
+- button "Includes dealer fees"
+- generic: "Ext. Color: gray"
+- generic "KL8CD6SA0MC751140": VIN KL8CD6SA0MC751140
+- generic: "Int. Color: black"
+- generic: 76,626 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2021 Chevrolet Spark 1LT"
+- region "Vehicle image carousel":
+  - generic: 1 of 28
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 28"
+- generic: 2011 Lexus
+- generic: IS 250
+- generic: $10,750
+- button "Includes dealer fees"
+- generic: "Ext. Color: silver"
+- generic "JTHBF5C2XB5131054": VIN JTHBF5C2XB5131054
+- generic: "Int. Color: black"
+- generic: 121,563 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2011 Lexus IS 250"
+- region "Vehicle image carousel":
+  - generic: 1 of 27
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 27"
+- generic: 2020 Chevrolet
+- generic: Equinox LT
+- generic: $11,770
+- button "Includes dealer fees"
+- generic: "Ext. Color: blue"
+- generic "2GNAXKEV8L6101483": VIN 2GNAXKEV8L6101483
+- generic: "Int. Color: jet black"
+- generic: 94,408 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2020 Chevrolet Equinox LT"
+- region "Vehicle image carousel":
+  - generic: 1 of 30
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 30"
+- generic: 2017 INFINITI
+- generic: Q50 2.0T
+- generic: $11,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: pure white"
+- generic "JN1CV7APXHM641229": VIN JN1CV7APXHM641229
+- generic: "Int. Color: graphite"
+- generic: 89,558 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2017 INFINITI Q50 2.0T"
+- region "Vehicle image carousel":
+  - generic: 1 of 32
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 32"
+- generic: 2015 BMW
+- generic: 4 Series 428i xDrive
+- generic: $12,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: white"
+- generic "WBA3N9C5XFK246445": VIN WBA3N9C5XFK246445
+- generic: "Int. Color: black"
+- generic: 103,032 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2015 BMW 4 Series 428i xDrive"
+- region "Vehicle image carousel":
+  - generic: 1 of 28
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 28"
+- generic: 2022 Chevrolet
+- generic: Malibu LT
+- generic: $12,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: silver"
+- generic "1G1ZD5ST7NF112436": VIN 1G1ZD5ST7NF112436
+- generic: "Int. Color: jet black"
+- generic: 106,273 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2022 Chevrolet Malibu LT"
+- region "Vehicle image carousel":
+  - generic: 1 of 12
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 12"
+- generic: 2017 Ford
+- generic: Fusion Energi Platinum
+- generic: $13,444
+- button "Includes dealer fees"
+- generic: "Ext. Color: white"
+- generic "3FA6P0SU0HR312911": VIN 3FA6P0SU0HR312911
+- generic: "Int. Color: white"
+- generic: 74,647 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2017 Ford Fusion Energi Platinum"
+- region "Vehicle image carousel":
+  - generic: 1 of 29
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 29"
+- generic: 2015 Acura
+- generic: RDX Base
+- generic: $13,450
+- button "Includes dealer fees"
+- generic: "Ext. Color: white"
+- generic "5J8TB3H30FL010818": VIN 5J8TB3H30FL010818
+- generic: "Int. Color: parchment"
+- generic: 83,958 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2015 Acura RDX Base"
+- region "Vehicle image carousel":
+  - generic: 1 of 30
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 30"
+- generic: 2013 Lexus
+- generic: RX 350
+- generic: $13,650
+- button "Includes dealer fees"
+- generic: "Ext. Color: obsidian"
+- generic "2T2ZK1BA6DC116209": VIN 2T2ZK1BA6DC116209
+- generic: "Int. Color: black"
+- generic: 110,500 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2013 Lexus RX 350"
+- region "Vehicle image carousel":
+  - generic: 1 of 30
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 30"
+- generic: 2019 Chevrolet
+- generic: Traverse LT Cloth
+- generic: $13,900
+- button "Includes dealer fees"
+- generic: "Ext. Color: black"
+- generic "1GNERGKW3KJ238855": VIN 1GNERGKW3KJ238855
+- generic: "Int. Color: jet black"
+- generic: 96,506 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2019 Chevrolet Traverse LT Cloth"
+- region "Vehicle image carousel":
+  - generic: 1 of 30
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 30"
+- generic: 2019 Jeep
+- generic: Grand Cherokee Limited
+- generic: $13,900
+- button "Includes dealer fees"
+- generic: "Ext. Color: gray"
+- generic "1C4RJFBG8KC697307": VIN 1C4RJFBG8KC697307
+- generic: "Int. Color: black"
+- generic: 107,573 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2019 Jeep Grand Cherokee Limited"
+- region "Vehicle image carousel":
+  - generic: 1 of 27
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 27"
+- generic: 2012 Honda
+- generic: Ridgeline RTL
+- generic: $13,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: black"
+- generic "5FPYK1F50CB453120": VIN 5FPYK1F50CB453120
+- generic: "Int. Color: gray"
+- generic: 128,249 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2012 Honda Ridgeline RTL"
+- region "Vehicle image carousel":
+  - generic: 1 of 29
+  - button "Previous carousel image":
+  - button "Next carousel image":
+  - img "Vehicle image 1 of 29"
+- generic: 2021 Buick
+- generic: Envision Preferred
+- generic: $13,999
+- button "Includes dealer fees"
+- generic: "Ext. Color: black"
+- generic "LRBAZLR46MD077759": VIN LRBAZLR46MD077759
+- generic: "Int. Color: ebony seats"
+- generic: 107,964 mi
+- button "Unlock estimated payments":
+  - generic: Unlock estimated payments
+- button "View 2021 Buick Envision Preferred"
+- button "Navigate to Previous Page" [disabled]:
+- link "Navigate to Page 1":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=1
+  - text: "1"
+- link "Navigate to Page 2":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=2
+  - text: "2"
+- link "Navigate to Page 3":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=3
+  - text: "3"
+- link "Navigate to Page 4":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=4
+  - text: "4"
+- link "Navigate to Page 5":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=5
+  - text: "5"
+- link "Navigate to Page 6":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=6
+  - text: "6"
+- link "Navigate to Page 7":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=7
+  - text: "7"
+- link "Navigate to Next Page":
+  - /url: https://autodriven.com/carfam/?refsrc=dealer-srp&financeTermLength=72&downPayment=5000&creditScore=Good&page=2
+- contentinfo:
+  - heading "Important Disclosures and Requirements" [level=3]
+  - button "Important Disclosures and Requirements Expand and Close Button": + Show All
+  - heading "I. How Showroom from Capital One Works" [level=4]
+  - generic: Showroom from Capital One is a digital retail experience that allows you to browse the dealer’s advertised inventory and find the vehicle that works best for your budget and lifestyle. Search and filter to find your desired vehicle, and begin exploring financing and leasing options all from the comfort of your home.
+  - heading "A. Finding Your Vehicle:" [level=4]
+  - generic: Search and filter to find your desired vehicle, and begin exploring financing and leasing options all from the comfort of your home.
+  - heading "B. Unlocking Estimated Payments, Creating an Account, and Building Your Deal:" [level=4]
+  - generic: Tell us a little bit about yourself, view pricing and offer information, and begin configuring possible financing and leasing options with estimated terms. The estimated financing and leasing terms displayed are provided by the dealer or the dealer’s associated lenders, including the estimated rates and monthly payments. These estimated terms are based on your self-selected credit range.
+  - generic: Create your Showroom from Capital One account by providing the information requested to connect with the dealer. Upon sharing your information with the dealer, the dealer should be in touch with you to discuss next steps. Once you create your Showroom from Capital One account, you can browse available service and protection plans and see how adding these plans may impact estimated terms. You can also share with the dealer any trade-in or lease-return you may have. You can also allow the dealer to obtain your credit report so they can explore personalized financing, leasing, and vehicle options for you, with no impact to your credit score. Creating an account does not guarantee that you will receive financing or leasing or any particular financing or leasing terms.
+  - heading "C. Estimated Financing and Leasing Terms:" [level=4]
+  - generic: Estimated financing and estimated leasing terms are provided by the dealer or lenders associated with the dealer and are not final until your financing or leasing is completed at the dealer. Your eligibility for such terms will be based on the dealer’s or its associated lender’s evaluation of your credit application, as well as key financing or leasing characteristics. Lenders or lessors may require a down payment or cash due on signing, and may also require a trade-in or lease-return. Capital One does not guarantee that you will receive financing or leasing or any particular financing or leasing terms, including those estimated terms displayed on Showroom from Capital One.
+  - generic: Estimated auto financing terms are provided based on common finance term lengths (e.g. 48-month and 60-month terms). Not all consumers qualify for the displayed term-length options and alternate options may be available at the dealer.
+  - generic: APR is the Annual Percentage Rate. The estimated financing terms, including the APR, are based on your self-selected credit range and depend on key financing characteristics, including but not limited to the amount financed, term, loan-to-value (LTV) ratio, down payment amount, and vehicle characteristics.
+  - generic: Estimated auto leasing terms are provided based on your self-selected credit range and common lease terms (e.g. 36-month or 42-month terms) and annual mileage limits (e.g. 10,000 miles). Not all consumers qualify for the displayed options and alternate options may be available at the dealer.
+  - generic: A security deposit will be required upon leasing, and is not accounted for in the estimated terms displayed by Showroom from Capital One. You understand that you may be responsible for the costs of all maintenance and repairs of the vehicle during the lease term. An extra charge may be imposed at the end of the lease term where the charge, if any, is based on the difference between the residual value of the leased vehicle and its realized value at the end of the lease term. Charges may be levied at the end of the lease term for reasons including exceeding mileage limits and excess wear or damage to the leased vehicle, and there may be fees if you terminate your lease before the end of the agreed-upon term.
+  - heading "D. Capital One Pre-Qualification:" [level=4]
+  - generic: For eligible vehicles on Showroom from Capital One, you can submit a request to pre-qualify with Capital One for auto financing. When you submit your pre-qualification request, you are also authorizing Capital One, upon confirming that you may be eligible to see if you pre-qualify for financing with a participating lender, to provide your information to participating lenders so that participating lenders may evaluate your pre-qualification request. Participating lenders may use the information you provide in order to determine whether you pre-qualify for financing and to send you important information about your pre-qualification request. Your pre-qualification request may not be submitted to any or all participating lenders. Participating lenders may pay Capital One if you finance with them. For complete information, see each participating lender’s privacy policies. Should you submit your pre-qualification request, you are also authorizing Capital One to share the information you input into your pre-qualification request, along with its and/or a participating lender’s response to your pre-qualification request, with the Dealer. When you share your information with the dealership, they may use the information consistent with their privacy policy.
+  - generic: Pre-qualification does not guarantee that you will receive financing or any particular financing terms, which are subject to change based on our evaluation of your credit application submitted at the dealer and any required documents, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. Capital One pre-qualification terms expire 30 days from the date your pre-qualification request is received. All other financing offers are subject to the terms of the offering party.
+  - generic: To pre-qualify with Capital One, you must be at least 18 years old, have a valid street address within the contiguous United States or an APO/FPO address. Minimum monthly income required is $1,500. Any existing Capital One accounts must be in good standing (not over limit, past due, or delinquent).
+  - generic: The minimum Amount Financed is $4,000. Your maximum Amount Financed may be based on income, key credit characteristics, the vehicle you are purchasing, the details of the financing deal, and/or the specific dealership from which you purchase the vehicle. The Amount Financed may include the vehicle sales price, tax, title, licensing fees, dealer fees, and any optional products like service contract and/or extended warranty that you choose to purchase from the dealer.
+  - generic: Capital One pre-qualification terms can only be used at participating dealer locations in connection with the purchase of a new or used car, light truck, minivan, or SUV intended for personal use. We do not finance certain vehicle makes including but not limited to, Oldsmobile, Daewoo, Saab, Suzuki or Isuzu vehicles. We do not offer financing for commercial vehicles, motorcycles, recreational vehicles (RVs), ATVs, boats, camper vans, motor homes, vehicles with a history of chronic malfunctions and/or manufacturer or dealer buy back (alternatively referred to as a lemon), branded title vehicles, or vehicles without a Vehicle Identification Number (VIN) or title issued. We may determine a vehicle to be commercial or otherwise ineligible based on the model and/or information provided to us.
+  - generic: The vehicle you are interested in financing with Capital One must have under 120,000 miles and its model year must be within the last 10 years. In some instances, an older model or higher mileage vehicle (up to 150,000 miles) may be eligible.
+  - generic: Your pre-qualification can only be used for the purchase of one, personal use vehicle. If you have recently applied and funded another loan with Capital One, this might impact your eligibility for a new loan with this pre-qualification.
+  - generic: Capital One provides financing for new and used vehicles purchased from participating dealers and offers pre-qualification at participating dealers through dealer websites and its Auto Navigator product. Participating dealers are subject to change. We do not offer financing for vehicles purchased from non-participating dealers, auto brokers, or private party sellers. We do not offer financing for lease buyouts. Any pre-qualification submission to Capital One, a participating dealer website or through Auto Navigator may be accessed for as long as the pre-qualification offer is available and may be accessed through digital channels where Capital One provides pre-qualification services.
+  - generic: If you are pre-qualified with more than one participating lender, pre-qualified offers from the participating dealer’s preferred participating lender will be displayed.
+  - heading "E. Participating Lenders" [level=4]
+  - generic: "Capital One has built relationships with the following participating lenders, which may provide auto financing pre-qualification offers to consumers in certain Capital One pre-qualification experiences: Eligibility for auto financing pre-qualification from participating lenders is determined by the information you submitted, along with the personal credit profile from credit reporting agencies that is obtained by Capital One through your pre-qualification request. Your request for pre-qualification may not be submitted to any or all participating lenders, and you may not receive a response from any or all participating lenders.Participating lenders may have their own eligibility restrictions, such as requiring that you be at least 18 years of age, live within the contiguous United States, meet minimum income requirements, and purchase a vehicle for personal use that meets specified year, make, model, and/or mileage restrictions.Pre-qualification does not guarantee that you will receive financing or any particular financing terms, which are subject to change based on the participating lender’s evaluation of your credit application submitted at the dealer and any required documents, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. The expiration of your pre-qualification is subject to the lender’s terms and may vary from Capital One. If you pre-qualified for auto financing with a participating lender and do not see that pre-qualification when you log into your account, you may access your pre-qualification at the website where you submitted that pre-qualification request.Participating lenders pay Capital One if you finance with them.Your pre-qualification terms, including monthly payment and Annual Percentage Rate (APR), are not final until your financing is completed at a participating dealer with the lender offering auto financing. These pre-qualified auto financing terms are based on information you provide and might change if you update any information with a participating lender or at the dealer, and may vary depending on the dealership selling the vehicle(s) you may be interested in financing. Capital One and participating lenders do not guarantee that the dealer will provide you with all terms outlined in your pre-qualification offer. Capital One uses third parties to provide vehicle information, including, but not limited to, trade-in values, car images, dealer reported mileage, and dealer advertised price."
+  - list:
+    - text: "Exeter Finance LLC :"
+    - link "https://www.exeterfinance.com/privacy":
+      - /url: https://www.exeterfinance.com/privacy
+    - text: "Global Lending Services LLC (GLS) :"
+    - link "https://www.glsauto.com/privacy-policy.html":
+      - /url: https://www.glsauto.com/privacy-policy.html
+    - text: "Westlake Services LLC :"
+    - link "https://www.westlakefinancial.com/privacy-policy/":
+      - /url: https://www.westlakefinancial.com/privacy-policy/
+  - text: Participating lenders provide financing for new and used vehicles purchased from participating dealers. Participating dealers are subject to change, and may vary by participating lender. You should verify the accuracy of any third party information on your own.
+  - heading "F. Using Showroom from Capital One at the Dealer:" [level=4]
+  - generic: When you visit the dealer, let them know you built your estimated or, if pre-qualified, pre-qualified deal through Showroom from Capital One. This will help the dealer retrieve your information, including the vehicles you are interested in financing or leasing. When you’re ready to do so, you will fill out a credit application and provide any information needed for review to complete your financing/leasing. The dealer may ask you to provide additional information to verify your identity and/or the accuracy of other details included in your application. A credit application at the dealer will result in one or more hard inquiries posted to your credit file. After negotiating final terms and receiving dealer credit approval, you will sign a contract with the dealer reflecting financing or leasing terms, as applicable. Obtaining financing for a vehicle will result in a retail installment contract with the dealer as the original creditor; leasing a vehicle will result in your entry into a lease agreement.
+  - heading "II. Providing Information to the Dealer and Capital One:" [level=4]
+  - generic: When you use Showroom from Capital One, you share your information with Capital One and the dealer. By sharing your information with the dealer, the dealer may be able to help you identify vehicles you may be interested in and explore financing and leasing options, including options from the dealer’s associated lenders. The dealer may also use this information to contact you in connection with your Showroom from Capital One experience or other products and services. Using Showroom from Capital One, you can authorize the dealer to obtain information from your personal credit profile from credit reporting agencies so the dealer may help you explore personalized financing and vehicle options, including financing options from dealer’s associated lenders. Capital One will use the information you share to provide you and the dealer with services in connection with your use of Showroom from Capital One. Capital One and the dealer may also use the information you share consistent with their respective privacy policies.
+  - generic: If you choose to fill out a pre-qualification request, you are providing your information to Capital One. Capital One will use the information you provide in order to determine whether Capital One is able to pre-qualify you for financing and to send you important information about your pre-qualification request. Capital One will use the information you provide consistent with its privacy policies. Should you submit your pre-qualification request, you are also authorizing Capital One to share the information you input into your pre-qualification request and Capital One’s response to your pre-qualification request with the Dealer. When you share your information with the dealership, they may use the information consistent with their privacy policy.
+  - text: The Capital One privacy policies may be accessed at
+  - link "https://www.capitalone.com/privacy.":
+    - /url: https://www.capitalone.com/privacy
+  - text: The dealer's privacy policies may be accessed at
+  - link "https://www.carfam.com/privacy-policy.":
+    - /url: https://www.carfam.com/privacy-policy
+  - heading "III. Dealer Inventory and Pricing:" [level=4]
+  - generic: Vehicles are subject to prior sale and availability should be confirmed with the dealer. All vehicles available at the dealer may not be displayed on Showroom from Capital One. Inventory availability is subject to change without notice.
+  - generic: Dealer Price may be negotiable with the dealer. Dealer Price includes all costs to be paid by a consumer except for licensing costs, registration fees, taxes, and title fees, including any fees the dealer may charge helping to secure your registration and/or title and/or other fees the dealer may assess under the law. However, to improve your experience, Showroom from Capital One displays an estimate of tax, title, and license/registration fees to show you how they may impact your financing and leasing terms. Dealer Price does not include the cost of any additional requests you make or any other charges associated with financing or leasing a vehicle. You should verify with the dealer what is and is not included in the Dealer Price. Dealer Prices are subject to change without notice. Showroom from Capital One also displays Estimated Vehicle Price; this includes any applied offers and selected service and protection plans.
+  - generic: Showroom from Capital One uses information provided by the dealer that is otherwise available to enhance your experience. This includes, but is not limited to, Dealer Price, Estimated Vehicle Price, dealer reported mileage, dealer’s financing and leasing terms, offers, service and protection plans, and other fees charged or price adjustments made by the dealer, if any. Actual pricing, financing and leasing terms, vehicle availability, eligibility requirements, and all other details related to the dealer-provided information, including offers and service and protection plan availability, may vary from what is displayed in Showroom from Capital One. Services, packages, offers, vehicles, and financing and leasing options that are not displayed on Showroom from Capital One may be available. Please confirm all information displayed in Showroom from Capital One with the dealer as you move forward with your vehicle finance or lease.
+  - heading "IV. Third Party information:" [level=4]
+  - generic: Showroom from Capital One uses third party information, otherwise available, to enhance your experience. Third party information includes, but is not limited to, vehicle images, vehicle details, Dealer Price, MSRP, dealer reported mileage, fuel economy, dealer’s and dealer’s associated lender’s financing and leasing terms, tax, title, and license/registration estimates, offers, service and protection plans, and other fees charged by or price adjustments made by the dealer, if any. Please note that third parties, including the dealer’s associated lenders and service providers, provide this information, and Capital One does not sell vehicles or any service or protection plans or other optional products, offer offers, or make any express or implied representations or warranties with respect to the accuracy of the provided third party information. Actual pricing, availability, coverage, eligibility requirements, and all other details related to the third party information may vary from what is displayed in Showroom from Capital One. All lenders and lessors may not allow for all displayed service and protection plans and offers, and other services, plans, offers, and financing and leasing options may be available. You should verify the accuracy of any third party information on your own. All trademarks are the property of their respective owners.
+  - generic: "NOTICE: The automotive images or video contained herein are owned by EVOX Productions LLC (“EVOX”) and are protected under United States and international copyright law. Vehicle Images by EvoxImages.com."
+  - navigation:
+    - list:
+      - link "CarFam":
+        - /url: https://www.carfam.com/
+      - link "Contact Us":
+        - /url: https://www.carfam.com/contact-us
+      - link "Privacy Policy":
+        - /url: https://www.carfam.com/privacy-policy
+    - list:
+      - link "Capital One":
+        - /url: https://www.capitalone.com/cars
+      - link "Terms and Conditions":
+        - /url: https://www.capitalone.com/legal/terms-conditions
+      - link "Capital One Privacy Policy":
+        - /url: https://www.capitalone.com/privacy
+      - link "Capital One Security":
+        - /url: https://www.capitalone.com/applications/identity-protection/commitment
+      - link "Capital One Accessibility":
+        - /url: https://www.capitalone.com/about/accessibility-commitment
+  - paragraph: © 2026 Capital One

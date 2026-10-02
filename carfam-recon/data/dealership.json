@@ -1,0 +1,66 @@
+{
+  "name": "CARFAM",
+  "address": {
+    "street": "1731 South Cactus Ave",
+    "city": "Rialto",
+    "region": "CA",
+    "postal_code": "92316",
+    "country": "US"
+  },
+  "sales_phone": "909-543-1450",
+  "text_phone": "909-251-7182",
+  "email": "sales@carfam.com",
+  "hours": {
+    "Monday": "09:00–20:00",
+    "Tuesday": "09:00–20:00",
+    "Wednesday": "09:00–20:00",
+    "Thursday": "09:00–20:00",
+    "Friday": "09:00–20:00",
+    "Saturday": "09:00–20:00",
+    "Sunday": "10:00–19:00"
+  },
+  "timezone": "America/Los_Angeles",
+  "social_links": [
+    "https://www.facebook.com/carFAMdealer",
+    "https://www.instagram.com/carfam_dealer",
+    "https://x.com/CARFAMdealer",
+    "https://www.youtube.com/@carfamdealer7066",
+    "https://www.facebook.com/carFAMdealer",
+    "https://www.instagram.com/carfam_dealer",
+    "https://x.com/CARFAMdealer",
+    "https://www.youtube.com/@carfamdealer7066"
+  ],
+  "staff": [
+    {
+      "name": "Magic Faouri",
+      "role": null,
+      "email": "magic@carfam.com",
+      "photo_note": "Coming soon placeholder, not a verified staff portrait",
+      "bio": null
+    }
+  ],
+  "claims_requiring_review": [
+    {
+      "claim": "3-day or 200-mile return",
+      "source": "https://www.carfam.com/about-us"
+    },
+    {
+      "claim": "3-day or 250-mile return, no questions asked",
+      "source": "https://www.carfam.com/customer-gallery-at-carfam"
+    },
+    {
+      "claim": "Bloomington address and 909-990-5043 service number",
+      "source": "homepage appraisal popup image"
+    },
+    {
+      "claim": "Capital One dealer phone 909-990-5043 and Mon–Sat closing 21:00",
+      "source": "https://www.carfam.com/capital-one-pre-qualify-then-shop"
+    }
+  ],
+  "sources": [
+    "https://www.carfam.com/",
+    "https://www.carfam.com/about-us",
+    "https://www.carfam.com/contact-us",
+    "https://www.carfam.com/meet-our-team"
+  ]
+}

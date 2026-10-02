@@ -1,0 +1,351 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - link "Overview":
+    - /url: "#ds-vdp-overview-section"
+  - link:
+    - /url: "#ds-vdp-history-section"
+    - text: History
+  - link:
+    - /url: "#ds-vdp-features-section"
+    - text: Features
+  - link:
+    - /url: "#ds-vdp-description-section"
+    - text: Description
+  - link:
+    - /url: "#ds-vdp-financing-section"
+    - text: Financing
+  - link:
+    - /url: "#ds-vdp-specs-section"
+    - text: Specs
+  - link:
+    - /url: "#ds-vdp-similar-section"
+    - text: Similar
+  - heading "2020 Tesla Model X Long Range Plus" [level=1]
+  - heading "Long Range Plus AWD" [level=3]
+  - 'img "Image #29"'
+  - img "2020 Tesla Model X Long Range Plus"
+  - 'img "Image #2"'
+  - 'img "Image #3"'
+  - 'img "Image #4"'
+  - 'img "Image #5"'
+  - 'img "Image #6"'
+  - 'img "Image #7"'
+  - 'img "Image #8"'
+  - 'img "Image #9"'
+  - 'img "Image #10"'
+  - 'img "Image #11"'
+  - 'img "Image #12"'
+  - 'img "Image #13"'
+  - 'img "Image #14"'
+  - 'img "Image #15"'
+  - 'img "Image #16"'
+  - 'img "Image #17"'
+  - 'img "Image #18"'
+  - 'img "Image #19"'
+  - 'img "Image #20"'
+  - 'img "Image #21"'
+  - 'img "Image #22"'
+  - 'img "Image #23"'
+  - 'img "Image #24"'
+  - 'img "Image #25"'
+  - 'img "Image #26"'
+  - 'img "Image #27"'
+  - 'img "Image #28"'
+  - 'img "Image #29"'
+  - img "2020 Tesla Model X Long Range Plus"
+  - generic: 
+  - generic: 
+  - link "5 Photos (29)":
+    - /url: "#ds-vdp-featured-media-exterior-content-pane"
+    - generic: "5"
+    - generic: Photos (29)
+  - text: "0"
+  - heading "History & Pricing Tools" [level=3]
+  - link "View Carfax Report":
+    - /url: "#ds-widget-carfax-container"
+    - img "Carfax Logo"
+  - link "Get Pre-Qualified":
+    - /url: "#"
+    - generic: Estimate financing
+    - generic: No credit score risk
+    - img "Capital One Logo"
+  - heading "Features" [level=3]
+  - generic: Exterior
+  - generic: Pearl White Multi-Coat
+  - generic: Interior
+  - generic: Black
+  - generic: t
+  - generic: Drivetrain
+  - generic: All Wheel Drive
+  - generic: q
+  - generic: Engine
+  - generic: Electric Motor
+  - generic: "'"
+  - generic: Fuel
+  - generic: Electric
+  - generic: "y"
+  - generic: Horsepower
+  - generic: 534 hp
+  - generic: "6"
+  - generic: Torque
+  - generic: 556 lb-ft
+  - generic: "\""
+  - generic: Transmission
+  - generic: Automatic
+  - heading "Highlights" [level=3]
+  - img "Active Cruise Control"
+  - generic: Active Cruise Control
+  - img "Blind Spot Monitor"
+  - generic: Blind Spot Monitor
+  - img "Bluetooth"
+  - generic: Bluetooth
+  - img "Fwd Collision Warning"
+  - generic: Fwd Collision Warning
+  - img "Heated Seats"
+  - generic: Heated Seats
+  - img "Parking Assist"
+  - generic: Parking Assist
+  - img "Rain Sensing Wipers"
+  - generic: Rain Sensing Wipers
+  - img "Towing Pkg"
+  - generic: Towing Pkg
+  - img "Lane Departure Warning"
+  - generic: Lane Departure Warning
+  - img "Lane Keep Assist"
+  - generic: Lane Keep Assist
+  - heading "Description" [level=3]
+  - text: Experience the pinnacle of electric vehicle innovation with this Carfax 1-Owner 2020 Tesla Model X Long Range Plus AWD. Adorned in the stunning Pearl White Multi-Coat, this luxurious SUV combines elegance with cutting-edge technology. The interior is tastefully appointed in a sleek Black color scheme, offering a sophisticated atmosphere for both driver and passengers.
+  - text: Equipped with all-wheel drive, the Model X ensures confident handling and power delivery across varying conditions. Active cruise control enhances your driving experience by maintaining optimal speed on highways. Safety features such as the blind spot monitor and forward collision warning provide peace of mind on every journey. The lane departure warning and lane keep assist further enhance your control and safety, making every ride more secure.
+  - text: Comfort is paramount with heated seats, ensuring a cozy drive during colder months. The addition of a towing package brings versatility for all your travel and hauling needs. Rain-sensing wipers adjust automatically, providing exceptional visibility in all weather conditions. Enjoy seamless connectivity with Bluetooth, making it easy to stay connected on the go. Parking is made effortless with the parking assist feature, guiding you into tight spaces with ease. Experience the future of driving with this remarkable Tesla Model X.
+  - heading "Estimated Payment Calculator" [level=3]
+  - generic: Loan Amount
+  - generic: $34,134
+  - generic: Estimated Payment *
+  - generic: $548/mo
+  - generic: Credit Score
+  - generic: 520 - Below
+  - generic: 20.90% APR
+  - generic: 580 - 619
+  - generic: 18.90% APR
+  - generic: 620 - 679
+  - generic: 11.90% APR
+  - generic: 680 - 779
+  - generic: 5.90% APR
+  - generic: 780 - Above
+  - generic: 4.90% APR
+  - generic: Payment Terms
+  - generic: 24 mo
+  - generic: 36 mo
+  - generic: 48 mo
+  - generic: 60 mo
+  - generic: 72 mo
+  - generic: Down Payment
+  - textbox "Down Payment": <redacted>
+  - generic: Trade In Value
+  - textbox "Trade In Value": <redacted>
+  - link "Contact Dealer":
+    - /url: "#ds-vdp-question-contact-modal"
+  - link "Get Approved":
+    - /url: /finance-your-car/pre-approved/?vehicleId=1489060
+  - generic: Disclaimer
+  - paragraph: "All Payments exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. The price for listed vehicles as equipped does not include charges such as: License, Title, Registration Fees, State or Local Taxes, Smog Fees, Credit Investigation, Optional Credit Insurance, Physical Damage of Liability Insurance, or Delivery Fees."
+  - heading "Specifications" [level=3]
+  - link "Exterior":
+    - /url: "#ds-vdp-spec-exterior-pane"
+    - generic: Exterior
+  - link "Interior":
+    - /url: "#ds-vdp-spec-interior-pane"
+    - generic: Interior
+  - link "Safety":
+    - /url: "#ds-vdp-spec-safety-pane"
+    - generic: Safety
+  - generic: "Roof: Generic Sun/Moonroof"
+  - generic: 
+  - generic: "Roof: Sun/Moonroof"
+  - generic: 
+  - generic: "Tire - Front: Tires - Front Performance"
+  - generic: 
+  - generic: "Tire - Rear: Tires - Rear Performance"
+  - generic: 
+  - heading "Exterior" [level=5]
+  - generic: Auto On/Off Projector Beam Led Low/High Beam Auto-Leveling Directionally Adaptive Auto High-Beam Daytime Running Lights Preference Setting Headlamps w/Delay-Off
+  - generic: 
+  - generic: Black Grille w/Chrome Surround
+  - generic: 
+  - generic: Body-Colored Front Bumper
+  - generic: 
+  - generic: Body-Colored Power w/Tilt Down Heated Auto Dimming Side Mirrors w/Power Folding
+  - generic: 
+  - generic: Body-Colored Rear Bumper
+  - generic: 
+  - generic: Chrome Bodyside Insert and Black Fender Flares
+  - generic: 
+  - generic: Chrome Door Handles
+  - generic: 
+  - generic: Chrome Side Windows Trim
+  - generic: 
+  - generic: Fixed Rear Window w/Defroster
+  - generic: 
+  - generic: Front Fog Lamps
+  - generic: 
+  - generic: Sun Visor Strip
+  - generic: 
+  - generic: Galvanized Steel/Aluminum Panels
+  - generic: 
+  - generic: Headlights-Automatic Highbeams
+  - generic: 
+  - generic: LED Brakelights
+  - generic: 
+  - generic: Light Tinted Glass
+  - generic: 
+  - generic: Perimeter/Approach Lights
+  - generic: 
+  - generic: Power Falcon Wing Rear Doors
+  - generic: 
+  - generic: Soft Close Doors
+  - generic: 
+  - generic: Speed Sensitive Rain Detecting Variable Intermittent Wipers w/Heated Jets And Wiper Park
+  - generic: 
+  - generic: Wing Spoiler
+  - generic: 
+  - text:                                                                                                                                             
+  - heading "Disclaimer" [level=4]
+  - paragraph: All advertised prices exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. While we try to make sure that all prices posted here are accurate at all times, we cannot be responsible for typographical and other errors that may appear on the site. We make every effort to provide you with the most accurate, up-to-the-minute information; however, it is your responsibility to verify with the Dealer that all details listed are accurate. The dealership is not responsible for typographical, pricing, product information, advertising, or shipping errors. Advertised prices and available quantities are subject to change without notice. All rates and offers are dependent on bank approval, which varies based on the applicant's credit as well as the vehicle.
+  - generic: "n"
+  - heading "Shopping Tools" [level=3]
+  - link "Save this in your customer account":
+    - /url: "#"
+    - generic: 
+  - generic: "8"
+  - text: "#"
+  - link "! Schedule a Test Drive":
+    - /url: "#ds-vdp-schedule-test-drive-modal"
+    - generic: "!"
+    - generic: Schedule a Test Drive
+  - link "r Ask a Question":
+    - /url: "#ds-vdp-question-contact-modal"
+    - generic: r
+    - generic: Ask a Question
+  - link "4 Text Link to Phone":
+    - /url: "#ds-vdp-send-to-phone-modal"
+    - generic: "4"
+    - generic: Text Link to Phone
+  - link "1 Get Approved":
+    - /url: https://www.carfam.com/finance-your-car/pre-approved/?vehicleId=1489060
+    - generic: "1"
+    - generic: Get Approved
+  - generic: "Internet Price:"
+  - generic: $33,999
+  - generic: "Doc Fee:"
+  - generic: +$85
+  - generic: "Smog Fee:"
+  - generic: +$50
+  - generic: "Sale Price:"
+  - generic: $34,134
+  - link "Get Our Best Price":
+    - /url: "#ds-vdp-buy-now-modal"
+  - generic: "Miles: 61,574"
+  - generic: Estimated
+  - generic: "Range:"
+  - generic: 328 miles
+  - generic: "Stock #: 7841"
+  - generic: "VIN: 5YJXCDE2XLF270110"
+  - generic: "0"
+  - generic: CARFAM
+  - text: "Call:"
+  - link "(909) 543-1450":
+    - /url: tel:9095431450
+  - link "1731 South Cactus Ave, Rialto, CA 92316":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731+South+Cactus+Ave%2C+Rialto%2C+CA+92316
+  - text: 
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

@@ -1,0 +1,176 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "Select Language":
+  - /url: "#"
+  - generic: Select Language
+  - generic: ▼
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - heading "Solicitar Financiación" [level=1]
+  - list:
+    - link "Home":
+      - /url: /
+    - listitem: / Solicitar Financiación
+  - iframe [active] [id="ds-cp-spanish-financing-iframe"]:
+    - main:
+      - list:
+        - button "English"
+      - switch "Aumentar contraste"
+      - generic: Aumentar contraste
+      - img "logo image"
+      - navigation:
+        - navigation "Progress Bar":
+          - list:
+            - button "Información Personal 1/5 (Active, In Progress (es))": "1"
+            - generic: Información Personal
+            - button [disabled]: "2"
+            - generic: Informacion de Domicilio
+            - button [disabled]: "3"
+            - generic: Informacion de Ingresos
+            - button [disabled]: "4"
+            - generic: Informacion de Vehiculo
+            - button [disabled]: "5"
+            - generic: Revisar
+      - main:
+        - heading "HÁBLENOS DE USTED:" [level=1]
+        - paragraph: La siguiente información será utilizada para procesar su solicitud de crédito. También puede solicitar para crédito conjunto seleccionando el botón de Co-solicitante.
+        - generic: "*Campos Requeridos"
+        - 'region "HÁBLENOS DE USTED: La siguiente información será utilizada para procesar su solicitud de crédito. También puede solicitar para crédito conjunto seleccionando el botón de Co-solicitante."':
+          - heading "Solicitante" [level=2]
+          - group "Solicitante":
+            - text: "*"
+            - text: Nombre
+            - textbox "Nombre"
+            - text: "*"
+            - text: Apellido
+            - textbox "Apellido"
+            - text: "*"
+            - text: Dirección de Correo Electrónico
+            - textbox "Dirección de Correo Electrónico"
+            - text: "*"
+            - text: Teléfono de casa
+            - textbox "Teléfono de casa"
+            - text: Teléfono móvil
+            - textbox "Teléfono móvil"
+            - text: "*"
+            - text: Fecha de Nacimiento
+            - textbox "Fecha de Nacimiento":
+              - /placeholder: MM/DD/AAAA
+            - button "Open calendar":
+            - text: Agente de Ventas
+            - textbox "Agente de Ventas"
+            - text: "Aviso de privacidad específico por estado para:"
+            - list "Aviso de privacidad específico por estado para:":
+              - link "California":
+                - /url: javascript:void(0)
+            - generic: "Residentes de California: por favor, leer el aviso de privacidad específico por estado antes de enviar cualquier información personal."
+          - separator
+          - button "Solicitante Agregar Referencia":
+            - img: add
+            - generic: Agregar Referencia
+          - button "Agregar Co-solicitante (opcional)":
+            - img: add
+            - generic: Agregar Co-solicitante (opcional)
+          - text: Estoy aplicando para un crédito individual a mi nombre y contando con mis ingresos y activos personales, y no en ingresos o
+          - text: activos de otra persona para el pago del crédito solicitado.
+      - button "Siguiente Paso":
+        - generic: Siguiente Paso
+        - img: arrow_forward
+      - img: lock
+      - generic: Powered and Secured by RouteOne
+      - link "Política de privacidad de California":
+        - /url: javascript:void(0)
+      - link "CO, CT, DE, IA, IN, KY, MD, MN, MT, NE, NH, NJ, OR, RI, TN, TX, UT, VA Política de Privacidad":
+        - /url: javascript:void(0)
+      - link "Política de Privacidad":
+        - /url: javascript:void(0)
+      - paragraph
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

@@ -1,0 +1,175 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "Select Language":
+  - /url: "#"
+  - generic: Select Language
+  - generic: ▼
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - heading "Get Pre-Approved" [level=1]
+  - list:
+    - link "Home":
+      - /url: /
+    - listitem: / Get Pre-Approved
+  - iframe [active] [id="ds-preapproved-dc"]:
+    - main:
+      - list
+      - switch "Increase Contrast"
+      - generic: Increase Contrast
+      - img "logo image"
+      - navigation:
+        - navigation "Progress Bar":
+          - list:
+            - button "Personal Info 1/5 (Active, In Progress)": "1"
+            - generic: Personal Info
+            - button [disabled]: "2"
+            - generic: Address Info
+            - button [disabled]: "3"
+            - generic: Income Info
+            - button [disabled]: "4"
+            - generic: Vehicle Info
+            - button [disabled]: "5"
+            - generic: Review
+      - main:
+        - heading "TELL US ABOUT YOURSELF:" [level=1]
+        - paragraph: The following information will be used to process your credit application. You may apply for joint credit by selecting the 'Add Co-Applicant' button.
+        - generic: "* Required Fields"
+        - 'region "TELL US ABOUT YOURSELF: The following information will be used to process your credit application. You may apply for joint credit by selecting the ''Add Co-Applicant'' button."':
+          - heading "Applicant" [level=2]
+          - group "Applicant":
+            - text: "*"
+            - text: First Name
+            - textbox "First Name"
+            - text: "*"
+            - text: Last Name
+            - textbox "Last Name"
+            - text: "*"
+            - text: E-mail Address
+            - textbox "E-mail Address"
+            - text: "*"
+            - text: Home Phone
+            - textbox "Home Phone"
+            - text: Cellular Phone
+            - textbox "Cellular Phone"
+            - text: "*"
+            - text: Date of Birth
+            - textbox "Date of Birth":
+              - /placeholder: MM/DD/YYYY
+            - button "Open calendar":
+            - text: Salesperson
+            - textbox "Salesperson"
+            - text: "State-Specific Privacy Notice for:"
+            - list "State-Specific Privacy Notice for:":
+              - link "California":
+                - /url: javascript:void(0)
+            - generic: "Residents of California: Please read the appropriate State-Specific Privacy Notice before submitting any personal information."
+          - separator
+          - button "Applicant Add Reference":
+            - img: add
+            - generic: Add Reference
+          - button "Add Co-Applicant (optional)":
+            - img: add
+            - generic: Add Co-Applicant (optional)
+          - text: I am applying for individual credit in my own name and relying on my own income or assets and not the income or
+          - text: assets of another person as the basis for repayment of the credit requested.
+      - button "Next Step":
+        - generic: Next Step
+        - img: arrow_forward
+      - img: lock
+      - generic: Powered and Secured by RouteOne
+      - link "California Privacy Policy":
+        - /url: javascript:void(0)
+      - link "CO, CT, DE, IA, IN, KY, MD, MN, MT, NE, NH, NJ, OR, RI, TN, TX, UT, VA Privacy Policy":
+        - /url: javascript:void(0)
+      - link "Privacy Policy":
+        - /url: javascript:void(0)
+      - paragraph
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

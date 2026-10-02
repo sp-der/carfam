@@ -1,0 +1,342 @@
+Browser tab: 2, Title: "Used 2019 Acura RDX w/Technology Pkg in Rialto", URL: "https://www.carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362".
+1 AXWebArea Used 2019 Acura RDX w/Technology Pkg in Rialto, URL: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362
+	2 container
+		3 container ds-header-contact-wrapper
+			4 link Description: (909) 543-1450, Value: tel:9095431450
+			5 link Description: 1731 South Cactus Ave, Rialto, CA 92316, Value: google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+		6 container ds-menu-navbar-content-row
+			7 link Description: CARFAM, Value: carfam.com/
+			8 container ds-menu-navbar-container
+				9 content list ds-menu-navbar
+					10 pop up button (collapsed) Inventory , Help: Click here to view Inventory, ID: ds-menu-inventory, Secondary Actions: Expand
+					11 pop up button (collapsed) Finance , Help: Click here to Finance Your Car, ID: ds-menu-finance, Secondary Actions: Expand
+					12 link Description: We Buy Your Car, Value: carfam.com/sell-my-car, ID: ds-menu-sell-you-car
+					13 pop up button (collapsed) About Us , ID: ds-menu-about-us, Secondary Actions: Expand
+					14 pop up button (collapsed) Research , Help: Research Before You Buy, ID: ds-menu-research, Secondary Actions: Expand
+					15 link Description: Our Customers, Value: carfam.com/customer-gallery-at-carfam, ID: ds-menu-customers
+				16 container ds-fuzzy-search
+					17 text Enter your search term
+					18 search text field (settable) Enter your search term, ID: q
+					19 button Search dealership's inventory
+				20 content list ds-kebab-navbar
+					21 pop up button (collapsed) , Help: Click here to view more menu items, ID: ds-kebab-toggle, Secondary Actions: Expand
+						22 text 
+		23 container Page content
+			24 container ds-vdp-content-row-1
+				25 container ds-vdp-content-column-1
+					26 link Description: Overview, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-overview-section, ID: ds-tab-overview-link
+					27 container ds-vdp-content-1
+						28 container ds-vdp-content-main
+							29 container ds-vdp-vehicle-title-container
+								30 heading 2019 Acura RDX w/Technology Pkg, Value: 1
+									31 text 2019 Acura RDX w/Technology Pkg
+								32 heading MAJESTIC BLACK PEARL, Value: 3
+									33 text MAJESTIC BLACK PEARL
+							34 container
+								35 image Image #29
+								36 image 2019 Acura RDX w/Technology Pkg
+								37 image Image #2
+								38 image Image #3
+								39 image Image #4
+								40 image Image #5
+								41 image Image #6
+								42 image Image #7
+								43 image Image #8
+								44 image Image #9
+								45 image Image #10
+								46 image Image #11
+								47 image Image #12
+								48 image Image #13
+								49 image Image #14
+								50 image Image #15
+								51 image Image #16
+								52 image Image #17
+								53 image Image #18
+								54 image Image #19
+								55 image Image #20
+								56 image Image #21
+								57 image Image #22
+								58 image Image #23
+								59 image Image #24
+								60 image Image #25
+								61 image Image #26
+								62 image Image #27
+								63 image Image #28
+								64 image Image #29
+								65 image 2019 Acura RDX w/Technology Pkg
+								66 text  
+							67 link Description: 5 Photos (29), Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-featured-media-exterior-content-pane, ID: ds-vdp-view-all-photos-btn
+						68 container ds-vdp-widget-container
+							69 heading History & Pricing Tools, Value: 3
+								70 text History & Pricing Tools
+							71 container
+								72 link Description: View Carfax Report, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-widget-carfax-container, ID: ds-vdp-carfax-btn
+								73 link Description: Get Pre-Qualified, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#, ID: ds-vdp-capitalone-prequal-leads-navigator-btn
+								74 link Description: View Monroney Label, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-widget-monroneylabel-container, ID: ds-vdp-monroney-btn
+						75 container ds-vdp-standard-features-container
+							76 heading Features, Value: 3
+								77 text Features
+							78 container ds-vdp-features-container
+								79 container ds-vdp-feature-exterior-color
+									80 text EXTERIOR
+									81 text Majestic Black Pearl
+								82 container ds-vdp-feature-interior-color
+									83 text INTERIOR
+									84 text Ebony
+								85 container ds-vdp-feature-drivetrain
+									86 text t
+									87 text DRIVETRAIN
+									88 text Front Wheel Drive
+								89 container ds-vdp-feature-engine
+									90 text q
+									91 text ENGINE
+									92 text 2.0L 4 Cylinders
+								93 container ds-vdp-feature-horsepower
+									94 text y
+									95 text HORSEPOWER
+									96 text 272 hp @ 6500 rpm
+								97 container ds-vdp-feature-torque
+									98 text 6
+									99 text TORQUE
+									100 text 280 lb-ft @ 1600 rpm
+								101 container ds-vdp-feature-transmission
+									102 text "
+									103 text TRANSMISSION
+									104 text Automatic
+								105 container ds-vdp-feature-style
+									106 text 7
+									107 text STYLE
+									108 text FWD w/Technology Pkg
+						109 container ds-vdp-optional-packages-container
+							110 heading Included Packages & Options, Value: 3
+								111 text Included Packages & Options
+							112 container ds-vdp-packages
+								113 heading OPTION, Value: 5
+									114 text OPTION
+								115 heading ORIGINAL MSRP ($), Value: 5
+									116 text ORIGINAL
+									117 text MSRP ($)
+								118 container
+									119 heading MAJESTIC BLACK PEARL, Value: 5
+										120 text MAJESTIC BLACK PEARL
+									121 text $400
+								122 container
+									123 heading MAJESTIC BLACK PEARL, Value: 5
+										124 text MAJESTIC BLACK PEARL
+									125 text $400
+								126 container ds-vdp-packages-summary-container
+									127 heading TOTAL ADDED VALUE, Value: 5
+										128 text TOTAL ADDED VALUE
+									129 text $800
+						130 container ds-vdp-description-container
+							131 heading Description, Value: 3
+								132 text Description
+							133 container ds-vdp-description
+								134 text Elevate your daily drive with this stunning 2019 Acura RDX FWD w/Technology Pkg. Draped in the deep, sophisticated Majestic Black Pearl exterior paint, this luxury crossover commands attention on every road. Step inside to find a meticulously crafted Ebony interior that perfectly complements its sleek outer styling, offering a premium and modern sanctuary for both driver and passengers alike. This vehicle represents the ideal fusion of athletic styling and upscale sophistication, making it a highly sought-after choice for discerning SUV buyers looking for a premium driving experience.
+								135 text Under the hood, this 2019 Acura RDX is powered by a responsive 2.0L 4-cylinder engine that delivers an engaging and efficient driving experience. Paired with front-wheel drive (FWD), this luxury crossover offers agile handling, precise steering, and confident performance in various driving conditions. Whether you are navigating tight city streets or cruising on the open highway, the engineered balance of power and efficiency ensures that every journey is as exhilarating as it is composed and reliable.
+								136 text Equipped with the highly desirable Technology Package, this premium SUV elevates your driving experience with advanced connectivity and convenience features. Inside the quiet cabin, the Ebony interior provides exceptional comfort, while integrated tech highlights include the Acura Navigation System, a premium audio system, and advanced driver-assist safety features designed to keep you confident on the go. Do not miss the opportunity to own this stylish, tech-forward 2019 Acura RDX FWD w/Technology Pkg in Majestic Black Pearl—schedule your test drive today to experience its refined luxury firsthand.
+						137 container ds-payment-calculator
+							138 container ds-payment-calculator-form
+								139 heading Estimated Payment Calculator, Value: 3
+									140 text Estimated Payment Calculator
+								141 container ds-payment-calculator-controls
+									142 container
+										143 text Loan Amount
+										144 text $18,410
+									145 container
+										146 text Estimated Payment *
+										147 text $296
+										148 text /mo
+									149 container
+										150 text Credit Score
+										151 container
+											152 text 520 - Below 20.90% APR
+										153 container
+											154 text 580 - 619 18.90% APR
+										155 container
+											156 text 620 - 679 11.90% APR
+										157 container
+											158 text 680 - 779 5.90% APR
+										159 container
+											160 text 780 - Above 4.90% APR
+									161 container
+										162 text Payment Terms
+										163 text 24 mo
+										164 text 36 mo
+										165 text 48 mo
+										166 text 60 mo
+										167 text 72 mo
+									168 container
+										169 text Down Payment
+										170 text field (settable) Down Payment, Value: <redacted>
+									171 container
+										172 text Trade In Value
+										173 text field (settable) Trade In Value, Value: <redacted>
+									174 link Description: Contact Dealer, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-question-contact-modal
+									175 link Description: Get Approved, Value: carfam.com/finance-your-car/pre-approved/?vehicleId=1567362
+							176 text Disclaimer
+							177 text All Payments exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. The price for listed vehicles as equipped does not include charges such as: License, Title, Registration Fees, State or Local Taxes, Smog Fees, Credit Investigation, Optional Credit Insurance, Physical Damage of Liability Insurance, or Delivery Fees.
+						178 container ds-vdp-specifications-container
+							179 heading Specifications, Value: 3
+								180 text Specifications
+							181 container ds-vdp-specifications-controls-tabs
+								182 link Description: Exterior, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-spec-exterior-pane, ID: ds-vdp-spec-exterior-tab
+								183 link Description: Interior, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-spec-interior-pane, ID: ds-vdp-spec-interior-tab
+								184 link Description: Safety, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-spec-safety-pane, ID: ds-vdp-spec-safety-tab
+							185 container ds-vdp-spec-exterior-pane
+								186 container
+									187 text Roof: Generic Sun/Moonroof
+									188 text 
+								189 container
+									190 text Roof: Panoramic Roof
+									191 text 
+								192 container
+									193 text Tire - Front: Tires - Front Performance
+									194 text 
+								195 container
+									196 text Tire - Rear: Tires - Rear Performance
+									197 text 
+								198 heading Exterior, Value: 5
+									199 text Exterior
+								200 container
+									201 text Auto On/Off Projector Beam Led Low/High Beam Daytime Running Auto High-Beam Headlamps w/Delay-Off
+									202 text 
+								203 container
+									204 text Black Grille w/Chrome Surround
+									205 text 
+								206 container
+									207 text Body-Colored Door Handles
+									208 text 
+								209 container
+									210 text Body-Colored Front Bumper w/Chrome Rub Strip/Fascia Accent
+									211 text 
+								212 container
+									213 text Body-Colored Power w/Tilt Down Heated Side Mirrors w/Manual Folding and Turn Signal Indicator
+									214 text 
+								215 container
+									216 text Body-Colored Rear Bumper w/Black Rub Strip/Fascia Accent
+									217 text 
+								218 container
+									219 text Chrome Bodyside Insert
+									220 text 
+								221 container
+									222 text Chrome Side Windows Trim
+									223 text 
+								224 container
+									225 text Deep Tinted Glass
+									226 text 
+								227 container
+									228 text Express Open/Close Sliding And Tilting Glass 1st And 2nd Row Sunroof w/Power Sunshade
+									229 text 
+								230 container
+									231 text Fixed Rear Window w/Wiper, Heated Wiper Park and Defroster
+									232 text 
+								233 container
+									234 text Galvanized Steel/Aluminum Panels
+									235 text 
+								236 container
+									237 text Headlights-Automatic Highbeams
+									238 text 
+								239 container
+									240 text LED Brakelights
+									241 text 
+								242 container
+									243 text Lip Spoiler
+									244 text 
+								245 container
+									246 text Perimeter/Approach Lights
+									247 text 
+								248 container
+									249 text Speed Sensitive Variable Intermittent Wipers
+									250 text 
+								251 container
+									252 text Tire Mobility Kit
+									253 text 
+								254 container
+									255 text 235/55R19 High-Performance All-Season
+									256 text 
+						257 container ds-vdp-disclaimer-container
+							258 heading Disclaimer, Value: 4
+								259 text Disclaimer
+							260 text All advertised prices exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. While we try to make sure that all prices posted here are accurate at all times, we cannot be responsible for typographical and other errors that may appear on the site. We make every effort to provide you with the most accurate, up-to-the-minute information; however, it is your responsibility to verify with the Dealer that all details listed are accurate. The dealership is not responsible for typographical, pricing, product information, advertising, or shipping errors. Advertised prices and available quantities are subject to change without notice. All rates and offers are dependent on bank approval, which varies based on the applicant's credit as well as the vehicle.
+				261 container ds-vdp-sidebar-floating-container
+					262 container ds-vdp-sidebar-header-column
+						263 container ds-vdp-sidebar-header-title-wrapper
+							264 text n
+							265 heading SHOPPING TOOLS, Value: 3, ID: ds-vdp-sidebar-header-title
+								266 text SHOPPING TOOLS
+						267 container ds-vdp-sidebar-header-icons-wrapper
+							268 link Description: Save this in your customer account, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#
+							269 text 8
+					270 container ds-vdp-shopping-tools-container
+						271 link Description: ! SCHEDULE A TEST DRIVE, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-schedule-test-drive-modal
+						272 link Description: r ASK A QUESTION, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-question-contact-modal
+						273 link Description: 4 TEXT LINK TO PHONE, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-send-to-phone-modal
+						274 link Description: 1 GET APPROVED, Value: carfam.com/finance-your-car/pre-approved/?vehicleId=1567362
+					275 container ds-vdp-sidebar-vehicle-info
+						276 container ds-vdp-sidebar-pricing-row
+							277 text Internet Price: $18,275 Doc Fee: +$85 Smog Fee: +$50 Sale Price: $18,410
+							278 link Description: GET OUR BEST PRICE, Value: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362#ds-vdp-buy-now-modal, ID: ds-vdp-sidebar-pricing-cta-btn
+						279 container ds-vdp-sidebar-mileage-row
+							280 container ds-vdp-sidebar-mileage-total-column
+								281 text Miles:  102,778
+							282 container ds-vdp-sidebar-mileage-type-column
+								283 text 28
+								284 container
+									285 text HWY MPG
+								286 text x
+								287 text 22
+								288 container
+									289 text CITY MPG
+						290 container ds-vdp-sidebar-vehicle-id-row
+							291 container ds-vdp-sidebar-vehicle-id-total-column
+								292 text Stock #:  8113
+							293 container ds-vdp-sidebar-vehicle-id-type-column
+								294 text VIN:  5J8TC1H53KL002421
+						295 container ds-vdp-sidebar-dealer-info-total-column-content-wrapper
+							296 text 0
+							297 container ds-vdp-sidebar-dealer-info-total-column-content
+								298 text CARFAM
+								299 container
+									300 text Call: 
+									301 link Description: (909) 543-1450, Value: tel:9095431450
+								302 link Description: 1731 South Cactus Ave, Rialto, CA 92316, Value: google.com/maps/dir/?api=1&destination=1731+South+Cactus+Ave%2C+Rialto%2C+CA+92316
+		303 container Page footer
+			304 heading BRAND INDEX, Value: 4
+				305 text BRAND  INDEX
+			306 content list ds-brand-index
+				307 link Description: BMW, Value: carfam.com/pre-owned-cars/BMW
+				308 link Description: Cadillac, Value: carfam.com/pre-owned-cars/Cadillac
+				309 link Description: Chevrolet, Value: carfam.com/pre-owned-cars/Chevrolet
+				310 link Description: Ford, Value: carfam.com/pre-owned-cars/Ford
+				311 link Description: GMC, Value: carfam.com/pre-owned-cars/GMC
+				312 link Description: Honda, Value: carfam.com/pre-owned-cars/Honda
+				313 link Description: Jeep, Value: carfam.com/pre-owned-cars/Jeep
+				314 link Description: Lexus, Value: carfam.com/pre-owned-cars/Lexus
+				315 link Description: Mercedes-Benz, Value: carfam.com/pre-owned-cars/Mercedes-Benz
+				316 link Description: Ram, Value: carfam.com/pre-owned-cars/Ram
+			317 heading LOCATE US, Value: 4
+				318 text LOCATE  US
+			319 link Description: 1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab), Value: google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+			320 container
+				321 text Sales: 
+				322 link Description: (909) 543-1450, Value: tel:9095431450
+			323 heading FOLLOW US, Value: 4
+				324 text FOLLOW  US
+			325 link Description: Facebook (Opens in a new tab), Help: Facebook, Value: facebook.com/carFAMdealer
+			326 link Description: Instagram (Opens in a new tab), Help: Instagram, Value: instagram.com/carfam_dealer
+			327 link Description: Twitter (Opens in a new tab), Help: Twitter, Value: x.com/CARFAMdealer
+			328 link Description: YouTube (Opens in a new tab), Help: YouTube, Value: youtube.com/@carfamdealer7066
+			329 heading DEALER INFO, Value: 4
+				330 text DEALER  INFO
+			331 link Description: Careers, Value: carfam.com/careers
+			332 link Description: Privacy Policy, Value: carfam.com/privacy-policy
+			333 link Description: Privacy Rights, Value: carfam.com/privacy-rights
+			334 button Disclaimer Notice
+			335 text © 2026 DealerSync. All Rights Reserved.
+			336 link Description: Powered by DealerSync, Value: dealersync.com/
+		337 container Accessibility Menu
+			338 button Open accessibility menu
+				339 image Accessibility Widget
+
+The focused UI element is 1 AXWebArea Used 2019 Acura RDX w/Technology Pkg in Rialto, URL: carfam.com/pre-owned-cars/detail/2019-Acura-RDX/1567362

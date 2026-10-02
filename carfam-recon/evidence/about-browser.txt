@@ -1,0 +1,136 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - heading "About Us" [level=1]
+  - list:
+    - link "Home":
+      - /url: /
+    - listitem: / About Us
+  - img "About Us Image"
+  - list:
+    - link "About Us":
+      - /url: "#ds-about-us-pane"
+  - heading "Used Car Dealership in Rialto, CA" [level=2]
+  - text: Welcome to CARFAM, Rialto’s trusted destination for high-quality used vehicles. Located near the heart of the Inland Empire, we take immense pride in providing our customers with exceptional service and a handpicked selection of pre-owned cars, trucks, and SUVs. At CARFAM, we understand that purchasing a vehicle is more than just a transaction, it’s about finding the right partner for your journeys ahead. That’s why we’re committed to making your car-buying experience seamless, transparent, and enjoyable.
+  - text: Choosing a used car from CARFAM opens up a world of opportunities to explore the vibrant San Bernardino County area and beyond. Imagine cruising along the historic Route 66, venturing into the scenic beauty of the San Bernardino National Forest, or enjoying a family outing to the California Citrus State Historic Park. A reliable and stylish vehicle from our dealership can make these experiences easily accessible, giving you the freedom to immerse yourself in all that Southern California has to offer.
+  - text: At CARFAM, we want you to feel completely confident in your purchase. That’s why we offer a 3-day or 200-mile return policy, giving you the flexibility to ensure your new car is the perfect fit for your needs. Plus, we make the car-buying process even more convenient by offering vehicle delivery directly to your doorstep. Whether you’re located in Rialto, San Bernardino, or the SoCal area, we’re here to bring your dream car to you.
+  - text: Our team at CARFAM is passionate about helping you find the perfect car to match your lifestyle and budget. Each vehicle in our inventory undergoes a rigorous inspection to ensure it meets our high standards for quality and performance. We believe in offering value, and our competitive pricing ensures you get the most for your investment. Additionally, our finance specialists are here to guide you through flexible options tailored to your needs, so you can drive away with confidence and peace of mind.
+  - text: Beyond our extensive inventory and top-notch customer service, what truly sets CARFAM apart is our deep connection to the community. We’re not just here to sell cars, we’re here to build relationships. As a local business, we take pride in contributing to the culture and growth of Rialto and the surrounding San Bernardino County. When you choose CARFAM, you’re supporting a dealership that genuinely cares about its customers and community.
+  - text: Let CARFAM be the starting point for your adventures. From spontaneous road trips to everyday commutes, the right vehicle can make all the difference. Visit us today in Rialto, CA, and discover why so many drivers trust CARFAM to provide exceptional cars and unforgettable experiences. Your next journey awaits, and it starts with CARFAM.
+  - link "Opens in a new tab":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+    - text: Facebook
+  - link "Opens in a new tab":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+    - text: Twitter
+  - link "1731 South Cactus Ave Rialto, CA 92316":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - heading "1731 South Cactus Ave" [level=4]:
+      - strong: 1731 South Cactus Ave
+    - heading "Rialto, CA 92316" [level=4]:
+      - strong: Rialto, CA 92316
+  - paragraph:
+    - text: "SALES:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - paragraph: Email Us
+  - paragraph:
+    - text: "SALES:"
+    - link "sales@carfam.com":
+      - /url: mailto:sales@carfam.com
+  - iframe:
+    - generic: Your organization doesn’t allow you to view this site
+  - link "Visual Sitemap":
+    - /url: /visual-sitemap
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

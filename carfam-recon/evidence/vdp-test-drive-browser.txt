@@ -1,0 +1,386 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - link "Overview":
+    - /url: "#ds-vdp-overview-section"
+  - link:
+    - /url: "#ds-vdp-history-section"
+    - text: History
+  - link:
+    - /url: "#ds-vdp-features-section"
+    - text: Features
+  - link:
+    - /url: "#ds-vdp-description-section"
+    - text: Description
+  - link:
+    - /url: "#ds-vdp-financing-section"
+    - text: Financing
+  - link:
+    - /url: "#ds-vdp-specs-section"
+    - text: Specs
+  - link:
+    - /url: "#ds-vdp-similar-section"
+    - text: Similar
+  - heading "2019 Acura RDX w/Technology Pkg" [level=1]
+  - heading "MAJESTIC BLACK PEARL" [level=3]
+  - 'img "Image #29"'
+  - img "2019 Acura RDX w/Technology Pkg"
+  - 'img "Image #2"'
+  - 'img "Image #3"'
+  - 'img "Image #4"'
+  - 'img "Image #5"'
+  - 'img "Image #6"'
+  - 'img "Image #7"'
+  - 'img "Image #8"'
+  - 'img "Image #9"'
+  - 'img "Image #10"'
+  - 'img "Image #11"'
+  - 'img "Image #12"'
+  - 'img "Image #13"'
+  - 'img "Image #14"'
+  - 'img "Image #15"'
+  - 'img "Image #16"'
+  - 'img "Image #17"'
+  - 'img "Image #18"'
+  - 'img "Image #19"'
+  - 'img "Image #20"'
+  - 'img "Image #21"'
+  - 'img "Image #22"'
+  - 'img "Image #23"'
+  - 'img "Image #24"'
+  - 'img "Image #25"'
+  - 'img "Image #26"'
+  - 'img "Image #27"'
+  - 'img "Image #28"'
+  - 'img "Image #29"'
+  - img "2019 Acura RDX w/Technology Pkg"
+  - generic: 
+  - generic: 
+  - link "5 Photos (29)":
+    - /url: "#ds-vdp-featured-media-exterior-content-pane"
+    - generic: "5"
+    - generic: Photos (29)
+  - text: x 0
+  - heading "History & Pricing Tools" [level=3]
+  - link "View Carfax Report":
+    - /url: "#ds-widget-carfax-container"
+    - img "Carfax Logo"
+  - link "Get Pre-Qualified":
+    - /url: "#"
+    - generic: Estimate financing
+    - generic: No credit score risk
+    - img "Capital One Logo"
+  - link "View Monroney Label":
+    - /url: "#ds-widget-monroneylabel-container"
+    - img "Factory Window Sticker Logo"
+  - img "CARFAX Logo"
+  - generic: Snapshot
+  - generic: 2019 ACURA RDX W/TECH
+  - img "No accidents or damage reported"
+  - generic: No Accidents or Damage Reported to CARFAX
+  - img "Service information available"
+  - strong: "24"
+  - text: Service History Records
+  - img "Reliability"
+  - generic: Great Reliability
+  - img "2 previous owners"
+  - strong: "2"
+  - text: Previous Owners
+  - img "Registered as a personal vehicle"
+  - generic: "Types of Owners: Personal Lease, Personal"
+  - img "Last reported odometer reading/mileage"
+  - strong: 102,779
+  - text: Last Reported Odometer Reading
+  - img "Just say, Show Me the CARFAX!"
+  - link "FREE CARFAX Report":
+    - /url: https://www.carfax.com/VehicleHistory/ar20/HFlmXdJvm3onFs2jE5aPq069U8tDESsokwWlgF-BXG1-isPswKtuDRv8GW6qbRDRN6xQdsfdnOK7IDTb42vgv2fRSRAtsMPE9CHy9ULA
+  - paragraph: See the full CARFAX Report for additional information
+  - heading "Features" [level=3]
+  - generic: Exterior
+  - generic: Majestic Black Pearl
+  - generic: Interior
+  - generic: Ebony
+  - generic: t
+  - generic: Drivetrain
+  - generic: Front Wheel Drive
+  - generic: q
+  - generic: Engine
+  - generic: 2.0L 4 Cylinders
+  - generic: "y"
+  - generic: Horsepower
+  - generic: 272 hp @ 6500 rpm
+  - generic: "6"
+  - generic: Torque
+  - generic: 280 lb-ft @ 1600 rpm
+  - generic: "\""
+  - generic: Transmission
+  - generic: Automatic
+  - generic: "7"
+  - generic: Style
+  - generic: FWD w/Technology Pkg
+  - heading "Included Packages & Options" [level=3]
+  - heading "Option" [level=5]
+  - heading "Original MSRP ($)" [level=5]:
+    - text: Original
+    - text: MSRP ($)
+  - heading "MAJESTIC BLACK PEARL" [level=5]
+  - generic: $400
+  - heading "MAJESTIC BLACK PEARL" [level=5]
+  - generic: $400
+  - heading "Total Added Value" [level=5]
+  - text: $800
+  - heading "Description" [level=3]
+  - text: Elevate your daily drive with this stunning 2019 Acura RDX FWD w/Technology Pkg. Draped in the deep, sophisticated Majestic Black Pearl exterior paint, this luxury crossover commands attention on every road. Step inside to find a meticulously crafted Ebony interior that perfectly complements its sleek outer styling, offering a premium and modern sanctuary for both driver and passengers alike. This vehicle represents the ideal fusion of athletic styling and upscale sophistication, making it a highly sought-after choice for discerning SUV buyers looking for a premium driving experience.
+  - text: Under the hood, this 2019 Acura RDX is powered by a responsive 2.0L 4-cylinder engine that delivers an engaging and efficient driving experience. Paired with front-wheel drive (FWD), this luxury crossover offers agile handling, precise steering, and confident performance in various driving conditions. Whether you are navigating tight city streets or cruising on the open highway, the engineered balance of power and efficiency ensures that every journey is as exhilarating as it is composed and reliable.
+  - text: Equipped with the highly desirable Technology Package, this premium SUV elevates your driving experience with advanced connectivity and convenience features. Inside the quiet cabin, the Ebony interior provides exceptional comfort, while integrated tech highlights include the Acura Navigation System, a premium audio system, and advanced driver-assist safety features designed to keep you confident on the go. Do not miss the opportunity to own this stylish, tech-forward 2019 Acura RDX FWD w/Technology Pkg in Majestic Black Pearl—schedule your test drive today to experience its refined luxury firsthand.
+  - heading "Estimated Payment Calculator" [level=3]
+  - generic: Loan Amount
+  - generic: $18,410
+  - generic: Estimated Payment *
+  - generic: $296/mo
+  - generic: Credit Score
+  - generic: 520 - Below
+  - generic: 20.90% APR
+  - generic: 580 - 619
+  - generic: 18.90% APR
+  - generic: 620 - 679
+  - generic: 11.90% APR
+  - generic: 680 - 779
+  - generic: 5.90% APR
+  - generic: 780 - Above
+  - generic: 4.90% APR
+  - generic: Payment Terms
+  - generic: 24 mo
+  - generic: 36 mo
+  - generic: 48 mo
+  - generic: 60 mo
+  - generic: 72 mo
+  - generic: Down Payment
+  - textbox "Down Payment": <redacted>
+  - generic: Trade In Value
+  - textbox "Trade In Value": <redacted>
+  - link "Contact Dealer":
+    - /url: "#ds-vdp-question-contact-modal"
+  - link "Get Approved":
+    - /url: /finance-your-car/pre-approved/?vehicleId=1567362
+  - generic: Disclaimer
+  - paragraph: "All Payments exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. The price for listed vehicles as equipped does not include charges such as: License, Title, Registration Fees, State or Local Taxes, Smog Fees, Credit Investigation, Optional Credit Insurance, Physical Damage of Liability Insurance, or Delivery Fees."
+  - heading "Specifications" [level=3]
+  - link "Exterior":
+    - /url: "#ds-vdp-spec-exterior-pane"
+    - generic: Exterior
+  - link "Interior":
+    - /url: "#ds-vdp-spec-interior-pane"
+    - generic: Interior
+  - link "Safety":
+    - /url: "#ds-vdp-spec-safety-pane"
+    - generic: Safety
+  - generic: "Roof: Generic Sun/Moonroof"
+  - generic: 
+  - generic: "Roof: Panoramic Roof"
+  - generic: 
+  - generic: "Tire - Front: Tires - Front Performance"
+  - generic: 
+  - generic: "Tire - Rear: Tires - Rear Performance"
+  - generic: 
+  - heading "Exterior" [level=5]
+  - generic: Auto On/Off Projector Beam Led Low/High Beam Daytime Running Auto High-Beam Headlamps w/Delay-Off
+  - generic: 
+  - generic: Black Grille w/Chrome Surround
+  - generic: 
+  - generic: Body-Colored Door Handles
+  - generic: 
+  - generic: Body-Colored Front Bumper w/Chrome Rub Strip/Fascia Accent
+  - generic: 
+  - generic: Body-Colored Power w/Tilt Down Heated Side Mirrors w/Manual Folding and Turn Signal Indicator
+  - generic: 
+  - generic: Body-Colored Rear Bumper w/Black Rub Strip/Fascia Accent
+  - generic: 
+  - generic: Chrome Bodyside Insert
+  - generic: 
+  - generic: Chrome Side Windows Trim
+  - generic: 
+  - generic: Deep Tinted Glass
+  - generic: 
+  - generic: Express Open/Close Sliding And Tilting Glass 1st And 2nd Row Sunroof w/Power Sunshade
+  - generic: 
+  - generic: Fixed Rear Window w/Wiper, Heated Wiper Park and Defroster
+  - generic: 
+  - generic: Galvanized Steel/Aluminum Panels
+  - generic: 
+  - generic: Headlights-Automatic Highbeams
+  - generic: 
+  - generic: LED Brakelights
+  - generic: 
+  - generic: Lip Spoiler
+  - generic: 
+  - generic: Perimeter/Approach Lights
+  - generic: 
+  - generic: Speed Sensitive Variable Intermittent Wipers
+  - generic: 
+  - generic: Tire Mobility Kit
+  - generic: 
+  - generic: 235/55R19 High-Performance All-Season
+  - generic: 
+  - text:                                                                                                                                               
+  - heading "Disclaimer" [level=4]
+  - paragraph: All advertised prices exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. While we try to make sure that all prices posted here are accurate at all times, we cannot be responsible for typographical and other errors that may appear on the site. We make every effort to provide you with the most accurate, up-to-the-minute information; however, it is your responsibility to verify with the Dealer that all details listed are accurate. The dealership is not responsible for typographical, pricing, product information, advertising, or shipping errors. Advertised prices and available quantities are subject to change without notice. All rates and offers are dependent on bank approval, which varies based on the applicant's credit as well as the vehicle.
+  - generic: "n"
+  - heading "Shopping Tools" [level=3]
+  - link "Save this in your customer account":
+    - /url: "#"
+    - generic: 
+  - generic: "8"
+  - text: "#"
+  - link "! Schedule a Test Drive" [active]:
+    - /url: "#ds-vdp-schedule-test-drive-modal"
+    - generic: "!"
+    - generic: Schedule a Test Drive
+  - link "r Ask a Question":
+    - /url: "#ds-vdp-question-contact-modal"
+    - generic: r
+    - generic: Ask a Question
+  - link "4 Text Link to Phone":
+    - /url: "#ds-vdp-send-to-phone-modal"
+    - generic: "4"
+    - generic: Text Link to Phone
+  - link "1 Get Approved":
+    - /url: https://www.carfam.com/finance-your-car/pre-approved/?vehicleId=1567362
+    - generic: "1"
+    - generic: Get Approved
+  - generic: "Internet Price:"
+  - generic: $18,275
+  - generic: "Doc Fee:"
+  - generic: +$85
+  - generic: "Smog Fee:"
+  - generic: +$50
+  - generic: "Sale Price:"
+  - generic: $18,410
+  - link "Get Our Best Price":
+    - /url: "#ds-vdp-buy-now-modal"
+  - generic: "Miles: 102,778"
+  - text: "28"
+  - generic: Hwy
+  - generic: MPG
+  - generic: x
+  - text: "22"
+  - generic: City
+  - generic: MPG
+  - generic: "Stock #: 8113"
+  - generic: "VIN: 5J8TC1H53KL002421"
+  - generic: "0"
+  - generic: CARFAM
+  - text: "Call:"
+  - link "(909) 543-1450":
+    - /url: tel:9095431450
+  - link "1731 South Cactus Ave, Rialto, CA 92316":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731+South+Cactus+Ave%2C+Rialto%2C+CA+92316
+  - generic: "!"
+  - heading "Schedule a Test Drive" [level=3]
+  - link "Close ":
+    - /url: "#"
+    - generic: Close
+    - generic: 
+  - generic: Please fill out the fields below
+  - generic: First Name
+  - textbox
+  - generic: Last Name
+  - textbox
+  - generic: Phone Number
+  - textbox
+  - generic: Email
+  - textbox
+  - button "Schedule Test Drive"
+  - paragraph: By submitting my contact information I agree to receive communications from the dealership and the dealership’s agent(s). If I include my phone number, I agree to receive calls and text messages (including via automation). Standard message and data rates may apply. I can opt-out at any time by contacting the dealer. This consent is not required as a condition of purchase.
+  - paragraph
+  - text: 
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

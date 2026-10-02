@@ -1,0 +1,1398 @@
+[
+  {
+    "id": null,
+    "name": "sortBy",
+    "options": [
+      {
+        "value": "",
+        "label": "Default"
+      },
+      {
+        "value": "InternetPrice-asc",
+        "label": "Lowest Price"
+      },
+      {
+        "value": "InternetPrice-desc",
+        "label": "Highest Price"
+      },
+      {
+        "value": "Year-asc",
+        "label": "Earliest Year"
+      },
+      {
+        "value": "Year-desc",
+        "label": "Latest Year"
+      },
+      {
+        "value": "Make-asc",
+        "label": "Make (a-z)"
+      },
+      {
+        "value": "Make-desc",
+        "label": "Make (z-a)"
+      },
+      {
+        "value": "Model-asc",
+        "label": "Model (a-z)"
+      },
+      {
+        "value": "Model-desc",
+        "label": "Model (z-a)"
+      },
+      {
+        "value": "Mileage-asc",
+        "label": "Lowest Mileage"
+      },
+      {
+        "value": "Mileage-desc",
+        "label": "Highest Mileage"
+      },
+      {
+        "value": "EstimatedRange-asc",
+        "label": "Lowest Estimated Range"
+      },
+      {
+        "value": "EstimatedRange-desc",
+        "label": "Highest Estimated Range"
+      }
+    ]
+  },
+  {
+    "id": "Values_BodyType",
+    "name": "Values.BodyType",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Cargo Van",
+        "label": "Cargo Van (3)"
+      },
+      {
+        "value": "Convertible",
+        "label": "Convertible (1)"
+      },
+      {
+        "value": "Coupe",
+        "label": "Coupe (7)"
+      },
+      {
+        "value": "Hatchback",
+        "label": "Hatchback (7)"
+      },
+      {
+        "value": "Other",
+        "label": "Other"
+      },
+      {
+        "value": "Passenger Van",
+        "label": "Passenger Van (5)"
+      },
+      {
+        "value": "Pickup",
+        "label": "Pickup (31)"
+      },
+      {
+        "value": "Sedan",
+        "label": "Sedan (33)"
+      },
+      {
+        "value": "SUV",
+        "label": "SUV (40)"
+      }
+    ]
+  },
+  {
+    "id": "Values_Year",
+    "name": "Values.Year",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "2025",
+        "label": "2025 (1)"
+      },
+      {
+        "value": "2024",
+        "label": "2024 (3)"
+      },
+      {
+        "value": "2023",
+        "label": "2023 (8)"
+      },
+      {
+        "value": "2022",
+        "label": "2022 (13)"
+      },
+      {
+        "value": "2021",
+        "label": "2021 (11)"
+      },
+      {
+        "value": "2020",
+        "label": "2020 (20)"
+      },
+      {
+        "value": "2019",
+        "label": "2019 (21)"
+      },
+      {
+        "value": "2018",
+        "label": "2018 (9)"
+      },
+      {
+        "value": "2017",
+        "label": "2017 (14)"
+      },
+      {
+        "value": "2016",
+        "label": "2016 (7)"
+      },
+      {
+        "value": "2015",
+        "label": "2015 (5)"
+      },
+      {
+        "value": "2014",
+        "label": "2014 (3)"
+      },
+      {
+        "value": "2013",
+        "label": "2013 (6)"
+      },
+      {
+        "value": "2012",
+        "label": "2012 (2)"
+      },
+      {
+        "value": "2011",
+        "label": "2011 (2)"
+      },
+      {
+        "value": "2010",
+        "label": "2010 (1)"
+      },
+      {
+        "value": "2005",
+        "label": "2005 (1)"
+      }
+    ]
+  },
+  {
+    "id": "Values_Make",
+    "name": "Values.Make",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Acura",
+        "label": "Acura (2)"
+      },
+      {
+        "value": "Audi",
+        "label": "Audi (2)"
+      },
+      {
+        "value": "BMW",
+        "label": "BMW (8)"
+      },
+      {
+        "value": "Buick",
+        "label": "Buick (2)"
+      },
+      {
+        "value": "Cadillac",
+        "label": "Cadillac (5)"
+      },
+      {
+        "value": "Chevrolet",
+        "label": "Chevrolet (22)"
+      },
+      {
+        "value": "Chrysler",
+        "label": "Chrysler (1)"
+      },
+      {
+        "value": "Dodge",
+        "label": "Dodge (3)"
+      },
+      {
+        "value": "Ford",
+        "label": "Ford (6)"
+      },
+      {
+        "value": "GMC",
+        "label": "GMC (10)"
+      },
+      {
+        "value": "Honda",
+        "label": "Honda (7)"
+      },
+      {
+        "value": "Hyundai",
+        "label": "Hyundai (3)"
+      },
+      {
+        "value": "INFINITI",
+        "label": "INFINITI (4)"
+      },
+      {
+        "value": "Jeep",
+        "label": "Jeep (8)"
+      },
+      {
+        "value": "Kia",
+        "label": "Kia (4)"
+      },
+      {
+        "value": "Lexus",
+        "label": "Lexus (8)"
+      },
+      {
+        "value": "Mazda",
+        "label": "Mazda (1)"
+      },
+      {
+        "value": "Mercedes-Benz",
+        "label": "Mercedes-Benz (6)"
+      },
+      {
+        "value": "Nissan",
+        "label": "Nissan (1)"
+      },
+      {
+        "value": "Porsche",
+        "label": "Porsche (1)"
+      },
+      {
+        "value": "Ram",
+        "label": "Ram (5)"
+      },
+      {
+        "value": "Subaru",
+        "label": "Subaru (1)"
+      },
+      {
+        "value": "Tesla",
+        "label": "Tesla (2)"
+      },
+      {
+        "value": "Toyota",
+        "label": "Toyota (15)"
+      }
+    ]
+  },
+  {
+    "id": "Values_Model",
+    "name": "Values.Model",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "1500",
+        "label": "1500 (5)"
+      },
+      {
+        "value": "300",
+        "label": "300 (1)"
+      },
+      {
+        "value": "370Z",
+        "label": "370Z (1)"
+      },
+      {
+        "value": "4-Series",
+        "label": "4 Series (2)"
+      },
+      {
+        "value": "5-Series",
+        "label": "5 Series (3)"
+      },
+      {
+        "value": "7-Series",
+        "label": "7 Series (2)"
+      },
+      {
+        "value": "A-220",
+        "label": "A 220 (1)"
+      },
+      {
+        "value": "A5-Sportback",
+        "label": "A5 Sportback (1)"
+      },
+      {
+        "value": "Accord-Hybrid",
+        "label": "Accord Hybrid (1)"
+      },
+      {
+        "value": "Accord-Sedan",
+        "label": "Accord Sedan (1)"
+      },
+      {
+        "value": "Avalon",
+        "label": "Avalon (1)"
+      },
+      {
+        "value": "Blazer",
+        "label": "Blazer (1)"
+      },
+      {
+        "value": "C-300",
+        "label": "C 300 (1)"
+      },
+      {
+        "value": "Camaro",
+        "label": "Camaro (1)"
+      },
+      {
+        "value": "Camry",
+        "label": "Camry (1)"
+      },
+      {
+        "value": "Canyon",
+        "label": "Canyon (1)"
+      },
+      {
+        "value": "Cayenne",
+        "label": "Cayenne (1)"
+      },
+      {
+        "value": "Civic-Type-R",
+        "label": "Civic Type R (2)"
+      },
+      {
+        "value": "CLA-250",
+        "label": "CLA 250 (1)"
+      },
+      {
+        "value": "Colorado",
+        "label": "Colorado (2)"
+      },
+      {
+        "value": "Corolla",
+        "label": "Corolla (2)"
+      },
+      {
+        "value": "Corolla-iM",
+        "label": "Corolla iM (1)"
+      },
+      {
+        "value": "CR-V-Hybrid",
+        "label": "CR-V Hybrid (1)"
+      },
+      {
+        "value": "CT-200h",
+        "label": "CT 200h (1)"
+      },
+      {
+        "value": "CT5",
+        "label": "CT5 (1)"
+      },
+      {
+        "value": "CX-5",
+        "label": "CX-5 (1)"
+      },
+      {
+        "value": "Dart",
+        "label": "Dart (1)"
+      },
+      {
+        "value": "Durango",
+        "label": "Durango (2)"
+      },
+      {
+        "value": "Elantra",
+        "label": "Elantra (1)"
+      },
+      {
+        "value": "Enclave",
+        "label": "Enclave (1)"
+      },
+      {
+        "value": "Envision",
+        "label": "Envision (1)"
+      },
+      {
+        "value": "EQB-300",
+        "label": "EQB 300 (1)"
+      },
+      {
+        "value": "Equinox",
+        "label": "Equinox (2)"
+      },
+      {
+        "value": "Escalade",
+        "label": "Escalade (1)"
+      },
+      {
+        "value": "Escalade-ESV",
+        "label": "Escalade ESV (2)"
+      },
+      {
+        "value": "F-150",
+        "label": "F-150 (1)"
+      },
+      {
+        "value": "FJ-Cruiser",
+        "label": "FJ Cruiser (1)"
+      },
+      {
+        "value": "Fusion-Energi",
+        "label": "Fusion Energi (1)"
+      },
+      {
+        "value": "G37-Coupe",
+        "label": "G37 Coupe (1)"
+      },
+      {
+        "value": "G37-Sedan",
+        "label": "G37 Sedan (1)"
+      },
+      {
+        "value": "Gladiator",
+        "label": "Gladiator (1)"
+      },
+      {
+        "value": "Grand-Cherokee",
+        "label": "Grand Cherokee (3)"
+      },
+      {
+        "value": "GX-460",
+        "label": "GX 460 (1)"
+      },
+      {
+        "value": "Highlander",
+        "label": "Highlander (3)"
+      },
+      {
+        "value": "IS-250",
+        "label": "IS 250 (1)"
+      },
+      {
+        "value": "IS-Turbo",
+        "label": "IS Turbo (2)"
+      },
+      {
+        "value": "K5",
+        "label": "K5 (2)"
+      },
+      {
+        "value": "Malibu",
+        "label": "Malibu (3)"
+      },
+      {
+        "value": "Model-3",
+        "label": "Model 3 (1)"
+      },
+      {
+        "value": "Model-X",
+        "label": "Model X (1)"
+      },
+      {
+        "value": "Odyssey",
+        "label": "Odyssey (2)"
+      },
+      {
+        "value": "Q3",
+        "label": "Q3 (1)"
+      },
+      {
+        "value": "Q50",
+        "label": "Q50 (1)"
+      },
+      {
+        "value": "Q60",
+        "label": "Q60 (1)"
+      },
+      {
+        "value": "Ranger",
+        "label": "Ranger (1)"
+      },
+      {
+        "value": "RAV4",
+        "label": "RAV4 (1)"
+      },
+      {
+        "value": "RC-350",
+        "label": "RC 350 (1)"
+      },
+      {
+        "value": "RDX",
+        "label": "RDX (2)"
+      },
+      {
+        "value": "RX-350",
+        "label": "RX 350 (1)"
+      },
+      {
+        "value": "Sienna",
+        "label": "Sienna (2)"
+      },
+      {
+        "value": "Sierra-1500",
+        "label": "Sierra 1500 (6)"
+      },
+      {
+        "value": "Sierra-2500HD",
+        "label": "Sierra 2500HD (2)"
+      },
+      {
+        "value": "Sierra-3500HD",
+        "label": "Sierra 3500HD (1)"
+      },
+      {
+        "value": "Silverado-1500",
+        "label": "Silverado 1500 (6)"
+      },
+      {
+        "value": "Silverado-1500-LTD",
+        "label": "Silverado 1500 LTD (1)"
+      },
+      {
+        "value": "Sonata",
+        "label": "Sonata (2)"
+      },
+      {
+        "value": "Soul",
+        "label": "Soul (1)"
+      },
+      {
+        "value": "Spark",
+        "label": "Spark (1)"
+      },
+      {
+        "value": "Sprinter-Cargo-Van",
+        "label": "Sprinter Cargo Van (1)"
+      },
+      {
+        "value": "Sprinter-Passenger-Vans",
+        "label": "Sprinter Passenger Vans (1)"
+      },
+      {
+        "value": "Suburban",
+        "label": "Suburban (1)"
+      },
+      {
+        "value": "Super-Duty-F-250-SRW",
+        "label": "Super Duty F-250 SRW (1)"
+      },
+      {
+        "value": "Tacoma",
+        "label": "Tacoma (1)"
+      },
+      {
+        "value": "Tacoma-2WD",
+        "label": "Tacoma 2WD (1)"
+      },
+      {
+        "value": "Tacoma-4WD",
+        "label": "Tacoma 4WD (1)"
+      },
+      {
+        "value": "Tahoe",
+        "label": "Tahoe (3)"
+      },
+      {
+        "value": "Telluride",
+        "label": "Telluride (1)"
+      },
+      {
+        "value": "Transit-Cargo-Van",
+        "label": "Transit Cargo Van (1)"
+      },
+      {
+        "value": "Transit-Van",
+        "label": "Transit Van (1)"
+      },
+      {
+        "value": "Traverse",
+        "label": "Traverse (1)"
+      },
+      {
+        "value": "UX-250h",
+        "label": "UX 250h (1)"
+      },
+      {
+        "value": "Wrangler",
+        "label": "Wrangler (1)"
+      },
+      {
+        "value": "Wrangler-Unlimited",
+        "label": "Wrangler Unlimited (3)"
+      },
+      {
+        "value": "WRX",
+        "label": "WRX (1)"
+      },
+      {
+        "value": "XT5",
+        "label": "XT5 (1)"
+      },
+      {
+        "value": "Z4",
+        "label": "Z4 (1)"
+      }
+    ]
+  },
+  {
+    "id": "Values_PriceRange",
+    "name": "Values.PriceRange",
+    "options": [
+      {
+        "value": "",
+        "label": "Any"
+      },
+      {
+        "value": "Under 10000",
+        "label": "Under $10,000 (8)"
+      },
+      {
+        "value": "10000-20000",
+        "label": "$10,000-$20,000 (47)"
+      },
+      {
+        "value": "20000-30000",
+        "label": "$20,000-$30,000 (53)"
+      },
+      {
+        "value": "30000-40000",
+        "label": "$30,000-$40,000 (11)"
+      },
+      {
+        "value": "40000-50000",
+        "label": "$40,000-$50,000 (6)"
+      },
+      {
+        "value": "50000-60000",
+        "label": "$50,000-$60,000 (1)"
+      },
+      {
+        "value": "Over 70000",
+        "label": "Over $70,000 (1)"
+      }
+    ]
+  },
+  {
+    "id": "ds-basiccolor-criteria",
+    "name": "Values.BasicColor",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Black",
+        "label": "Black (22)"
+      },
+      {
+        "value": "Blue",
+        "label": "Blue (5)"
+      },
+      {
+        "value": "Gray",
+        "label": "Gray (26)"
+      },
+      {
+        "value": "Green",
+        "label": "Green (1)"
+      },
+      {
+        "value": "Red",
+        "label": "Red (5)"
+      },
+      {
+        "value": "Silver",
+        "label": "Silver (9)"
+      },
+      {
+        "value": "White",
+        "label": "White (58)"
+      }
+    ]
+  },
+  {
+    "id": "ds-color-criteria",
+    "name": "Values.Color",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Aegean Blue Metallic",
+        "label": "Aegean Blue Metallic (1)"
+      },
+      {
+        "value": "Agate Black Metallic",
+        "label": "Agate Black Metallic (1)"
+      },
+      {
+        "value": "Alpine White",
+        "label": "Alpine White (2)"
+      },
+      {
+        "value": "Army Green",
+        "label": "Army Green (1)"
+      },
+      {
+        "value": "Atomic Silver",
+        "label": "Atomic Silver (1)"
+      },
+      {
+        "value": "Billet Silver Metallic Clearcoat",
+        "label": "Billet Silver Metallic Clearcoat (2)"
+      },
+      {
+        "value": "Black Blue",
+        "label": "Black Blue (1)"
+      },
+      {
+        "value": "Black Clearcoat",
+        "label": "Black Clearcoat (1)"
+      },
+      {
+        "value": "Black Raven",
+        "label": "Black Raven (1)"
+      },
+      {
+        "value": "Black Sand Pearl",
+        "label": "Black Sand Pearl (1)"
+      },
+      {
+        "value": "Black Sapphire Metallic",
+        "label": "Black Sapphire Metallic (4)"
+      },
+      {
+        "value": "Black",
+        "label": "Black (4)"
+      },
+      {
+        "value": "Blazing Blue Pearl",
+        "label": "Blazing Blue Pearl (1)"
+      },
+      {
+        "value": "Blizzard Pearl",
+        "label": "Blizzard Pearl (2)"
+      },
+      {
+        "value": "Bluestone Metallic",
+        "label": "Bluestone Metallic (1)"
+      },
+      {
+        "value": "Bright White Clearcoat",
+        "label": "Bright White Clearcoat (4)"
+      },
+      {
+        "value": "Brilliant Silver Metallic",
+        "label": "Brilliant Silver Metallic (2)"
+      },
+      {
+        "value": "Cardinal Red",
+        "label": "Cardinal Red (1)"
+      },
+      {
+        "value": "Caviar",
+        "label": "Caviar (1)"
+      },
+      {
+        "value": "Ceramic White",
+        "label": "Ceramic White (1)"
+      },
+      {
+        "value": "Championship White",
+        "label": "Championship White (1)"
+      },
+      {
+        "value": "Charcoal",
+        "label": "Charcoal (1)"
+      },
+      {
+        "value": "Chronos Gray Metallic",
+        "label": "Chronos Gray Metallic (1)"
+      },
+      {
+        "value": "Cirrus White",
+        "label": "Cirrus White (1)"
+      },
+      {
+        "value": "Clear White",
+        "label": "Clear White (1)"
+      },
+      {
+        "value": "Crystal White Tricoat",
+        "label": "Crystal White Tricoat (3)"
+      },
+      {
+        "value": "Dark Graphite Metallic",
+        "label": "Dark Graphite Metallic (1)"
+      },
+      {
+        "value": "Destroyer Gray Clearcoat",
+        "label": "Destroyer Gray Clearcoat (1)"
+      },
+      {
+        "value": "Diamond Black Crystal Pearlcoat",
+        "label": "Diamond Black Crystal Pearlcoat (1)"
+      },
+      {
+        "value": "Ebony Twilight Metallic",
+        "label": "Ebony Twilight Metallic (1)"
+      },
+      {
+        "value": "Electric Storm Blue",
+        "label": "Electric Storm Blue (1)"
+      },
+      {
+        "value": "Eminent White Pearl",
+        "label": "Eminent White Pearl (1)"
+      },
+      {
+        "value": "Eminent White",
+        "label": "Eminent White (1)"
+      },
+      {
+        "value": "Glacial White Pearl",
+        "label": "Glacial White Pearl (1)"
+      },
+      {
+        "value": "Glacier White Metallic",
+        "label": "Glacier White Metallic (1)"
+      },
+      {
+        "value": "Granite Crystal Metallic Clearcoat",
+        "label": "Granite Crystal Metallic Clearcoat (2)"
+      },
+      {
+        "value": "Graphite Shadow",
+        "label": "Graphite Shadow (2)"
+      },
+      {
+        "value": "Gray",
+        "label": "Gray (1)"
+      },
+      {
+        "value": "Harbor Gray Metallic",
+        "label": "Harbor Gray Metallic (1)"
+      },
+      {
+        "value": "Iridescent Pearl Tricoat",
+        "label": "Iridescent Pearl Tricoat (1)"
+      },
+      {
+        "value": "Lunar Rock",
+        "label": "Lunar Rock (2)"
+      },
+      {
+        "value": "Lunar Silver Metallic",
+        "label": "Lunar Silver Metallic (1)"
+      },
+      {
+        "value": "Magnetic Metallic",
+        "label": "Magnetic Metallic (2)"
+      },
+      {
+        "value": "Majestic Black Pearl",
+        "label": "Majestic Black Pearl (1)"
+      },
+      {
+        "value": "Maximum Steel Metallic Clearcoat",
+        "label": "Maximum Steel Metallic Clearcoat (1)"
+      },
+      {
+        "value": "Midnight Blue Metallic",
+        "label": "Midnight Blue Metallic (1)"
+      },
+      {
+        "value": "Mocha Bronze Metallic",
+        "label": "Mocha Bronze Metallic (1)"
+      },
+      {
+        "value": "Moonlight White",
+        "label": "Moonlight White (1)"
+      },
+      {
+        "value": "Mosaic Black Metallic",
+        "label": "Mosaic Black Metallic (2)"
+      },
+      {
+        "value": "Natural White",
+        "label": "Natural White (1)"
+      },
+      {
+        "value": "Nightfall Gray",
+        "label": "Nightfall Gray (1)"
+      },
+      {
+        "value": "Obsidian",
+        "label": "Obsidian (1)"
+      },
+      {
+        "value": "Onyx Black",
+        "label": "Onyx Black (2)"
+      },
+      {
+        "value": "Oxford White",
+        "label": "Oxford White (2)"
+      },
+      {
+        "value": "Pearl White Multi-Coat",
+        "label": "Pearl White Multi-Coat (1)"
+      },
+      {
+        "value": "Platinum White Pearl",
+        "label": "Platinum White Pearl (2)"
+      },
+      {
+        "value": "Polar White",
+        "label": "Polar White (3)"
+      },
+      {
+        "value": "Predawn Gray Mica",
+        "label": "Predawn Gray Mica (2)"
+      },
+      {
+        "value": "Pure White",
+        "label": "Pure White (1)"
+      },
+      {
+        "value": "Quartz White",
+        "label": "Quartz White (1)"
+      },
+      {
+        "value": "Sangria Metallic Clearcoat",
+        "label": "Sangria Metallic Clearcoat (1)"
+      },
+      {
+        "value": "Satin Steel Gray Metallic",
+        "label": "Satin Steel Gray Metallic (1)"
+      },
+      {
+        "value": "Satin Steel Metallic",
+        "label": "Satin Steel Metallic (3)"
+      },
+      {
+        "value": "Scarlet Red Pearl",
+        "label": "Scarlet Red Pearl (1)"
+      },
+      {
+        "value": "Silver Ice Metallic",
+        "label": "Silver Ice Metallic (1)"
+      },
+      {
+        "value": "Silver Sky Metallic",
+        "label": "Silver Sky Metallic (1)"
+      },
+      {
+        "value": "Siren Red Tintcoat",
+        "label": "Siren Red Tintcoat (1)"
+      },
+      {
+        "value": "Snow White Pearl",
+        "label": "Snow White Pearl (1)"
+      },
+      {
+        "value": "Snowflake White Pearl Mica",
+        "label": "Snowflake White Pearl Mica (1)"
+      },
+      {
+        "value": "Starfire Pearl",
+        "label": "Starfire Pearl (1)"
+      },
+      {
+        "value": "Sterling Gray Metallic",
+        "label": "Sterling Gray Metallic (1)"
+      },
+      {
+        "value": "Sting-Gray Clearcoat",
+        "label": "Sting-Gray Clearcoat (2)"
+      },
+      {
+        "value": "Summit White",
+        "label": "Summit White (13)"
+      },
+      {
+        "value": "Torred",
+        "label": "Torred (1)"
+      },
+      {
+        "value": "Tungsten Pearl",
+        "label": "Tungsten Pearl (1)"
+      },
+      {
+        "value": "Ultra White",
+        "label": "Ultra White (1)"
+      },
+      {
+        "value": "White Diamond Pearl",
+        "label": "White Diamond Pearl (2)"
+      },
+      {
+        "value": "White Diamond Tricoat",
+        "label": "White Diamond Tricoat (1)"
+      },
+      {
+        "value": "White Frost Tricoat",
+        "label": "White Frost Tricoat (1)"
+      },
+      {
+        "value": "White Knuckle Clearcoat",
+        "label": "White Knuckle Clearcoat (1)"
+      },
+      {
+        "value": "White Orchid Pearl",
+        "label": "White Orchid Pearl (1)"
+      },
+      {
+        "value": "White Platinum Metallic Tri-Coat",
+        "label": "White Platinum Metallic Tri-Coat (1)"
+      },
+      {
+        "value": "White",
+        "label": "White (1)"
+      },
+      {
+        "value": "Wind Chill Pearl",
+        "label": "Wind Chill Pearl (1)"
+      },
+      {
+        "value": "Wolf Gray",
+        "label": "Wolf Gray (1)"
+      }
+    ]
+  },
+  {
+    "id": "ds-condition-criteria",
+    "name": "Values.NewOrPreOwnedStatus",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "pre-owned-cars",
+        "label": "Pre-Owned (127)"
+      }
+    ]
+  },
+  {
+    "id": "ds-drivetrain-criteria",
+    "name": "Values.Drivetrain",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "All Wheel Drive",
+        "label": "All Wheel Drive (16)"
+      },
+      {
+        "value": "Four Wheel Drive",
+        "label": "Four Wheel Drive (30)"
+      },
+      {
+        "value": "Four Wheel Drive/DRW",
+        "label": "Four Wheel Drive/DRW (1)"
+      },
+      {
+        "value": "Front Wheel Drive",
+        "label": "Front Wheel Drive (40)"
+      },
+      {
+        "value": "Rear Wheel Drive",
+        "label": "Rear Wheel Drive (40)"
+      }
+    ]
+  },
+  {
+    "id": "ds-fuel-criteria",
+    "name": "Values.Fuel",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Diesel Fuel",
+        "label": "Diesel Fuel (10)"
+      },
+      {
+        "value": "Electric Fuel System",
+        "label": "Electric Fuel System (3)"
+      },
+      {
+        "value": "Flex Fuel Capability",
+        "label": "Flex Fuel Capability (5)"
+      },
+      {
+        "value": "Gas/Electric Hybrid",
+        "label": "Gas/Electric Hybrid (6)"
+      },
+      {
+        "value": "Gasoline Fuel",
+        "label": "Gasoline Fuel (102)"
+      },
+      {
+        "value": "Plug-In Electric/Gas",
+        "label": "Plug-In Electric/Gas (1)"
+      }
+    ]
+  },
+  {
+    "id": "ds-mpg-hwy-criteria",
+    "name": "Values.HighwayMpg",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Other",
+        "label": "Other (14)"
+      },
+      {
+        "value": "Over 10 MPG",
+        "label": "Over 10 MPG (113)"
+      },
+      {
+        "value": "Over 20 MPG",
+        "label": "Over 20 MPG (110)"
+      },
+      {
+        "value": "Over 30 MPG",
+        "label": "Over 30 MPG (39)"
+      },
+      {
+        "value": "Over 40 MPG",
+        "label": "Over 40 MPG (3)"
+      },
+      {
+        "value": "Over 50 MPG",
+        "label": "Over 50 MPG (1)"
+      }
+    ]
+  },
+  {
+    "id": "ds-interiorcolor-criteria",
+    "name": "Values.InteriorColor",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Alpine Umber",
+        "label": "Alpine Umber (1)"
+      },
+      {
+        "value": "Ash",
+        "label": "Ash (1)"
+      },
+      {
+        "value": "Beige",
+        "label": "Beige (1)"
+      },
+      {
+        "value": "Black w/Illustrious Piano Black Trim",
+        "label": "Black w/Illustrious Piano Black Trim (1)"
+      },
+      {
+        "value": "Black/Red",
+        "label": "Black/Red (2)"
+      },
+      {
+        "value": "Black",
+        "label": "Black (47)"
+      },
+      {
+        "value": "Brandy with Very Dark Atmosphere accents",
+        "label": "Brandy with Very Dark Atmosphere accents (1)"
+      },
+      {
+        "value": "Camelback",
+        "label": "Camelback (1)"
+      },
+      {
+        "value": "Cement Gray",
+        "label": "Cement Gray (1)"
+      },
+      {
+        "value": "Cement",
+        "label": "Cement (2)"
+      },
+      {
+        "value": "Charcoal Black",
+        "label": "Charcoal Black (1)"
+      },
+      {
+        "value": "Choccachino",
+        "label": "Choccachino (1)"
+      },
+      {
+        "value": "Circuit Red",
+        "label": "Circuit Red (1)"
+      },
+      {
+        "value": "Cocoa/Dune",
+        "label": "Cocoa/Dune (1)"
+      },
+      {
+        "value": "Dark Atmosphere/ Medium Ash Gray",
+        "label": "Dark Atmosphere/ Medium Ash Gray (1)"
+      },
+      {
+        "value": "Dark Bisque",
+        "label": "Dark Bisque (1)"
+      },
+      {
+        "value": "Dark charcoal",
+        "label": "Dark charcoal (1)"
+      },
+      {
+        "value": "Dark Palazzo Grey",
+        "label": "Dark Palazzo Grey (1)"
+      },
+      {
+        "value": "Dark Walnut/Slate",
+        "label": "Dark Walnut/Slate (1)"
+      },
+      {
+        "value": "Diesel Gray/Black",
+        "label": "Diesel Gray/Black (1)"
+      },
+      {
+        "value": "Ebony seats",
+        "label": "Ebony seats (1)"
+      },
+      {
+        "value": "Ebony",
+        "label": "Ebony (3)"
+      },
+      {
+        "value": "Ecru w/Mahogany Trim",
+        "label": "Ecru w/Mahogany Trim (1)"
+      },
+      {
+        "value": "Gideon/Very Dark Atmosphere",
+        "label": "Gideon/Very Dark Atmosphere (1)"
+      },
+      {
+        "value": "Graphite",
+        "label": "Graphite (4)"
+      },
+      {
+        "value": "Gray",
+        "label": "Gray (4)"
+      },
+      {
+        "value": "Ivory White",
+        "label": "Ivory White (1)"
+      },
+      {
+        "value": "Ivory",
+        "label": "Ivory (1)"
+      },
+      {
+        "value": "Jet Black with Jet Black Accents",
+        "label": "Jet Black with Jet Black Accents (1)"
+      },
+      {
+        "value": "Jet Black with Kalahari Accents",
+        "label": "Jet Black with Kalahari Accents (1)"
+      },
+      {
+        "value": "Jet Black/Dark Anderson Silver Metallic",
+        "label": "Jet Black/Dark Anderson Silver Metallic (1)"
+      },
+      {
+        "value": "Jet Black/Dark Ash",
+        "label": "Jet Black/Dark Ash (1)"
+      },
+      {
+        "value": "Jet Black/Maple Sugar",
+        "label": "Jet Black/Maple Sugar (1)"
+      },
+      {
+        "value": "Jet Black/Victory Red",
+        "label": "Jet Black/Victory Red (1)"
+      },
+      {
+        "value": "Jet Black",
+        "label": "Jet Black (22)"
+      },
+      {
+        "value": "Kona Brown w/Jet Black Accents",
+        "label": "Kona Brown w/Jet Black Accents (1)"
+      },
+      {
+        "value": "Light Gray",
+        "label": "Light Gray (1)"
+      },
+      {
+        "value": "Macchiato Beige",
+        "label": "Macchiato Beige (1)"
+      },
+      {
+        "value": "Magma Red",
+        "label": "Magma Red (1)"
+      },
+      {
+        "value": "Medium Soft Ceramic",
+        "label": "Medium Soft Ceramic (1)"
+      },
+      {
+        "value": "Monaco Red",
+        "label": "Monaco Red (1)"
+      },
+      {
+        "value": "Parchment",
+        "label": "Parchment (1)"
+      },
+      {
+        "value": "Red/Black",
+        "label": "Red/Black (2)"
+      },
+      {
+        "value": "Rioja Red w/Silver Performance Trim",
+        "label": "Rioja Red w/Silver Performance Trim (2)"
+      },
+      {
+        "value": "Rock Gray",
+        "label": "Rock Gray (1)"
+      },
+      {
+        "value": "Taupe",
+        "label": "Taupe (1)"
+      },
+      {
+        "value": "Tuscan Brown",
+        "label": "Tuscan Brown (1)"
+      }
+    ]
+  },
+  {
+    "id": "ds-transmission-criteria",
+    "name": "Values.Transmission",
+    "options": [
+      {
+        "value": "",
+        "label": "All"
+      },
+      {
+        "value": "Automatic",
+        "label": "Automatic (120)"
+      },
+      {
+        "value": "Manual",
+        "label": "Manual (7)"
+      }
+    ]
+  }
+]

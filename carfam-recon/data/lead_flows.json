@@ -1,0 +1,153 @@
+[
+  {
+    "id": "contact",
+    "page": "/contact-us",
+    "purpose": "Dealer contact",
+    "definition_ids": [
+      "ds-contact-us-form"
+    ]
+  },
+  {
+    "id": "find-my-car",
+    "page": "/find-my-car",
+    "purpose": "Desired vehicle sourcing",
+    "definition_ids": [
+      "ds-findmycar-form"
+    ]
+  },
+  {
+    "id": "appraisal",
+    "page": "/sell-my-car",
+    "purpose": "Three-step appraisal plus review",
+    "definition_ids": [
+      "anonymous wizard forms"
+    ]
+  },
+  {
+    "id": "test-drive",
+    "page": "vehicle detail pages",
+    "purpose": "Request a test drive",
+    "definition_ids": [
+      "ds-vdp-schedule-test-drive-form"
+    ]
+  },
+  {
+    "id": "best-price",
+    "page": "vehicle detail pages",
+    "purpose": "Pricing inquiry",
+    "definition_ids": [
+      "ds-vdp-pricing-contact-form"
+    ]
+  },
+  {
+    "id": "vehicle-question",
+    "page": "vehicle detail pages",
+    "purpose": "Vehicle inquiry",
+    "definition_ids": [
+      "ds-vdp-question-contact-form"
+    ]
+  },
+  {
+    "id": "text-link",
+    "page": "vehicle detail pages",
+    "purpose": "Text vehicle link",
+    "definition_ids": [
+      "ds-vdp-send-to-phone-form"
+    ]
+  },
+  {
+    "id": "routeone-english",
+    "page": "/finance-your-car/pre-approved",
+    "provider": "RouteOne",
+    "fields_observed": [
+      {
+        "name": "First Name",
+        "required": true
+      },
+      {
+        "name": "Last Name",
+        "required": true
+      },
+      {
+        "name": "Email",
+        "required": true
+      },
+      {
+        "name": "Home Phone",
+        "required": true
+      },
+      {
+        "name": "Cellular Phone",
+        "required": false
+      },
+      {
+        "name": "Date of Birth",
+        "required": true
+      },
+      {
+        "name": "Salesperson",
+        "required": false
+      }
+    ],
+    "steps": [
+      "Personal Info",
+      "Address Info",
+      "Income Info",
+      "Vehicle Info",
+      "Review"
+    ],
+    "limitations": "Only initial fields inspected; later fields unverified."
+  },
+  {
+    "id": "routeone-spanish",
+    "page": "/solicitar-financiacion",
+    "provider": "RouteOne",
+    "locale": "es_MX",
+    "fields_observed": [
+      {
+        "name": "Nombre",
+        "required": true
+      },
+      {
+        "name": "Apellido",
+        "required": true
+      },
+      {
+        "name": "Dirección de correo electrónico",
+        "required": true
+      },
+      {
+        "name": "Teléfono de casa",
+        "required": true
+      },
+      {
+        "name": "Teléfono móvil",
+        "required": false
+      },
+      {
+        "name": "Fecha de nacimiento",
+        "required": true
+      },
+      {
+        "name": "Agente de ventas",
+        "required": false
+      }
+    ],
+    "limitations": "Only initial fields inspected."
+  },
+  {
+    "id": "capital-one",
+    "page": "/capital-one-pre-qualify-then-shop",
+    "provider": "Capital One",
+    "fields_observed": [
+      "First Name",
+      "Last Name",
+      "Email Address",
+      "Confirm Email Address",
+      "Phone Number",
+      "Optional co-applicant"
+    ],
+    "consent": "Data sharing, dealer/lender contact, privacy policies, eCommunications disclosure; see loaded browser evidence.",
+    "limitations": "Initial public interface only; no agreement or submission."
+  }
+]

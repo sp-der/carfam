@@ -1,0 +1,23 @@
+My Account
+Home
+My Account
+Create Your Account
+Your Email
+Password
+Go to NEXT step
+Contact me about new arrivals and promotions
+First Name
+Last Name
+Address
+City
+State
+Zip Code
+Phone
+Back
+or
+Login
+Your Email
+Password
+Verification Required
+Forgot Your
+Password?

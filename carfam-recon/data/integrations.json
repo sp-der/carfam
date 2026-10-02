@@ -1,0 +1,106 @@
+[
+  {
+    "service": "DealerSync",
+    "purpose": "Site platform, inventory hosting, public forms, CDN, accessibility controls",
+    "domain": "dealersync.com",
+    "evidence": "Header/footer/HTML and forms",
+    "status": "confirmed",
+    "replacement_requirement": "Production requires dealer platform/feed/CRM agreement; demo uses snapshot"
+  },
+  {
+    "service": "RouteOne",
+    "purpose": "Credit application, English and Spanish",
+    "domain": "routeone.net",
+    "evidence": "Finance application iframes and loaded browser interface",
+    "status": "confirmed",
+    "replacement_requirement": "Provider integration required in production; informational placeholder in demo"
+  },
+  {
+    "service": "Capital One",
+    "purpose": "Prequalification and vehicle financing estimate tools",
+    "domain": "auto-digital-retail.capitalone.com",
+    "evidence": "Finance page, SRP/VDP loader and rendered interface",
+    "status": "confirmed",
+    "replacement_requirement": "Dealer-approved token/account and provider flow; never copy token into demo"
+  },
+  {
+    "service": "CARFAX",
+    "purpose": "History reports and snapshots",
+    "domain": "carfax.com",
+    "evidence": "Rendered Acura VDP snapshot, report link, source widgets",
+    "status": "confirmed",
+    "replacement_requirement": "Licensed vehicle report links/service; no invented history badges"
+  },
+  {
+    "service": "Monroney Labels",
+    "purpose": "Factory window sticker",
+    "domain": "monroneylabels.com",
+    "evidence": "VDP source images/links",
+    "status": "confirmed",
+    "replacement_requirement": "Retain supported sticker slot; commercial access/rights require confirmation"
+  },
+  {
+    "service": "AutoDriven",
+    "purpose": "External Shop From Home inventory/retail experience",
+    "domain": "autodriven.com",
+    "evidence": "Homepage overflow nav; loaded external interface",
+    "status": "confirmed",
+    "replacement_requirement": "Separate provider/checkout; do not reproduce connected purchase behavior in demo"
+  },
+  {
+    "service": "Google Maps",
+    "purpose": "Embedded location and directions",
+    "domain": "google.com / maps.googleapis.com",
+    "evidence": "Homepage/contact/footer iframe and links",
+    "status": "confirmed",
+    "replacement_requirement": "Directions link works as public link; map key/account required for new embed"
+  },
+  {
+    "service": "Google Analytics 4",
+    "purpose": "Analytics",
+    "domain": "googletagmanager.com / google-analytics.com",
+    "evidence": "gtag script and G-CPW9T29BZY tracking reference",
+    "status": "confirmed",
+    "replacement_requirement": "Disable in demo; new owner-approved account in production"
+  },
+  {
+    "service": "Google Translate",
+    "purpose": "Language selection",
+    "domain": "translate.google.com",
+    "evidence": "Inline loader plus rendered Select Language",
+    "status": "confirmed",
+    "replacement_requirement": "Recommend explicit edited Spanish for core pages rather than relying entirely on auto translation"
+  },
+  {
+    "service": "YouTube",
+    "purpose": "Carfam commercial embed and social link",
+    "domain": "youtube.com",
+    "evidence": "Sell My Car video K49v9drRQw8",
+    "status": "confirmed",
+    "replacement_requirement": "Optional click-to-load video; no autoplay required"
+  },
+  {
+    "service": "Edmunds",
+    "purpose": "External news headlines",
+    "domain": "edmunds.com",
+    "evidence": "/news source labels and linked headlines",
+    "status": "confirmed",
+    "replacement_requirement": "Optional outbound resource feed; not original Carfam article content"
+  },
+  {
+    "service": "ShareThis",
+    "purpose": "Vehicle share widget hook",
+    "domain": "sharethis (source data-network)",
+    "evidence": "VDP st-custom-button data-network attribute",
+    "status": "source_hook_only",
+    "replacement_requirement": "Loaded provider script not verified; native share/copy link can replace"
+  },
+  {
+    "service": "reCAPTCHA",
+    "purpose": "Verification containers in lead forms",
+    "domain": "Google reCAPTCHA (markup reference)",
+    "evidence": "VDP ds-recaptcha form containers",
+    "status": "source_hook_only",
+    "replacement_requirement": "Activation not verified; choose approved spam protection for production"
+  }
+]

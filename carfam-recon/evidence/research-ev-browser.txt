@@ -1,0 +1,111 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+    - link "Shop From Home (Opens in a new tab)":
+      - /url: https://autodriven.com/carfam/?refsrc=dealer-srp
+      - text: Shop From Home
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - text:   ¢ 
+- generic "Page content":
+  - 'heading "Level 1 vs. Level 2 Charging at Home: Is an Outlet Upgrade Worth It for a Used EV?" [level=1]'
+  - list:
+    - link "Home":
+      - /url: /
+    - listitem: / Charging At Home
+  - img "A car's dashboard."
+  - paragraph: Upgrading to a pre-owned electric car or plug-in hybrid is one of the smartest ways to enjoy premium comfort, instant torque, and a serene, whisper-quiet ride. Luxury features like leather-appointed seating, advanced driver-assist systems, and smooth power delivery are now accessible at a fraction of their original sticker price. Best of all, choosing a pre-owned EV lets you step away from unpredictable gas prices and regular oil changes.
+  - paragraph: "Once you bring your electric vehicle home to Rialto, one immediate practical question arises: how should you power it? When considering Level 1 vs Level 2 EV charging at home, used EV owners often wonder if they must invest in a dedicated charger right away or if a standard wall outlet will suffice."
+  - paragraph: The decision depends on your daily driving routine, your home's electrical setup, and the total distance you travel each day.
+  - heading "How Does Level 1 EV Charging Work for Daily Commutes?" [level=3]
+  - paragraph: Level 1 charging uses the standard equipment that comes bundled with almost every pre-owned electric vehicle. You simply plug the provided charging cable directly into a traditional 120V outlet in your garage or driveway.
+  - heading "How fast does a 120V outlet charge a used EV?" [level=4]
+  - paragraph: A standard 120V household receptacle provides continuous power at around 1.2 to 1.4 kilowatts. For most vehicles, this converts to gaining roughly 3 to 5 miles of range for every hour the car stays plugged in.
+  - paragraph: Over a typical 10-hour overnight period, a 120V connection adds 30 to 50 miles of total range back into your battery pack.
+  - heading "Is Level 1 charging enough for local drivers?" [level=4]
+  - paragraph: If your routine consists of quick local errands, school drop-offs, and a daily commute under 35 miles across the Inland Empire, Level 1 charging is completely sufficient. You return home in the evening, plug into a standard wall outlet, and wake up every morning with a fully replenished battery for your daily travel.
+  - paragraph: Drivers who select a plug-in hybrid (PHEV) with a smaller battery pack often find that a basic 120V outlet is all they ever need to keep their daily drive entirely electric.
+  - heading "What Makes Level 2 EV Charging Different?" [level=3]
+  - paragraph: Level 2 charging steps up the power output significantly by utilizing a 240V circuit, which is the same type of heavy-duty power supply used by large home appliances like electric clothes dryers or kitchen ranges.
+  - table:
+    - rowgroup:
+      - row "Feature Level 1 Charging (120V Outlet) Level 2 Charging (240V Upgrade)":
+        - columnheader "Feature"
+        - columnheader "Level 1 Charging (120V Outlet)"
+        - columnheader "Level 2 Charging (240V Upgrade)"
+    - rowgroup:
+      - row "Voltage Standard 120V household outlet Dedicated 240V outlet or hardwired":
+        - cell "Voltage"
+        - cell "Standard 120V household outlet"
+        - cell "Dedicated 240V outlet or hardwired"
+      - row "Recovery Rate 3 to 5 miles of range per hour 20 to 30+ miles of range per hour":
+        - cell "Recovery Rate"
+        - cell "3 to 5 miles of range per hour"
+        - cell "20 to 30+ miles of range per hour"
+      - row "Overnight Replenishment (10 hrs) 30 to 50 miles 200 to 300+ miles (Full Charge)":
+        - cell "Overnight Replenishment (10 hrs)"
+        - cell "30 to 50 miles"
+        - cell "200 to 300+ miles (Full Charge)"
+      - row "Required Hardware Included portable charging cord NEMA 14-50 outlet or Wall Unit":
+        - cell "Required Hardware"
+        - cell "Included portable charging cord"
+        - cell "NEMA 14-50 outlet or Wall Unit"
+      - row "Upfront Setup Cost $0 (Uses existing household outlets) $300 to $1,500+ for electrician setup":
+        - cell "Upfront Setup Cost"
+        - cell "$0 (Uses existing household outlets)"
+        - cell "$300 to $1,500+ for electrician setup"
+  - heading "How quickly does a 240V Level 2 setup recover range?" [level=4]
+  - paragraph: By delivering power at 7.2 kW to 11.5 kW or higher, a Level 2 unit adds roughly 20 to 30+ miles of driving distance for every hour connected. Instead of waiting all night for a modest top-off, you can take a pre-owned battery electric vehicle (BEV) from nearly depleted to 100% capacity in 6 to 8 hours.
+  - heading "Why do higher-mileage drivers prefer Level 2?" [level=4]
+  - paragraph: Level 2 charging offers a crucial buffer for unpredictable schedules. If you return home from work with a low battery and need to head back out for an evening dinner or an unexpected trip, a Level 2 unit can add 50 to 60 miles of range while you relax for a couple of hours.
+  - heading "What Is the True Cost of Upgrading to a Level 2 Charger?" [level=3]
+  - paragraph: "Installing a Level 2 setup requires two main investments: the charging hardware itself and the electrical labor required to support it."
+  - paragraph: Hardware costs represent the first portion of the expense. A high-quality, smart Level 2 home charger typically costs between $350 and $700. Many modern wall units offer Wi-Fi connectivity, allowing you to track energy consumption and schedule your charging cycles directly from a smartphone app.
+  - paragraph: Electrician installation costs make up the remaining portion of the project. To plug in a portable Level 2 charger, an electrician must install a dedicated 240V outlet, most commonly a heavy-duty NEMA 14-50 receptacle. If your main breaker panel has adequate capacity and sits inside or right next to your garage, electrician installation cost ranges between $300 and $1,000 for labor, wiring, and permits.
+  - paragraph: If your home has an older 100-amp electrical panel that requires a service upgrade to 200 amps to support the new circuit, total installation costs can rise by $1,500 to $3,000.
+  - heading "Should You Upgrade to Level 2 for Your Used EV?" [level=3]
+  - paragraph: "To determine whether an outlet upgrade makes financial sense for your pre-owned electric car, evaluate these four key considerations:"
+  - heading "What is your actual daily mileage?" [level=4]
+  - paragraph: Calculate your average weekday round-trip distance. If you log less than 35 miles per day, Level 1 charging handles your needs effortlessly without spending extra money on electrical work. If your daily commute spans 50 to 100 miles, Level 2 becomes necessary to prevent a gradual loss of total battery charge over consecutive workdays.
+  - heading "What electricity rates does your local utility offer?" [level=4]
+  - paragraph: Electric utilities across Southern California frequently offer time-of-use (TOU) pricing plans with discounted off-peak electricity rates. These super-off-peak windows often run during the middle of the night (for example, midnight to 6:00 AM).
+  - paragraph: Because Level 1 charging takes 12 to 20 hours to fully replenish a large battery, much of your charging time will spill over into expensive peak hours. A Level 2 charger packs a full charge into that narrow, low-cost overnight window, allowing you to take full advantage of the cheapest rate tiers.
+  - heading "Are you driving a BEV or a plug-in hybrid?" [level=4]
+  - paragraph: "Vehicle type plays a major role in your home charging requirements:"
+  - paragraph: For Plug-in Hybrids (PHEVs), vehicles with smaller battery packs (typically 10 kWh to 18 kWh) reach full capacity in 4 to 6 hours using a basic 120V outlet, so an upgrade is rarely necessary.
+  - paragraph: For Battery Electric Vehicles (BEVs), pure electric vehicles with large 60 kWh to 100 kWh battery packs take over 40 hours to charge from empty on Level 1, making Level 2 a far more practical long-term choice.
+  - heading "Do you plan to stay in your current home long-term?" [level=4]
+  - paragraph: Installing a 240V NEMA 14-50 receptacle or a dedicated wall unit adds modern utility and resale value to your home. Future buyers increasingly look for EV-ready garage infrastructure, making the installation a solid property investment regardless of which electric vehicle you park inside.
+  - heading "How to Choose the Right Home Setup" [level=3]
+  - paragraph: "Follow this straightforward pathway to select the right charging strategy for your lifestyle:"
+  - paragraph: First, calculate your daily mileage. Track your daily driving distance for one full week. If your average stays under 35 miles per day, start by using standard Level 1 charging to see how easily it fits your schedule.
+  - paragraph: Next, inspect your electrical panel. Open your main electrical panel and check the total amperage rating along with open breaker slots. A standard setup requires space for a dedicated 40-amp or 50-amp double-pole breaker.
+  - paragraph: Then, consult a licensed electrician. Have a qualified electrician evaluate your home wiring, perform a load calculation, and provide a clear quote for adding a 240V NEMA 14-50 receptacle or hardwiring a wall box.
+  - paragraph: Finally, check utility rebates and incentives. Research local energy provider programs. Many utilities offer cash rebates that help cover both the cost of purchasing a smart Level 2 unit and hiring an electrician.
+  - heading "Experience Premium Electric Driving at CARFAM" [level=3]
+  - paragraph: At CARFAM in Rialto, CA, we believe that stepping up to an electric vehicle should be smooth, straightforward, and rewarding. Our pre-owned inventory gives you access to refined luxury, near-silent cabin comfort, and cutting-edge technology without the financial uncertainty of long-term mechanical repairs.
+  - paragraph: Whether you are looking for an efficient plug-in hybrid for flexible daily travel or a spacious all-electric vehicle for refined commuting, our knowledgeable team is here to guide you through every feature, range estimate, and charging option. Visit our dealership in Rialto today to explore our pre-owned inventory and experience the modern drive firsthand.
+  - link "View All EVs":
+    - /url: /pre-owned-cars/filter/fuel/Electric-Fuel-System

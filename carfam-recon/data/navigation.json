@@ -1,0 +1,229 @@
+{
+  "desktop": [
+    {
+      "label": "Inventory",
+      "url": "#",
+      "children": [
+        {
+          "label": "Inventory",
+          "url": "https://www.carfam.com"
+        },
+        {
+          "label": "Pre-Owned Vehicles",
+          "url": "https://www.carfam.com/pre-owned-cars"
+        },
+        {
+          "label": "Vehicles Under 15K",
+          "url": "https://www.carfam.com/pre-owned-cars/filter/pricerange=0-15000"
+        },
+        {
+          "label": "Find My Car",
+          "url": "https://www.carfam.com/find-my-car"
+        }
+      ]
+    },
+    {
+      "label": "Finance",
+      "url": "#",
+      "children": [
+        {
+          "label": "Finance",
+          "url": "https://www.carfam.com"
+        },
+        {
+          "label": "Finance Department",
+          "url": "https://www.carfam.com/finance-your-car"
+        },
+        {
+          "label": "Apply For Financing",
+          "url": "https://www.carfam.com/finance-your-car/pre-approved"
+        },
+        {
+          "label": "Solicitar Financiación",
+          "url": "https://www.carfam.com/solicitar-financiacion"
+        },
+        {
+          "label": "Get Pre Qualified With Capital One",
+          "url": "https://www.carfam.com/capital-one-pre-qualify-then-shop"
+        },
+        {
+          "label": "Bad Credit Financing",
+          "url": "https://www.carfam.com/bad-credit-financing-in-bloomington-ca"
+        }
+      ]
+    },
+    {
+      "label": "We Buy Your Car",
+      "url": "/sell-my-car",
+      "children": [
+        {
+          "label": "We Buy Your Car",
+          "url": "https://www.carfam.com/sell-my-car"
+        }
+      ]
+    },
+    {
+      "label": "About Us",
+      "url": "#",
+      "children": [
+        {
+          "label": "About Us",
+          "url": "https://www.carfam.com"
+        },
+        {
+          "label": "About the Dealership",
+          "url": "https://www.carfam.com/about-us"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://www.carfam.com/contact-us"
+        },
+        {
+          "label": "Meet Our Staff",
+          "url": "https://www.carfam.com/meet-our-team"
+        },
+        {
+          "label": "Community Outreach",
+          "url": "https://www.carfam.com/used-car-dealer-serving-the-community-in-rialto"
+        },
+        {
+          "label": "Careers",
+          "url": "https://www.carfam.com/careers"
+        },
+        {
+          "label": "ADA Policy Statement",
+          "url": "https://www.carfam.com/ada-policy-statement"
+        }
+      ]
+    },
+    {
+      "label": "Research",
+      "url": "#",
+      "children": [
+        {
+          "label": "Research",
+          "url": "https://www.carfam.com"
+        },
+        {
+          "label": "Buying A Car",
+          "url": "https://www.carfam.com/buying-a-car-in-bloomington-ca"
+        },
+        {
+          "label": "Best Used BMW",
+          "url": "https://www.carfam.com/pre-owned-cars/BMW"
+        },
+        {
+          "label": "Best Used Jeeps",
+          "url": "https://www.carfam.com/pre-owned-cars/Jeep"
+        },
+        {
+          "label": "Best Used Lexus",
+          "url": "https://www.carfam.com/pre-owned-cars/Lexus"
+        },
+        {
+          "label": "Best Used Nissan",
+          "url": "https://www.carfam.com/pre-owned-cars/Nissan"
+        },
+        {
+          "label": "Best Used Toyotas",
+          "url": "https://www.carfam.com/pre-owned-cars/Toyota"
+        },
+        {
+          "label": "Best Used Cars",
+          "url": "https://www.carfam.com/best-used-cars-in-bloomington-ca"
+        },
+        {
+          "label": "Best Used Coupes",
+          "url": "https://www.carfam.com/best-used-coupes-in-bloomington-ca"
+        },
+        {
+          "label": "Best Used SUVs",
+          "url": "https://www.carfam.com/best-used-suvs-in-rialto-ca"
+        },
+        {
+          "label": "Best Used Trucks",
+          "url": "https://www.carfam.com/best-used-trucks-in-rialto-ca"
+        },
+        {
+          "label": "Lv 1 vs Lv 2 EV Charging",
+          "url": "https://www.carfam.com/used-ev-home-charging-guide-rialto-ca"
+        },
+        {
+          "label": "Used Car Guide",
+          "url": "https://www.carfam.com/used-car-rialto-used-car-dealership-guide"
+        }
+      ]
+    },
+    {
+      "label": "Our Customers",
+      "url": "/customer-gallery-at-carfam",
+      "children": [
+        {
+          "label": "Our Customers",
+          "url": "https://www.carfam.com/customer-gallery-at-carfam"
+        }
+      ]
+    },
+    {
+      "label": "Shop From Home",
+      "url": "https://autodriven.com/carfam/?refsrc=dealer-srp",
+      "children": [
+        {
+          "label": "Shop From Home",
+          "url": "https://autodriven.com/carfam/?refsrc=dealer-srp"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "label": "Careers",
+      "url": "https://www.carfam.com/careers"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/carFAMdealer"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/carfam_dealer"
+    },
+    {
+      "label": "Twitter",
+      "url": "https://x.com/CARFAMdealer"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@carfamdealer7066"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/carFAMdealer"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/carfam_dealer"
+    },
+    {
+      "label": "Twitter",
+      "url": "https://x.com/CARFAMdealer"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@carfamdealer7066"
+    },
+    {
+      "label": "Careers",
+      "url": "https://www.carfam.com/careers"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "https://www.carfam.com/privacy-policy"
+    },
+    {
+      "label": "Privacy Rights",
+      "url": "https://www.carfam.com/privacy-rights"
+    }
+  ],
+  "mobile_note": "Source contains mobile navigation, account, search, dealer/contact panels. Actual mobile viewport capture unavailable in this browser API; see MOBILE_AUDIT.md."
+}

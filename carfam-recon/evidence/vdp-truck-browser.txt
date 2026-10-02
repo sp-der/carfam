@@ -1,0 +1,378 @@
+- link "(909) 543-1450":
+  - /url: tel:9095431450
+  - generic: 
+  - text: (909) 543-1450
+- link "1731 South Cactus Ave, Rialto, CA 92316":
+  - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+  - generic: 
+  - text: 1731 South Cactus Ave, Rialto, CA 92316
+- navigation:
+  - text:   b
+  - text:  c
+  - link "CARFAM":
+    - /url: /
+    - img "CARFAM"
+  - list:
+    - button "Inventory"
+    - button "Finance"
+    - link "We Buy Your Car":
+      - /url: /sell-my-car
+    - button "About Us"
+    - button "Research"
+    - link "Our Customers":
+      - /url: /customer-gallery-at-carfam
+  - search:
+    - generic: Enter your search term
+    - searchbox "Enter your search term"
+    - button "Search dealership's inventory": 
+  - list:
+    - button "":
+      - generic: 
+  - text:   ¢ 
+- generic "Page content":
+  - link "Overview":
+    - /url: "#ds-vdp-overview-section"
+  - link:
+    - /url: "#ds-vdp-history-section"
+    - text: History
+  - link:
+    - /url: "#ds-vdp-features-section"
+    - text: Features
+  - link:
+    - /url: "#ds-vdp-description-section"
+    - text: Description
+  - link:
+    - /url: "#ds-vdp-financing-section"
+    - text: Financing
+  - link:
+    - /url: "#ds-vdp-specs-section"
+    - text: Specs
+  - link:
+    - /url: "#ds-vdp-similar-section"
+    - text: Similar
+  - heading "2023 GMC Sierra 1500 Pro" [level=1]
+  - heading "PRO VALUE PACKAGE" [level=3]
+  - 'img "Image #26"'
+  - img "2023 GMC Sierra 1500 Pro"
+  - 'img "Image #2"'
+  - 'img "Image #3"'
+  - 'img "Image #4"'
+  - 'img "Image #5"'
+  - 'img "Image #6"'
+  - 'img "Image #7"'
+  - 'img "Image #8"'
+  - 'img "Image #9"'
+  - 'img "Image #10"'
+  - 'img "Image #11"'
+  - 'img "Image #12"'
+  - 'img "Image #13"'
+  - 'img "Image #14"'
+  - 'img "Image #15"'
+  - 'img "Image #16"'
+  - 'img "Image #17"'
+  - 'img "Image #18"'
+  - 'img "Image #19"'
+  - 'img "Image #20"'
+  - 'img "Image #21"'
+  - 'img "Image #22"'
+  - 'img "Image #23"'
+  - 'img "Image #24"'
+  - 'img "Image #25"'
+  - 'img "Image #26"'
+  - img "2023 GMC Sierra 1500 Pro"
+  - generic: 
+  - generic: 
+  - link "5 Photos (26)":
+    - /url: "#ds-vdp-featured-media-exterior-content-pane"
+    - generic: "5"
+    - generic: Photos (26)
+  - text: x 0
+  - heading "History & Pricing Tools" [level=3]
+  - link "View Carfax Report":
+    - /url: "#ds-widget-carfax-container"
+    - img "Carfax Logo"
+  - link "Get Pre-Qualified":
+    - /url: "#"
+    - generic: Estimate financing
+    - generic: No credit score risk
+    - img "Capital One Logo"
+  - heading "Features" [level=3]
+  - generic: Exterior
+  - generic: Summit White
+  - generic: Interior
+  - generic: Jet Black
+  - generic: t
+  - generic: Drivetrain
+  - generic: Rear Wheel Drive
+  - generic: q
+  - generic: Engine
+  - generic: 2.7L 4 Cylinders
+  - generic: "y"
+  - generic: Horsepower
+  - generic: 310 hp @ 5600 rpm
+  - generic: "6"
+  - generic: Torque
+  - generic: 430 lb-ft @ 3000 rpm
+  - generic: "\""
+  - generic: Transmission
+  - generic: Automatic
+  - generic: "7"
+  - generic: Style
+  - generic: 2WD Double Cab 147" Pro
+  - heading "Highlights" [level=3]
+  - img "Bluetooth"
+  - generic: Bluetooth
+  - img "Fwd Collision Warning"
+  - generic: Fwd Collision Warning
+  - img "Towing Pkg"
+  - generic: Towing Pkg
+  - img "Lane Departure Warning"
+  - generic: Lane Departure Warning
+  - img "Lane Keep Assist"
+  - generic: Lane Keep Assist
+  - img "LED Headlights"
+  - generic: LED Headlights
+  - img "Backup Camera"
+  - generic: Backup Camera
+  - img "Convenience Pkg"
+  - generic: Convenience Pkg
+  - img "Lighting Pkg"
+  - generic: Lighting Pkg
+  - img "Preferred Pkg"
+  - generic: Preferred Pkg
+  - heading "Included Packages & Options" [level=3]
+  - heading "Option" [level=5]
+  - heading "Original MSRP ($)" [level=5]:
+    - text: Original
+    - text: MSRP ($)
+  - heading "ALTERNATOR, 220 AMPS" [level=5]
+  - generic: $150
+  - heading "CONVENIENCE PACKAGE" [level=5]
+  - text: Includes (QT5) EZ Lift Power Lock And Release Tailgate
+  - text: (AKO) Tinted Glass
+  - text: (UF2) LED Cargo Bed Lighting
+  - text: (C49) Rear-Window Defogger
+  - text: (K34) Cruise Control And (DLF) Outside Power Mirrors.
+  - generic: $1,070
+  - heading "CRUISE CONTROL, STEERING WHEEL-MOUNTED" [level=5]
+  - generic: $225
+  - heading "LED CARGO AREA LIGHTING" [level=5]
+  - generic: Located In Cargo Bed Activated With Switch On Center Switch Bank Or Key Fob
+  - generic: $125
+  - heading "PRO VALUE PACKAGE" [level=5]
+  - generic: Includes (PCI) Convenience Package And (Z82) Trailering Package
+  - generic: $1,465
+  - heading "TAILGATE, GATE FUNCTION MANUAL WITH EZ LIFT" [level=5]
+  - text: Includes Power Lock And Release
+  - text: Includes Hitch Area Light
+  - generic: $150
+  - heading "TRAILERING PACKAGE" [level=5]
+  - text: Includes Trailer Hitch
+  - text: 7-Pin And 4-Pin Connectors And (CTT) Hitch Guidance
+  - generic: $395
+  - heading "Additional Options " [level=5]:
+    - text: Additional Options
+    - generic: 
+  - generic: ($50)
+  - heading "Total Added Value" [level=5]
+  - text: $3,530
+  - heading "Description" [level=3]
+  - text: The 2023 GMC Sierra 1500 2WD Double Cab 147" Pro stands out as a highly capable and visually striking light-duty pickup, engineered to tackle demanding workdays and weekend adventures alike. Wrapped in a clean, professional Summit White exterior, this truck commands attention on the road while offering a spacious and functional Jet Black interior designed for maximum utility. As a versatile double cab configuration, it strikes the perfect balance between passenger space and cargo bed capacity, making it an ideal choice for buyers seeking a reliable, modern workhorse with premium curb appeal.
+  - text: Under the hood, this 2023 GMC Sierra 1500 is powered by an efficient yet energetic 2.7L 4-cylinder engine, delivering the power and torque needed for daily hauling and highway cruising. This truck is purpose-built for utility, boasting an impressive 220-amp alternator to power your tools and accessories, along with a robust towing package and trailering package. Whether you are pulling a utility trailer to the job site or hauling recreational gear for a weekend getaway, this rear-wheel-drive pickup provides the confident performance and towing stability you expect from a GMC.
+  - text: Inside the cabin, the Sierra 1500 Pro is equipped with an array of smart technologies and driver-assist features that enhance both comfort and safety. Stay connected on the go with hands-free Bluetooth, while driving confidence is elevated by advanced safety systems like forward collision warning, lane departure warning, lane keep assist, and a high-definition backup camera. The vehicle’s convenience package, preferred package, lighting package, and pro value package work together to deliver premium value, adding steering wheel-mounted cruise control and bright LED headlights for superior night visibility. This combination of modern safety, integrated packages, and proven capability makes the 2023 GMC Sierra 1500 Pro an exceptional investment for truck buyers who refuse to compromise on quality.
+  - heading "Estimated Payment Calculator" [level=3]
+  - generic: Loan Amount
+  - generic: $20,125
+  - generic: Estimated Payment *
+  - generic: $323/mo
+  - generic: Credit Score
+  - generic: 520 - Below
+  - generic: 20.90% APR
+  - generic: 580 - 619
+  - generic: 18.90% APR
+  - generic: 620 - 679
+  - generic: 11.90% APR
+  - generic: 680 - 779
+  - generic: 5.90% APR
+  - generic: 780 - Above
+  - generic: 4.90% APR
+  - generic: Payment Terms
+  - generic: 24 mo
+  - generic: 36 mo
+  - generic: 48 mo
+  - generic: 60 mo
+  - generic: 72 mo
+  - generic: Down Payment
+  - textbox "Down Payment": <redacted>
+  - generic: Trade In Value
+  - textbox "Trade In Value": <redacted>
+  - link "Contact Dealer":
+    - /url: "#ds-vdp-question-contact-modal"
+  - link "Get Approved":
+    - /url: /finance-your-car/pre-approved/?vehicleId=1540740
+  - generic: Disclaimer
+  - paragraph: "All Payments exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. The price for listed vehicles as equipped does not include charges such as: License, Title, Registration Fees, State or Local Taxes, Smog Fees, Credit Investigation, Optional Credit Insurance, Physical Damage of Liability Insurance, or Delivery Fees."
+  - heading "Specifications" [level=3]
+  - link "Exterior":
+    - /url: "#ds-vdp-spec-exterior-pane"
+    - generic: Exterior
+  - link "Interior":
+    - /url: "#ds-vdp-spec-interior-pane"
+    - generic: Interior
+  - link "Safety":
+    - /url: "#ds-vdp-spec-safety-pane"
+    - generic: Safety
+  - generic: SUMMIT WHITE
+  - generic: 
+  - generic: "Tire - Front: Tires - Front All-Season"
+  - generic: 
+  - generic: "Tire - Rear: Tires - Rear All-Season"
+  - generic: 
+  - generic: "Tire - Spare: Conventional Spare Tire"
+  - generic: 
+  - heading "Exterior" [level=5]
+  - generic: Bumper, front chrome lower (Requires (VJH) rear chrome bumper and (E63) pickup bed. Required with (UD7) Rear Park Assist or (PQA) 1SA Safety Plus Package on 1SA unless ordered with (WBP) Graphite Edition.)
+  - generic: 
+  - generic: Bumper, rear chrome with bumper CornerSteps (Requires (V46) front chrome bumper and (E63) pickup bed.)
+  - generic: 
+  - generic: CornerStep, rear bumper
+  - generic: 
+  - generic: Door handles, Black grained
+  - generic: 
+  - generic: Glass, solar absorbing, tinted
+  - generic: 
+  - generic: Grille (Chrome header with flat black grille insert bars)
+  - generic: 
+  - generic: Lamps, cargo area, cab mounted integrated with center high mount stop lamp, with switch in bank on left side of steering wheel
+  - generic: 
+  - generic: Mirrors, outside manual, Black (Not available on Regular Cab models.)
+  - generic: 
+  - generic: Tailgate and bed rail protection caps, top
+  - generic: 
+  - generic: Tailgate, gate function manual, no lift assist (Deleted with (ZW9) pickup bed delete or (QK2) GMC MultiPro Tailgate.)
+  - generic: 
+  - generic: Tailgate, locking utilizes same key as ignition and door (Deleted with (ZW9) pickup bed delete or (QK2) GMC MultiPro Tailgate.)
+  - generic: 
+  - generic: Tailgate, standard (Deleted with (ZW9) pickup bed delete.)
+  - generic: 
+  - generic: Taillamps, LED LED signature taillight and Fade-on/Fade-off animation, incandescent stop, turn and reverse light
+  - generic: 
+  - generic: Tire carrier lock keyed cylinder lock that utilizes same key as ignition and door (Deleted with (ZW9) pickup bed delete.)
+  - generic: 
+  - generic: Wheel, 17" x 8" (43.2 cm x 20.3 cm) full-size, steel spare
+  - generic: 
+  - text:                                                            
+  - heading "Disclaimer" [level=4]
+  - paragraph: All advertised prices exclude government fees and taxes, any finance charges, any dealer document preparation charges, and any emission testing charges. While we try to make sure that all prices posted here are accurate at all times, we cannot be responsible for typographical and other errors that may appear on the site. We make every effort to provide you with the most accurate, up-to-the-minute information; however, it is your responsibility to verify with the Dealer that all details listed are accurate. The dealership is not responsible for typographical, pricing, product information, advertising, or shipping errors. Advertised prices and available quantities are subject to change without notice. All rates and offers are dependent on bank approval, which varies based on the applicant's credit as well as the vehicle.
+  - generic: "n"
+  - heading "Shopping Tools" [level=3]
+  - link "Save this in your customer account":
+    - /url: "#"
+    - generic: 
+  - generic: "8"
+  - text: "#"
+  - link "! Schedule a Test Drive":
+    - /url: "#ds-vdp-schedule-test-drive-modal"
+    - generic: "!"
+    - generic: Schedule a Test Drive
+  - link "r Ask a Question":
+    - /url: "#ds-vdp-question-contact-modal"
+    - generic: r
+    - generic: Ask a Question
+  - link "4 Text Link to Phone":
+    - /url: "#ds-vdp-send-to-phone-modal"
+    - generic: "4"
+    - generic: Text Link to Phone
+  - link "1 Get Approved":
+    - /url: https://www.carfam.com/finance-your-car/pre-approved/?vehicleId=1540740
+    - generic: "1"
+    - generic: Get Approved
+  - generic: "Internet Price:"
+  - generic: $19,990
+  - generic: "Doc Fee:"
+  - generic: +$85
+  - generic: "Smog Fee:"
+  - generic: +$50
+  - generic: "Sale Price:"
+  - generic: $20,125
+  - link "Get Our Best Price":
+    - /url: "#ds-vdp-buy-now-modal"
+  - generic: "Miles: 106,360"
+  - text: "22"
+  - generic: Hwy
+  - generic: MPG
+  - generic: x
+  - text: "19"
+  - generic: City
+  - generic: MPG
+  - generic: "Stock #: 8032"
+  - generic: "VIN: 1GTRHAEK8PZ226759"
+  - generic: "0"
+  - generic: CARFAM
+  - text: "Call:"
+  - link "(909) 543-1450":
+    - /url: tel:9095431450
+  - link "1731 South Cactus Ave, Rialto, CA 92316":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731+South+Cactus+Ave%2C+Rialto%2C+CA+92316
+  - text: 
+- contentinfo "Page footer":
+  - heading "Brand Index" [level=4]
+  - list:
+    - link "BMW":
+      - /url: /pre-owned-cars/BMW
+    - link "Cadillac":
+      - /url: /pre-owned-cars/Cadillac
+    - link "Chevrolet":
+      - /url: /pre-owned-cars/Chevrolet
+    - link "Ford":
+      - /url: /pre-owned-cars/Ford
+    - link "GMC":
+      - /url: /pre-owned-cars/GMC
+    - link "Honda":
+      - /url: /pre-owned-cars/Honda
+    - link "Jeep":
+      - /url: /pre-owned-cars/Jeep
+    - link "Lexus":
+      - /url: /pre-owned-cars/Lexus
+    - link "Mercedes-Benz":
+      - /url: /pre-owned-cars/Mercedes-Benz
+    - link "Ram":
+      - /url: /pre-owned-cars/Ram
+  - heading "Locate Us" [level=4]
+  - link "1731 South Cactus Ave, Rialto, CA 92316 (Opens in a new tab)":
+    - /url: https://www.google.com/maps/dir/?api=1&destination=1731%20South%20Cactus%20Ave%2C%20Rialto%2C%20CA%2092316
+    - paragraph: 1731 South Cactus Ave
+    - paragraph: Rialto, CA 92316
+  - paragraph:
+    - text: "Sales:"
+    - link "(909) 543-1450":
+      - /url: tel:9095431450
+  - heading "Follow Us" [level=4]
+  - link "Facebook (Opens in a new tab)":
+    - /url: https://www.facebook.com/carFAMdealer
+    - generic: 
+  - link "Instagram (Opens in a new tab)":
+    - /url: https://www.instagram.com/carfam_dealer
+    - generic: 
+  - link "Twitter (Opens in a new tab)":
+    - /url: https://x.com/CARFAMdealer
+    - generic: ¢
+  - link "YouTube (Opens in a new tab)":
+    - /url: https://www.youtube.com/@carfamdealer7066
+    - generic: 
+  - heading "Dealer Info" [level=4]
+  - link "Careers":
+    - /url: /careers
+  - link "Privacy Policy":
+    - /url: /privacy-policy
+  - link "Privacy Rights":
+    - /url: /privacy-rights
+  - button "Disclaimer Notice"
+  - generic: © 2026 DealerSync. All Rights Reserved.
+  - link "Powered by DealerSync":
+    - /url: https://www.dealersync.com/
+    - emphasis: Powered by
+    - strong: DealerSync
+- application "Accessibility Menu":
+  - button "Open accessibility menu":
+    - img "Accessibility Widget"

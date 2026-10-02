@@ -1,0 +1,48 @@
+{
+  "discovered_unique_urls": 431,
+  "http_success_pages": 429,
+  "requested_routes": 431,
+  "canonical_or_final_groups": 427,
+  "vehicle_records": 127,
+  "research_articles": 7,
+  "inventory_categories": 272,
+  "lead_form_flows": 10,
+  "raw_grouped_form_definitions": 16,
+  "third_party_services_identified": 13,
+  "confirmed_third_party_services": 11,
+  "source_hooks_only": 2,
+  "assets_downloaded": 146,
+  "inventory_photo_urls": 2961,
+  "desktop_screenshots": 23,
+  "mobile_screenshots": 0,
+  "inaccessible_routes": [
+    {
+      "url": "https://www.carfam.com/pre-owned-cars/detail/2022-Kia-Forte/1505080",
+      "status": 410,
+      "error": null
+    },
+    {
+      "url": "https://www.carfam.com/pre-owned-exotic-cars",
+      "status": 404,
+      "error": null
+    }
+  ],
+  "inventory_unknown_fields": {
+    "body_type": 1,
+    "fuel_type": 2,
+    "internet_price": 0,
+    "vin": 0,
+    "mileage": 0
+  },
+  "limitations": [
+    "Original mobile rendering/screenshots unavailable",
+    "Only initial finance application step fields inspected",
+    "No production form delivery/valuation/credit/CRM test",
+    "Maps blocked by cloud-browser organization policy",
+    "Snapshot changed during crawl: unavailable Kia route and an additional discovered vehicle",
+    "Only representative inventory photos downloaded; all photo URLs recorded"
+  ],
+  "vehicles_with_placeholder_image": 26,
+  "downloaded_demo_vehicle_photos": 36,
+  "downloaded_demo_vehicles": 9
+}
