@@ -1,5 +1,5 @@
-import type { InventoryFilters, SortOption } from "./filters";
-import { compactFilters } from "./filters";
+import type { FilterChip, InventoryFilters, SortOption } from "./filters";
+import { compactFilters, describeFilters, removeChip } from "./filters";
 import { slugKey } from "./normalize";
 import { salePriceCents } from "./pricing";
 import {
@@ -272,6 +272,29 @@ export function searchInventory(
     hasMore: visible.length < matches.length,
     facets,
   };
+}
+
+export interface FilterRelaxation {
+  chip: FilterChip;
+  /** Filters with this one chip removed. */
+  filters: InventoryFilters;
+  count: number;
+}
+
+/**
+ * No-results help: for each active chip, how many shoppable vehicles match if only that chip is
+ * removed. Suggestions are offered to the shopper; nothing (including the budget) is relaxed
+ * automatically. Sorted by count, highest first; zero-count options are dropped.
+ */
+export function suggestRelaxations(allVehicles: readonly Vehicle[], filters: InventoryFilters): FilterRelaxation[] {
+  const pool = allVehicles.filter(isShoppable);
+  return describeFilters(filters)
+    .map((chip) => {
+      const next = removeChip(filters, chip);
+      return { chip, filters: next, count: pool.filter(predicate(next)).length };
+    })
+    .filter((r) => r.count > 0)
+    .sort((a, b) => b.count - a.count);
 }
 
 /**

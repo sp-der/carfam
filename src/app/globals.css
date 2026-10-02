@@ -1,26 +1,152 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * Carfam tokens. Cyan (#00aeef) and pink (#ef59a1) are the original brand values.
+ * Contrast notes (WCAG): cyan on white is 2.6:1, so text on light surfaces uses cyan-ink (5.3:1).
+ * White on pink is 3.2:1, so pink buttons carry graphite text (5.7:1).
+ */
+@theme {
+  --color-graphite: #161616;
+  --color-graphite-2: #212121;
+  --color-graphite-3: #2e2e2e;
+  --color-paper: #ffffff;
+  --color-mist: #eef1f4;
+  --color-line: #d9dee3;
+  --color-ink: #161616;
+  --color-slate: #5a6169;
+  --color-fog: #a8aeb5;
+  --color-cyan: #00aeef;
+  --color-cyan-ink: #0072a3;
+  --color-pink: #ef59a1;
+  --color-pink-soft: #f47db6;
+  --color-danger: #b42318;
+  --color-amber: #8a5a00;
+  --color-amber-bg: #fff4dc;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-rise: rise 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
 }
 
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Keep focused/anchored content clear of the sticky header and the fixed bottom bars. */
+  scroll-padding-top: 5rem;
+  scroll-padding-bottom: 6rem;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "kern";
+  -webkit-tap-highlight-color: transparent;
+  /* viewport-fit=cover: keep content out of landscape notches. */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+a,
+button,
+select,
+summary,
+label,
+input[type="checkbox"],
+input[type="radio"] {
+  touch-action: manipulation;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+/* Expanded, heavy Archivo: the "badge" display face for headlines and prices. */
+.font-display {
+  font-variation-settings: "wdth" 125;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+.font-wide {
+  font-variation-settings: "wdth" 112;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-cyan-ink);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.on-dark :focus-visible {
+  outline-color: var(--color-cyan);
+}
+
+/* Native selects styled as underlined "slots" in the hero sentence. */
+.slot-select {
+  appearance: none;
+  /* Size each slot to its chosen value so the sentence reads naturally (Chromium/Safari 26+). */
+  field-sizing: content;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2300aeef' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.1em center;
+  background-size: 0.55em;
+}
+.slot-select option {
+  color: var(--color-ink);
+  background: var(--color-paper);
+  font-size: 1rem;
+  font-variation-settings: normal;
+  font-weight: 400;
+}
+
+.field-select {
+  appearance: none;
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235a6169' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 14px;
+  padding-right: 2.25rem;
+}
+
+/* Thin horizontal scrollers (thumbnails, body-style lineup on mobile). */
+.scroll-x {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+dialog::backdrop {
+  background: rgb(22 22 22 / 0.72);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

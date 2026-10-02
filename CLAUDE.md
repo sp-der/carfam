@@ -29,6 +29,10 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - `scripts/copy-photos.ts` estimates by default; `-- --download` copies, then re-run `import:recon`.
 - `npm run typecheck` (runs `next typegen` first; Next 16 needs generated route types), `npm run lint`, `npm test`, `npm run build`.
 - Public API responses use `toVehicleCard`, so review flags, provenance and staff fields never leave the server.
+- `src/app/(site)/` — public pages inside the site header/footer layout. `src/app/not-found.tsx` is the real 404.
+- `src/components/` — `site/` (header, nav, footer), `home/`, `inventory/`, `vehicle-detail/`, `vehicles/` (card, image + fallback), `shopping/` (saved/compare), `icons.tsx` (inline SVG, no icon fonts).
+- `src/lib/site.ts` — dealership facts (from recon `dealership.json`), hours, nav, snapshot label.
+- `.data/store.json` is created once and never picks up later seed changes (e.g. new photos). Run `npm run demo:reset` (with the server stopped; it caches the store in memory) to rebuild it from the seed.
 
 ## Decisions
 - **Budget field:** `salePrice` (internet price + doc + smog fees), with a strict `<` upper bound. It matches the original site's PriceRange facet counts. Every card, list and detail page shows this same price, labeled as including doc and smog fees; the detail page shows the breakdown. All pricing goes through `src/lib/inventory/pricing.ts`.
@@ -49,5 +53,18 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - **Payment calculator** starts from `salePriceCents`, not the internet price, and shows `calculatorDisclosure()` from `pricing.ts`: the sale price includes doc and smog fees. **Do not reuse Carfam's original calculator disclosure** saying dealer/doc/smog charges are excluded. APR is user-selected and illustrative; Carfam's old APR presets are not lender rates.
 - Homepage featured vehicles come from `selectFeaturedVehicles`. Inventory cards, lists and the detail page all use the same sale price via `toVehicleCard`/`priceBreakdown`.
 
+## Phase 2 decisions (public site: homepage, inventory, vehicle detail)
+- **Visual system** (tokens in `src/app/globals.css`): graphite `#161616` header/hero/footer, white and mist `#eef1f4` content, cyan `#00aeef` on dark only (`cyan-ink #0072a3` for text and focus rings on light), pink `#ef59a1` for conversion buttons **with graphite text** (white on pink is 3.2:1). Archivo variable with the `wdth` axis: `.font-display` (expanded, 800) for headlines and prices; tabular numbers for prices. Sentence case throughout.
+- **Homepage hero** is a sentence search ("Show me [body] from [make] under [budget]"): a GET form that works without JS, with a live count from `/api/inventory/search?summary=1`. The body-style lineup uses the dealer's cutouts (960px WebP derivatives in `public/body-styles/`) with real counts.
+- **Inventory URL is the single source of truth.** Server renders results; controls call `navigate()` from `InventoryNavProvider` (transition + `useOptimistic`, so checkboxes don't flicker). Filter chips are real links. Load More is `?page=N` (cumulative). The mobile filter sheet stages changes and previews counts/facets via the search API. No-results shows one-filter relaxations with counts (`suggestRelaxations`); the budget is never relaxed automatically.
+- **Routes:** `/pre-owned-cars/[[...segments]]` (clean URL, legacy category paths render with a canonical URL, legacy `/filter/…` and query keys 308 to the clean form); `/pre-owned-cars/detail/[slug]/[id]` (wrong slug 308, unknown 404, unavailable shows a tombstone with similar vehicles). `/inventory` and `/searchused.aspx` 308 via `next.config.ts`.
+- **HTTP 410** for unavailable vehicles comes from `src/proxy.ts`, which asks `/api/inventory/route-status` (proxy must not import the data layer) and rewrites with status 410.
+- **Vehicle detail:** packages shown via `publicPackages` (exact duplicates once, no review flags, no added-value total, "original MSRP" label). Dealer descriptions are shown verbatim under "From the dealer", with a note that history details aren't checked against a report. Inquiry dialog (test drive / question / best price) → server action → `submitDemoLead`; shows "Demo only—nothing was sent." Test drives are requests, never confirmed appointments.
+- **Saved vehicles and comparison** live in `localStorage` on the device (compare max 3), looked up via `/api/inventory/vehicles?ids=`. Clearing either offers Undo.
+- **Image optimization is off by default** (`images.unoptimized`; `CARFAM_IMAGE_OPTIMIZER=on` re-enables). On this Windows machine the Next 16.3.8 optimizer intermittently left some image/width requests hanging forever (root cause not found). Committed photos are 1200×900 JPEG (~115 KB).
+- `agentRules: false` in `next.config.ts` stops `next dev` appending generated text to this file.
+
 ## Open items
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).
+- Nav and footer link to Phase 3 pages (financing, sell, about, contact, Find My Car, resources, legal) that currently 404, and their prefetches log 404s in the console.
+- Image optimizer hang: re-test on the hosting platform before enabling `CARFAM_IMAGE_OPTIMIZER`.

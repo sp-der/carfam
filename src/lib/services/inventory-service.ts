@@ -5,7 +5,15 @@ import type { Repository } from "@/lib/data/repository";
 import type { InventoryFilters } from "@/lib/inventory/filters";
 import { resolveInventoryRoute, resolveVehicleRoute, type LegacyContext } from "@/lib/inventory/legacy-routes";
 import { cleanText, vehicleSlug } from "@/lib/inventory/normalize";
-import { hasPhotos, searchInventory, similarVehicles, type SearchOptions } from "@/lib/inventory/search";
+import {
+  hasPhotos,
+  isShoppable,
+  searchInventory,
+  selectFeaturedVehicles,
+  similarVehicles,
+  suggestRelaxations,
+  type SearchOptions,
+} from "@/lib/inventory/search";
 import {
   BODY_TYPES,
   DRIVETRAINS,
@@ -23,6 +31,30 @@ import {
 
 export async function searchPublicInventory(repo: Repository, filters: InventoryFilters, options?: SearchOptions) {
   return searchInventory(await repo.listVehicles(), filters, { ...options, shoppingOnly: true });
+}
+
+export async function suggestPublicRelaxations(repo: Repository, filters: InventoryFilters) {
+  return suggestRelaxations(await repo.listVehicles(), filters);
+}
+
+export async function getFeaturedVehicles(repo: Repository, limit = 8) {
+  return selectFeaturedVehicles(await repo.listVehicles(), limit);
+}
+
+/**
+ * Saved vehicles and comparison: look up public route ids from the browser. Returns the shoppable
+ * ones in request order plus the ids that are no longer available (sold, archived or unknown).
+ */
+export async function getShoppableByRouteIds(repo: Repository, routeIds: readonly string[]) {
+  const ids = [...new Set(routeIds)].slice(0, 50);
+  const vehicles: Vehicle[] = [];
+  const unavailable: string[] = [];
+  for (const id of ids) {
+    const v = await repo.getVehicleByRouteId(id);
+    if (v && isShoppable(v)) vehicles.push(v);
+    else unavailable.push(id);
+  }
+  return { vehicles, unavailable };
 }
 
 export async function getLegacyContext(repo: Repository): Promise<LegacyContext> {
