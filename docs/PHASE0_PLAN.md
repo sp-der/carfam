@@ -1,6 +1,6 @@
 # Phase 0 — Plan
 
-Status: proposal for review. No application code has been written.
+Status: approved with changes (see `SPEC.md` "Demo mode"). The Supabase/RLS parts of §3 are post-approval work; the demo uses a JSON file store behind the same repository interface.
 Inputs read: `SPEC.md`; `carfam-recon/` README, CLAUDE_REBUILD_HANDOFF, DESIGN_RECOMMENDATIONS, CONTENT_ISSUES, VEHICLE_DETAIL_TEMPLATE, FORMS_AND_INTEGRATIONS, THIRD_PARTY_SERVICES, MOBILE_AUDIT, CARFAM_SITE_AUDIT; `data/*.json`; `asset_manifest.csv`; sampled `evidence/html` and `evidence/text`. `carfam-recon/_superseded/` was ignored.
 
 ---
@@ -213,8 +213,8 @@ Filter-merge semantics (deterministic assistant and AI adapter share them):
 3. **Phone numbers**: sales 909-543-1450, text 909-251-7182, popup/Capital One 909-990-5043.
 4. **Hours**: Mon–Sat 9–8 (main) vs Mon–Sat 9–9 (Capital One footer). Demo uses main-site hours, flagged.
 5. **ADA statement does not exist**: `/ada-policy-statement` redirects to `/privacy-policy` and its captured text is identical to the privacy policy. Demo page will say an accessibility statement is pending dealer approval — no policy text invented.
-6. **Body/fuel classification vs Carfam's own facets**: the 2018 Mercedes CLA 250 Coupe is `coupe` in the data but is not in the original coupe filter (facet says 33 sedans / 7 coupes); the Tesla Model 3 body is null; the 2017 Fusion Energi is "Hybrid" in the data but the facet has 1 plug-in hybrid; Flex fuel 4 vs facet 5 and 2 vehicles null. Import keeps the data's values (or null), with flags; admin can correct.
-7. **Vehicle descriptions contain history claims**: 12 descriptions say "Carfax 1-Owner"-type language, but no CARFAX report link was captured for any vehicle. Descriptions shown verbatim as dealer copy; no badges derived; chatbot does not repeat history claims.
+6. **Body/fuel classification vs Carfam's own facets**: the 2018 Mercedes CLA 250 Coupe is `coupe` in the data but is not in the original coupe filter (facet says 33 sedans / 7 coupes); the Tesla Model 3 body is null; the 2017 Fusion Energi is "Hybrid" in the data but Carfam's own Plug-In filter page lists it (Phase 1: set to plug-in hybrid from that evidence, flagged); Flex fuel 4 vs facet 5 and 2 vehicles null. Import keeps the data's values (or null), with flags; admin can correct.
+7. **Vehicle descriptions contain history claims**: 13 descriptions (corrected in Phase 1; Phase 0 counted the two phrasings separately) say "Carfax 1-Owner"-type language, but no CARFAX report link was captured for any vehicle. Descriptions shown verbatim as dealer copy; no badges derived; chatbot does not repeat history claims.
 8. **Acura RDX duplicate package** (Majestic Black Pearl $400 ×2 = $800): flagged; total added value not shown.
 9. **Calculator disclosure** says doc/smog fees excluded while the sale price includes them.
 10. **"Guaranteed Car Loans"** in finance metadata — not reused.
