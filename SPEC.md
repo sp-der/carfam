@@ -21,14 +21,26 @@ This build runs in **phases**. The user will tell you which phase to run.
 
 | Phase | Scope |
 |---|---|
-| 0 | Plan only. Read everything, propose data model, route map, import mapping, budget price field, conflicts, gaps. No code. |
-| 1 | Foundation: scaffold, Supabase migrations + RLS, idempotent inventory import, shared filter schema + search service, tests. No UI. |
-| 2 | Core public site: homepage, inventory page, vehicle detail template. |
-| 3 | Remaining public pages, forms, legacy aliases, empty/error states. |
-| 4 | Staff auth + roles + admin inventory management. |
-| 5 | Lead inbox, financing overview, content management, settings, audit log. Wire public forms to leads. |
-| 6 | Chatbot: deterministic demo assistant, then AI adapter behind the same tools. |
-| 7 | Full verification, README, `.env.example`, screenshots, handoff list. |
+| 0 | Plan only (done; see `docs/PHASE0_PLAN.md`). |
+| 1 | Recon import + repository/data layer (JSON file store) + shared filter schema + search service + photo copy + tests. No UI. |
+| 2–3 | Public site: homepage, inventory, vehicle detail, remaining pages, forms (feeding the demo lead store), legacy aliases, empty/error states. |
+| 4 | Admin (demo mode): role switcher, inventory management, lead inbox. |
+| 5 | Chatbot: deterministic demo assistant, then AI adapter behind the same tools. |
+| 6 | Full verification, README, `.env.example`, screenshots, handoff list. |
+
+---
+
+## Demo mode (overrides the sections below until the client approves)
+
+Approved after Phase 0. Where this section conflicts with anything later in this spec, this section wins.
+
+- **No Supabase and no login in the demo.** Supabase, staff authentication, MFA and RLS are post-approval work, listed as such in the README.
+- **Repository interface.** All data reads and writes go through a repository interface. The demo implementation is a server-side JSON file store, seeded idempotently from the recon import, with a "Reset demo data" action. A Supabase implementation will replace it later without UI changes.
+- **Admin access.** `/admin` needs no login in demo mode. It shows a persistent "Demo mode — no login" banner and a clearly labeled "Viewing as: Owner / Manager / Sales" switcher that shows and hides controls by role. Permission checks are server-side functions so real auth can plug into them later; the switcher is not security.
+- **Read-only hosting.** If the app detects a read-only filesystem (e.g. Vercel), the admin switches to read-only with a banner.
+- **Admin scope for the pitch:** inventory management (add, edit, photos, pricing, status, featured) and a lead inbox fed by demo form submissions. Content management, audit log, financing overview and settings are deferred to post-approval work.
+- **Photos.** Don't load images from Carfam's photo server at runtime. Copy up to the first 6 photos per vehicle into `public/vehicles/`. Report the estimated count and total size before downloading. Vehicles without copied photos use the fallback image.
+- **Pricing.** Every card, list and detail page shows the same `sale_price` the budget filter uses, labeled as including doc and smog fees. The detail page also shows the breakdown.
 
 ---
 
