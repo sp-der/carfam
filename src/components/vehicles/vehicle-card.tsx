@@ -41,7 +41,6 @@ export function VehicleCard({
           image={card.image}
           title={card.title}
           priority={priority}
-          sizes="(min-width: 1280px) 360px, (min-width: 768px) 45vw, 100vw"
           className="transition-transform duration-300 ease-out group-hover:scale-[1.02]"
         />
         {card.status === "pending" ? (

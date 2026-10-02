@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "import:recon": "tsx scripts/import-recon.ts",
     "photos:copy": "tsx scripts/copy-photos.ts",
-    "demo:reset": "tsx scripts/reset-demo.ts"
+    "demo:reset": "tsx scripts/reset-demo.ts",
+    "photos:variants": "tsx scripts/make-photo-variants.ts"
   },
   "dependencies": {
     "next": "16.3.8",
@@ -29,6 +30,7 @@
     "cheerio": "^1.2.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5",

@@ -43,6 +43,7 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - **Default sort ("recommended"):** featured vehicles first (by rank), then newest model year, then lowest sale price.
 - **Demo roles:** only the owner can "Reset demo data". Managers manage inventory and all leads. Sales can view inventory and work on leads assigned to them.
 - **Photos:** up to the first 6 per vehicle are copied into `public/vehicles/{sourceId}/` and committed (606 files for 101 vehicles, ~70 MB). Runtime never loads Carfam's photo server; vehicles without copied photos use the fallback image.
+- **Homepage automatic fill** (`selectFeaturedVehicles`, after staff-featured vehicles) skips cargo and passenger vans (`AUTO_FILL_EXCLUDED_BODIES`); staff can still feature one.
 - **Vehicles without photos** (26 in the snapshot) stay in inventory but always rank last in "recommended", even if featured. They are never used on the homepage or in featured slots (`selectFeaturedVehicles`), and never lead the chatbot's results when a comparable vehicle with photos exists (`preferPhotographed`). Explicit sorts like price still place them in order. Staff can't feature a vehicle without photos, and removing all photos un-features it. Similar-vehicle suggestions deprioritize them. Tests: `tests/photo-ranking.test.ts`.
 - **Canonical inventory URL:** `/pre-owned-cars`. Legacy paths are parsed into the shared filter schema (`src/lib/inventory/legacy-routes.ts`).
 - **Appraisal photos** are previewed in the browser only and never uploaded.
@@ -61,10 +62,11 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - **HTTP 410** for unavailable vehicles comes from `src/proxy.ts`, which asks `/api/inventory/route-status` (proxy must not import the data layer) and rewrites with status 410.
 - **Vehicle detail:** packages shown via `publicPackages` (exact duplicates once, no review flags, no added-value total, "original MSRP" label). Dealer descriptions are shown verbatim under "From the dealer", with a note that history details aren't checked against a report. Inquiry dialog (test drive / question / best price) → server action → `submitDemoLead`; shows "Demo only—nothing was sent." Test drives are requests, never confirmed appointments.
 - **Saved vehicles and comparison** live in `localStorage` on the device (compare max 3), looked up via `/api/inventory/vehicles?ids=`. Clearing either offers Undo.
-- **Image optimization is off by default** (`images.unoptimized`; `CARFAM_IMAGE_OPTIMIZER=on` re-enables). On this Windows machine the Next 16.3.8 optimizer intermittently left some image/width requests hanging forever (root cause not found). Committed photos are 1200×900 JPEG (~115 KB).
+- **Image optimization is off by default** (`images.unoptimized`; `CARFAM_IMAGE_OPTIMIZER=on` re-enables). On this Windows machine the Next 16.3.8 optimizer intermittently left some image/width requests hanging forever (root cause not found). Instead, `npm run photos:variants` pre-generates `{n}-480.webp` and `{n}-960.webp` beside every committed `public/vehicles/{id}/{n}.jpg` (committed; ~64 MB). `VehiclePhoto` serves them: cards use `<picture>` so phones (< 640px) always get the 480px file; the detail gallery uses the full srcset; the lightbox uses the 1200px original. `tests/photo-variants.test.ts` fails if a variant is missing. Re-run the script after adding photos.
 - `agentRules: false` in `next.config.ts` stops `next dev` appending generated text to this file.
 
 ## Open items
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).
 - Nav and footer link to Phase 3 pages (financing, sell, about, contact, Find My Car, resources, legal) that currently 404, and their prefetches log 404s in the console.
 - Image optimizer hang: re-test on the hosting platform before enabling `CARFAM_IMAGE_OPTIMIZER`.
+- Staff-picked homepage vehicles: proposal awaiting owner approval; nothing is marked featured in the seed yet.

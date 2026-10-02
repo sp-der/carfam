@@ -7,6 +7,7 @@ import {
   DRIVETRAIN_LABELS,
   FUEL_TYPE_LABELS,
   TRANSMISSION_LABELS,
+  type BodyType,
   type Vehicle,
 } from "./types";
 
@@ -306,10 +307,14 @@ export function preferPhotographed<T extends Pick<Vehicle, "images">>(vehicles: 
   return [...vehicles.filter(hasPhotos), ...vehicles.filter((v) => !hasPhotos(v))];
 }
 
+/** Body styles never used to fill homepage slots automatically (staff can still feature them). */
+export const AUTO_FILL_EXCLUDED_BODIES: readonly BodyType[] = ["cargo-van", "passenger-van"];
+
 /**
  * Homepage / featured slots: shoppable vehicles with photos only. Staff-featured vehicles come
  * first (by rank); remaining slots are filled round-robin across body types so the mix covers
- * commuters, family vehicles, trucks and more, not one segment.
+ * commuters, family vehicles, trucks and more, not one segment. The automatic fill skips cargo
+ * and passenger vans.
  */
 export function selectFeaturedVehicles(all: readonly Vehicle[], limit = 8): Vehicle[] {
   const eligible = all.filter((v) => isShoppable(v) && hasPhotos(v));
@@ -321,6 +326,7 @@ export function selectFeaturedVehicles(all: readonly Vehicle[], limit = 8): Vehi
   const groups = new Map<string, Vehicle[]>();
   for (const v of [...eligible].sort(compareVehicles("recommended"))) {
     if (taken.has(v.id)) continue;
+    if (v.bodyType && AUTO_FILL_EXCLUDED_BODIES.includes(v.bodyType)) continue;
     const key = v.bodyType ?? "unknown";
     groups.set(key, [...(groups.get(key) ?? []), v]);
   }

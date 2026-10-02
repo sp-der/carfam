@@ -64,6 +64,18 @@ describe("vehicles without photos", () => {
     expect(new Set(picked.map((v) => v.id)).size).toBe(8);
   });
 
+  it("automatic homepage fill skips cargo and passenger vans; staff can still feature one", () => {
+    const auto = selectFeaturedVehicles(seedVehicles, 8);
+    expect(auto).toHaveLength(8);
+    expect(auto.some((v) => v.bodyType === "cargo-van" || v.bodyType === "passenger-van")).toBe(false);
+
+    const odyssey = { ...vehicleBySource("1573576"), featured: true, featuredRank: 1 }; // passenger van
+    const pool = seedVehicles.map((v) => (v.id === odyssey.id ? odyssey : v));
+    const picked = selectFeaturedVehicles(pool, 8);
+    expect(picked[0].id).toBe(odyssey.id);
+    expect(picked.slice(1).some((v) => v.bodyType === "cargo-van" || v.bodyType === "passenger-van")).toBe(false);
+  });
+
   it("are not the chatbot's top results when a comparable vehicle with photos exists", () => {
     // Highest-price-first Lexus SUVs would put the no-photo GX 460 first; it must not lead.
     const lexusSuvs = searchInventory(seedVehicles, { make: ["Lexus"], body: ["suv"], sort: "price-desc" }).vehicles;

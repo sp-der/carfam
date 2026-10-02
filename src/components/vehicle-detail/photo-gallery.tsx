@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
 import { ChevronLeft, ChevronRight, CloseIcon, ExpandIcon } from "@/components/icons";
 import { VehicleFallback } from "@/components/vehicles/vehicle-image";
+import { VehiclePhoto } from "@/components/vehicles/vehicle-photo";
 
 interface Photo {
   src: string;
@@ -69,14 +69,11 @@ export function PhotoGallery({ photos, title }: { photos: Photo[]; title: string
         {broken.has(index) ? (
           <VehicleFallback title={title} />
         ) : (
-          <Image
+          <VehiclePhoto
             key={photo.src}
             src={photo.src}
             alt={photo.alt}
-            width={1200}
-            height={900}
-            sizes="(min-width: 1024px) 760px, 100vw"
-            quality={75}
+            use="gallery"
             priority={index === 0}
             onError={() => markBroken(index)}
             className="aspect-[4/3] h-auto w-full object-cover"
@@ -122,13 +119,10 @@ export function PhotoGallery({ photos, title }: { photos: Photo[]; title: string
                 {broken.has(i) ? (
                   <span className="block aspect-[4/3] bg-graphite-2" />
                 ) : (
-                  <Image
+                  <VehiclePhoto
                     src={p.src}
                     alt=""
-                    width={1200}
-                    height={900}
-                    sizes="112px"
-                    quality={70}
+                    use="thumb"
                     onError={() => markBroken(i)}
                     className="aspect-[4/3] h-auto w-full object-cover"
                   />
@@ -166,14 +160,11 @@ export function PhotoGallery({ photos, title }: { photos: Photo[]; title: string
             {broken.has(index) ? (
               <VehicleFallback title={title} className="max-w-3xl" />
             ) : (
-              <Image
+              <VehiclePhoto
                 key={`lb-${photo.src}`}
                 src={photo.src}
                 alt={photo.alt}
-                width={1200}
-                height={900}
-                sizes="100vw"
-                quality={75}
+                use="full"
                 className="h-auto max-h-full w-auto max-w-full object-contain"
                 draggable={false}
               />

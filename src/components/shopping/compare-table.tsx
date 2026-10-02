@@ -87,7 +87,7 @@ export function CompareTable() {
               {vehicles.map((v) => (
                 <th key={v.id} scope="col" className="px-3 pb-3 align-top font-normal">
                   <div className="overflow-hidden rounded-[3px]">
-                    <VehicleImage image={v.image} title={v.title} sizes="(min-width: 1024px) 320px, 45vw" />
+                    <VehicleImage image={v.image} title={v.title} />
                   </div>
                   <Link href={v.href} className="mt-2 block font-bold leading-snug hover:text-cyan-ink">
                     {v.year} {v.make} {v.model} {v.trim}
