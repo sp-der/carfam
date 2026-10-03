@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { FINANCE_LINKS, isFinanceRoute } from "@/lib/finance";
+import { FINANCE_LINKS } from "@/lib/finance";
+import { ABOUT_LINKS } from "@/lib/dealership";
 import { CloseIcon, HeartIcon, MenuIcon, PhoneIcon, PinIcon } from "@/components/icons";
 import { useList } from "@/components/shopping/shopping-store";
 import { DEALER, formatPhone, MAIN_NAV, telHref } from "@/lib/site";
@@ -19,7 +20,7 @@ export function MainNav() {
       <ul className="flex items-center gap-1">
         {MAIN_NAV.map((item) => (
           <li key={item.href}>
-            {item.href === "/finance-your-car" ? <FinanceMenu /> : <Link
+            {item.href === "/finance-your-car" ? <BranchMenu label="Finance" items={FINANCE_LINKS} /> : item.href === "/about-us" ? <BranchMenu label="About us" items={ABOUT_LINKS} /> : <Link
               href={item.href}
               aria-current={isActive(pathname, item.href) ? "page" : undefined}
               className="inline-flex min-h-11 items-center rounded-md px-3 text-[0.9375rem] font-semibold text-paper/85 transition-colors hover:text-paper aria-[current=page]:text-cyan"
@@ -41,7 +42,7 @@ export function MainNav() {
   );
 }
 
-function FinanceMenu({ mobile = false }: { mobile?: boolean }) {
+function BranchMenu({ label, items, mobile = false }: { label: string; items: readonly { label: string; href: string }[]; mobile?: boolean }) {
   const ref = useRef<HTMLDetailsElement>(null);
   const pathname = usePathname();
   useEffect(() => { if (ref.current) ref.current.open = false; }, [pathname]);
@@ -53,8 +54,8 @@ function FinanceMenu({ mobile = false }: { mobile?: boolean }) {
     return () => { document.removeEventListener("pointerdown", closeOutside); document.removeEventListener("keydown", escape); };
   }, []);
   return <details ref={ref} className="relative" onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) event.currentTarget.open = false; }}>
-    <summary className={`${mobile ? "min-h-12 text-lg" : "min-h-11 text-[0.9375rem]"} flex cursor-pointer list-none items-center justify-between gap-2 rounded-md px-3 font-semibold hover:text-paper ${isFinanceRoute(pathname) ? "text-cyan" : "text-paper/85"}`}>Finance <span aria-hidden="true" className="text-xs">⌄</span></summary>
-    <ul className={mobile ? "ml-3 border-l border-graphite-3 pl-2" : "absolute left-0 top-full z-50 w-80 rounded-xl border border-graphite-3 bg-graphite p-2 shadow-xl"}>{FINANCE_LINKS.map((item) => <li key={item.href}><Link href={item.href} aria-current={pathname === item.href ? "page" : undefined} className="flex min-h-11 items-center rounded-md px-3 py-3 text-sm font-semibold text-paper/85 hover:bg-graphite-2 hover:text-paper aria-[current=page]:text-cyan">{item.label}</Link></li>)}</ul>
+    <summary className={`${mobile ? "min-h-12 text-lg" : "min-h-11 text-[0.9375rem]"} flex cursor-pointer list-none items-center justify-between gap-2 rounded-md px-3 font-semibold hover:text-paper ${items.some((item) => item.href === pathname) ? "text-cyan" : "text-paper/85"}`}>{label} <span aria-hidden="true" className="text-xs">⌄</span></summary>
+    <ul className={mobile ? "ml-3 border-l border-graphite-3 pl-2" : "absolute left-0 top-full z-50 w-80 rounded-xl border border-graphite-3 bg-graphite p-2 shadow-xl"}>{items.map((item) => <li key={item.href}><Link href={item.href} aria-current={pathname === item.href ? "page" : undefined} className="flex min-h-11 items-center rounded-md px-3 py-3 text-sm font-semibold text-paper/85 hover:bg-graphite-2 hover:text-paper aria-[current=page]:text-cyan">{item.label}</Link></li>)}</ul>
   </details>;
 }
 
@@ -122,7 +123,7 @@ export function MobileMenu() {
               {[...MAIN_NAV, { label: "Saved vehicles", href: "/saved" }, { label: "Contact", href: "/contact-us" }].map(
                 (item) => (
                   <li key={item.href}>
-                    {item.href === "/finance-your-car" ? <FinanceMenu mobile /> : <Link
+                    {item.href === "/finance-your-car" ? <BranchMenu label="Finance" items={FINANCE_LINKS} mobile /> : item.href === "/about-us" ? <BranchMenu label="About us" items={ABOUT_LINKS} mobile /> : <Link
                       href={item.href}
                       aria-current={isActive(pathname, item.href) ? "page" : undefined}
                       className="flex min-h-12 items-center rounded-md px-3 text-lg font-semibold hover:bg-graphite-2 aria-[current=page]:text-cyan"

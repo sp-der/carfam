@@ -324,7 +324,7 @@ export function DemoForm({
         </div>
         {kind === "contact" && (
           <label className="form-label">
-            Department
+            Subject
             <select name="department">
               {CONTACT_DEPARTMENTS.map((d) => (
                 <option key={d} value={d}>

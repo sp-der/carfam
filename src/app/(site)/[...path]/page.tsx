@@ -7,6 +7,8 @@ import path from "node:path";
 import { DemoForm } from "@/components/forms/demo-form";
 import { FinancePages } from "@/components/finance/finance-pages";
 import { isFinanceRoute } from "@/lib/finance";
+import { isDealershipRoute } from "@/lib/dealership";
+import { DealershipPages } from "@/components/dealership/dealership-pages";
 import { getRepository } from "@/lib/data";
 import { isShoppable } from "@/lib/inventory/search";
 import { calculatorDisclosure, salePriceCents } from "@/lib/inventory/pricing";
@@ -36,6 +38,7 @@ export default async function ContentPage({ params }: Props) {
   const guide = GUIDES.find((g) => g.path === route);
   const page = SITE_PAGES[route] ?? guide;
   if (!page) notFound();
+  if (isDealershipRoute(route)) return <DealershipPages route={route} />;
   const kind = "kind" in page ? page.kind : "guide";
   if (isFinanceRoute(route)) {
     const vehicles = (await getRepository().listVehicles()).filter(isShoppable).map((v) => ({ id: v.id, title: v.title, price: salePriceCents(v.pricing), disclosure: calculatorDisclosure(v.pricing) }));
@@ -66,48 +69,6 @@ export default async function ContentPage({ params }: Props) {
           <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
             <DemoForm kind={kind} />
             <DealerPanel />
-          </div>
-        )}
-        {kind === "about" && (
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div className="space-y-5 text-lg leading-relaxed">
-              <h2 className="font-display text-3xl">A car for real life.</h2>
-              <p>
-                The captured Carfam site describes a local dealership focused on
-                matching vehicles to everyday needs, budgets and Southern
-                California journeys.
-              </p>
-              <p>
-                Browse practical commuters, family SUVs, work trucks and more.
-                Compare the details that matter to you, then start a
-                conversation with the dealership.
-              </p>
-              <p className="rounded-lg bg-mist p-5 text-sm text-slate">
-                Return-policy terms and delivery/inspection claims require
-                dealer confirmation before production. This demo makes no
-                unverified promise.
-              </p>
-              <Link className="button" href="/pre-owned-cars">
-                Find your next vehicle
-              </Link>
-            </div>
-            <DealerPanel />
-          </div>
-        )}
-        {kind === "staff" && (
-          <div className="page-card max-w-lg">
-            <p className="text-sm text-slate">Captured staff listing</p>
-            <h2 className="font-display mt-2 text-2xl">Magic Faouri</h2>
-            <a
-              className="mt-3 block text-cyan-ink underline"
-              href="mailto:magic@carfam.com"
-            >
-              magic@carfam.com
-            </a>
-            <p className="mt-4 text-slate">
-              Role, biography and a verified staff photograph were not provided.
-              Additional team information is pending dealer approval.
-            </p>
           </div>
         )}
         {kind === "customers" && (
@@ -181,22 +142,6 @@ export default async function ContentPage({ params }: Props) {
               All guides
             </Link>
           </article>
-        )}
-        {(kind === "community" ||
-          kind === "careers" ||
-          kind === "accessibility") && (
-          <div className="max-w-3xl space-y-5">
-            <p>
-              {kind === "community"
-                ? "Historic CHOC and charity references are recorded in the audit. They are not presented as current affiliations or endorsements."
-                : kind === "careers"
-                  ? "Use the demo contact form to explore how a careers inquiry would reach the dealership. Resume uploads and email delivery are disabled."
-                  : "If you encounter a barrier, use the demo contact form to describe the page and issue. Keyboard navigation, readable contrast and reduced-motion support are part of this rebuild, but are not a legal compliance certification."}
-            </p>
-            <Link className="button" href="/contact-us">
-              Contact the dealership
-            </Link>
-          </div>
         )}
         {kind === "privacy" && (
           <div className="max-w-3xl space-y-5">
