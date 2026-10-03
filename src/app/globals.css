@@ -140,6 +140,15 @@ dialog::backdrop {
   background: rgb(22 22 22 / 0.72);
 }
 
+@layer components {
+  .button { @apply inline-flex min-h-12 items-center justify-center rounded-md bg-pink px-5 py-3 font-bold text-ink hover:bg-pink-soft disabled:opacity-50; }
+  .button-secondary { @apply inline-flex min-h-12 items-center justify-center rounded-md border border-line bg-paper px-5 py-3 font-bold text-ink hover:border-ink disabled:opacity-50; }
+  .page-card { @apply block rounded-xl border border-line bg-paper p-6 transition-colors hover:border-cyan-ink; }
+  .form-grid { @apply grid gap-4 sm:grid-cols-2; }
+  .form-label { @apply flex min-w-0 flex-col gap-2 text-sm font-semibold; }
+  .form-label input, .form-label select, .form-label textarea { @apply min-h-12 w-full min-w-0 rounded-md border border-line bg-paper px-3 py-2 text-base font-normal; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

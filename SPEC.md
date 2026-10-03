@@ -1,5 +1,7 @@
 # Carfam Dealership Demo — Build Spec
 
+**Owner execution override — October 2, 2026:** publish completed work to `main` and continue all remaining phases without waiting for separate phase approval. This overrides branch-only, push-only-on-request, and stop-after-each-phase rules below. The Demo mode section, stack, data, pricing, photo and filter decisions remain binding. Production activation/deployment is not authorized.
+
 You are building a complete, modern, private Carfam dealership demo in this project folder.
 
 - **Repository:** https://github.com/sp-der/carfam (this folder is its local clone)

@@ -17,7 +17,7 @@ describe("pre-generated photo variants", () => {
 
   it("every committed photo has its 480 and 960 WebP (run `npm run photos:variants` if this fails)", () => {
     const missing: string[] = [];
-    const dirs = readdirSync(path.join(PUBLIC, "vehicles"), { withFileTypes: true }).filter((d) => d.isDirectory());
+    const dirs = readdirSync(path.join(PUBLIC, "vehicles"), { withFileTypes: true }).filter((d) => d.isDirectory() && d.name !== "uploads");
     expect(dirs).toHaveLength(101);
     for (const { name: dir } of dirs) {
       for (const file of readdirSync(path.join(PUBLIC, "vehicles", dir)).filter((f) => /^\d+\.jpg$/.test(f))) {

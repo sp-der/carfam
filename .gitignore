@@ -9,3 +9,6 @@ node_modules/
 next-env.d.ts
 .vercel
 /.data/
+/public/vehicles/uploads/
+/playwright-report/
+/test-results/

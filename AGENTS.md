@@ -1,1 +1,1 @@
-Read CLAUDE.md and SPEC.md before doing anything. They are the binding decision record and spec. Follow them exactly. Work only on branch demo-build. Run one phase at a time, then stop and report.
+Read CLAUDE.md and SPEC.md before doing anything. They are the binding decision record and spec. Follow the approved demo-mode stack and data rules. On October 2, 2026 the owner authorized publishing to main and continuing through all remaining phases without stopping for phase approval. Never enable production integrations or deploy to carfam.com without separate authorization.

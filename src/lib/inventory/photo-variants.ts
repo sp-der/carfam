@@ -7,8 +7,8 @@
 export const PHOTO_VARIANT_WIDTHS = [480, 960] as const;
 export const ORIGINAL_PHOTO_WIDTH = 1200;
 
-/** Committed recon photos: `/vehicles/{id}/{n}.jpg`. Other images (future uploads) are served as-is. */
-const COMMITTED_PHOTO = /^\/vehicles\/[\w-]+\/\d+\.jpg$/;
+/** Recon photos and admin uploads both have pre-generated 480/960 WebP siblings. */
+const COMMITTED_PHOTO = /^\/vehicles\/(?:uploads\/)?[\w-]+\/\d+\.jpg$/;
 
 export function hasPhotoVariants(src: string): boolean {
   return COMMITTED_PHOTO.test(src);

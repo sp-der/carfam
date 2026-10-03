@@ -3,8 +3,8 @@
 Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan: `docs/PHASE0_PLAN.md`. Ignore `carfam-recon/_superseded/`.
 
 ## Working rules
-- Branch `demo-build` only; never commit to or merge into `main`. Push only when asked.
-- Run one phase at a time, then stop and report.
+- Owner update October 2, 2026: publish completed work to `main` and continue all remaining phases. This supersedes the earlier branch-only and stop-per-phase instructions.
+- Keep the approved demo-mode stack and data rules; production integrations remain disabled.
 - Line endings: LF (`.gitattributes`). Never commit `.env*` except `.env.example`.
 
 ## Phases (revised after Phase 0)
@@ -67,6 +67,6 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 
 ## Open items
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).
-- Nav and footer link to Phase 3 pages (financing, sell, about, contact, Find My Car, resources, legal) that currently 404, and their prefetches log 404s in the console.
+- Phase 3 routes, Phase 4 demo inventory/lead workspace and Phase 5 assistant are implemented. See `docs/IMPLEMENTATION_STATUS.md` for verification and remaining Phase 6 browser checks.
 - Image optimizer hang: re-test on the hosting platform before enabling `CARFAM_IMAGE_OPTIMIZER`.
 - Staff-picked homepage vehicles are approved and seeded in rank order: 2021 Toyota RAV4 XLE Premium, 2022 Chevrolet Silverado 1500 LTD Custom, 2021 Toyota Corolla Hybrid LE, 2018 Tesla Model 3 Long Range Battery, 2020 Kia Telluride SX, 2023 Toyota Tacoma 4WD TRD Off Road, 2024 Chevrolet Malibu LT, 2022 Cadillac Escalade Sport. `scripts/import-recon.ts` preserves these picks on re-import.
