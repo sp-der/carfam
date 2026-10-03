@@ -9,3 +9,9 @@ The department and bad-credit pages reuse the shared payment estimator, includin
 Validation: typecheck and lint passed; 190 unit tests in 16 files passed; production build passed. Added six tests covering all routes, language, shared pricing, provider separation and absence of sensitive/provider fields. Hosted browser verification is recorded separately after deployment.
 
 Production lender integrations remain disabled per SPEC.md demo mode. Connecting a live RouteOne/Capital One application requires separate authorization and verified provider configuration; no integration was activated as part of this change.
+
+## Hosted verification
+
+Verified https://carfam.vercel.app against published code commit `6a380a0cabb606d02e71d2956a015c83f13aa2e8` (Vercel deployment READY). Desktop Finance dropdown opens and exposes all five paths. English walkthrough advances to vehicle selection, retains the selected 2021 Toyota RAV4 on review/completion, then restarts. Spanish walkthrough supports back/next and finishes without a selection; both display explicit no-submission/no-credit-check/no-approval completion messages. Capital One renders its separate provider preview. Bad-credit content renders its dedicated conversation section; calculator shows $336/month for $20,134 at a synthetic 0% APR over 60 months with doc/smog disclosure. Returned to the financing department overview. Mobile navigation was implemented but no mobile viewport verification was performed.
+
+The production HTTP verification script also passed all 54 checks, including all five financing routes and existing inventory/admin/chat/form boundaries. Screenshot: `screenshots/carfam-financing-verified.jpg`.
