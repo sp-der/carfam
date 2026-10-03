@@ -41,14 +41,14 @@ export function OpeningAnimation() {
     // No server overlay: content remains usable without JS or if initialization fails.
     stop = scheduleOpening({
       isVisible: () => document.visibilityState === "visible",
-      frame: requestAnimationFrame,
-      cancelFrame: cancelAnimationFrame,
+      frame: (callback) => window.requestAnimationFrame(callback),
+      cancelFrame: (id) => window.cancelAnimationFrame(id),
       observeVisibility: (start) => {
         document.addEventListener("visibilitychange", start);
         return () => document.removeEventListener("visibilitychange", start);
       },
-      timeout: setTimeout,
-      clearTimeout,
+      timeout: (callback, milliseconds) => setTimeout(callback, milliseconds),
+      clearTimeout: (id) => clearTimeout(id),
       show: () => {
         shownInMemory = true;
         try {
