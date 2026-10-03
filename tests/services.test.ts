@@ -16,7 +16,7 @@ import {
   submitDemoLead,
   updateLead,
 } from "@/lib/services/lead-service";
-import { manager, owner, sales1, sales2, tempStore } from "./support/fixtures";
+import { manager, owner, sales1, sales2, seed, tempStore } from "./support/fixtures";
 
 const newVehicle = {
   vin: "1HGCV1F30LA012345",
@@ -129,7 +129,10 @@ describe("inventory management", () => {
   });
 
   it("featuring sets rank; un-featuring clears it", async () => {
-    const { store } = tempStore();
+    const { store } = tempStore({ seed: {
+      ...seed,
+      vehicles: seed.vehicles.map((v) => ({ ...v, featured: false, featuredRank: null })),
+    } });
     const rdx = (await store.getVehicleByRouteId("1567362"))!;
     await updateVehicle(store, manager, rdx.id, { featured: true, featuredRank: 1 });
     expect((await searchPublicInventory(store, {})).vehicles[0].id).toBe(rdx.id);

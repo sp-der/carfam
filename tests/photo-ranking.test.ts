@@ -16,6 +16,7 @@ import { manager, seedVehicles, tempStore, vehicleBySource } from "./support/fix
  */
 
 const withoutPhotos = seedVehicles.filter((v) => !hasPhotos(v));
+const unfeaturedVehicles = seedVehicles.map((v) => ({ ...v, featured: false, featuredRank: null }));
 
 describe("vehicles without photos", () => {
   it("snapshot has 101 vehicles with copied photos and 26 without", () => {
@@ -57,7 +58,7 @@ describe("vehicles without photos", () => {
 
   it("featured selection honours staff picks, then mixes body types", () => {
     const rdx = { ...vehicleBySource("1567362"), featured: true, featuredRank: 1 };
-    const pool = seedVehicles.map((v) => (v.id === rdx.id ? rdx : v));
+    const pool = unfeaturedVehicles.map((v) => (v.id === rdx.id ? rdx : v));
     const picked = selectFeaturedVehicles(pool, 8);
     expect(picked[0].id).toBe(rdx.id);
     expect(new Set(picked.map((v) => v.bodyType)).size).toBeGreaterThanOrEqual(5);
@@ -65,12 +66,12 @@ describe("vehicles without photos", () => {
   });
 
   it("automatic homepage fill skips cargo and passenger vans; staff can still feature one", () => {
-    const auto = selectFeaturedVehicles(seedVehicles, 8);
+    const auto = selectFeaturedVehicles(unfeaturedVehicles, 8);
     expect(auto).toHaveLength(8);
     expect(auto.some((v) => v.bodyType === "cargo-van" || v.bodyType === "passenger-van")).toBe(false);
 
     const odyssey = { ...vehicleBySource("1573576"), featured: true, featuredRank: 1 }; // passenger van
-    const pool = seedVehicles.map((v) => (v.id === odyssey.id ? odyssey : v));
+    const pool = unfeaturedVehicles.map((v) => (v.id === odyssey.id ? odyssey : v));
     const picked = selectFeaturedVehicles(pool, 8);
     expect(picked[0].id).toBe(odyssey.id);
     expect(picked.slice(1).some((v) => v.bodyType === "cargo-van" || v.bodyType === "passenger-van")).toBe(false);

@@ -69,4 +69,4 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).
 - Nav and footer link to Phase 3 pages (financing, sell, about, contact, Find My Car, resources, legal) that currently 404, and their prefetches log 404s in the console.
 - Image optimizer hang: re-test on the hosting platform before enabling `CARFAM_IMAGE_OPTIMIZER`.
-- Staff-picked homepage vehicles: proposal awaiting owner approval; nothing is marked featured in the seed yet.
+- Staff-picked homepage vehicles are approved and seeded in rank order: 2021 Toyota RAV4 XLE Premium, 2022 Chevrolet Silverado 1500 LTD Custom, 2021 Toyota Corolla Hybrid LE, 2018 Tesla Model 3 Long Range Battery, 2020 Kia Telluride SX, 2023 Toyota Tacoma 4WD TRD Off Road, 2024 Chevrolet Malibu LT, 2022 Cadillac Escalade Sport. `scripts/import-recon.ts` preserves these picks on re-import.

@@ -2705,8 +2705,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 3,
    "images": [
     {
      "src": "/vehicles/1512247/1.jpg",
@@ -6658,8 +6658,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 4,
    "images": [
     {
      "src": "/vehicles/1545135/1.jpg",
@@ -14019,8 +14019,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 6,
    "images": [
     {
      "src": "/vehicles/1570774/1.jpg",
@@ -17691,8 +17691,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 1,
    "images": [
     {
      "src": "/vehicles/1573124/1.jpg",
@@ -20300,8 +20300,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 7,
    "images": [
     {
      "src": "/vehicles/1574790/1.jpg",
@@ -26683,8 +26683,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 2,
    "images": [
     {
      "src": "/vehicles/1581603/1.jpg",
@@ -26986,8 +26986,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 5,
    "images": [
     {
      "src": "/vehicles/1581604/1.jpg",
@@ -34008,8 +34008,8 @@
    },
    "status": "available",
    "publication": "published",
-   "featured": false,
-   "featuredRank": null,
+   "featured": true,
+   "featuredRank": 8,
    "images": [
     {
      "src": "/vehicles/1592525/1.jpg",

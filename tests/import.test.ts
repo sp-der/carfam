@@ -3,11 +3,19 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { buildSeed, extractVdp } from "../scripts/import-recon";
 import { vehicleSchema } from "@/lib/inventory/types";
+import { searchInventory, selectFeaturedVehicles } from "@/lib/inventory/search";
 import { seed, seedVehicles, vehicleBySource } from "./support/fixtures";
 
 const ROOT = process.cwd();
 
 describe("recon import", () => {
+  it("seeds exactly the eight approved picks in homepage and recommended order", () => {
+    const ids = ["1573124", "1581603", "1512247", "1545135", "1581604", "1570774", "1574790", "1592525"];
+    expect(seedVehicles.filter((v) => v.featured)).toHaveLength(8);
+    expect(selectFeaturedVehicles(seedVehicles, 8).map((v) => v.sourceId)).toEqual(ids);
+    expect(searchInventory(seedVehicles, {}).vehicles.slice(0, 8).map((v) => v.sourceId)).toEqual(ids);
+    ids.forEach((id, i) => expect(vehicleBySource(id).featuredRank).toBe(i + 1));
+  });
   it("is deterministic and matches the committed seed", () => {
     const first = buildSeed();
     const second = buildSeed();

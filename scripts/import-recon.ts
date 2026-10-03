@@ -31,6 +31,18 @@ const RECON = path.join(ROOT, "carfam-recon");
 const OUT = path.join(ROOT, "data", "seed", "inventory.seed.json");
 const PHOTO_MANIFEST = path.join(ROOT, "public", "vehicles", "manifest.json");
 
+// Owner-approved homepage picks, in display order. Keep re-imports deterministic.
+const FEATURED_RANK_BY_SOURCE_ID: Record<string, number> = {
+  "1573124": 1, // 2021 Toyota RAV4 XLE Premium
+  "1581603": 2, // 2022 Chevrolet Silverado 1500 LTD Custom
+  "1512247": 3, // 2021 Toyota Corolla Hybrid LE
+  "1545135": 4, // 2018 Tesla Model 3 Long Range Battery
+  "1581604": 5, // 2020 Kia Telluride SX
+  "1570774": 6, // 2023 Toyota Tacoma 4WD TRD Off Road
+  "1574790": 7, // 2024 Chevrolet Malibu LT
+  "1592525": 8, // 2022 Cadillac Escalade Sport
+};
+
 export interface ReconVehicle {
   id: string;
   detail_url: string;
@@ -216,8 +228,8 @@ export function toVehicle(r: ReconVehicle, vdp: VdpExtract, photos: PhotoManifes
     pricing,
     status: "available",
     publication: "published",
-    featured: false,
-    featuredRank: null,
+    featured: FEATURED_RANK_BY_SOURCE_ID[r.id] !== undefined,
+    featuredRank: FEATURED_RANK_BY_SOURCE_ID[r.id] ?? null,
     images: (photos ?? []).map((p, i) => ({
       src: `/vehicles/${r.id}/${p.file}`,
       alt: `${cleanText(r.title)} — photo ${i + 1}`,
