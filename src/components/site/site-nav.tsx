@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { FINANCE_LINKS, isFinanceRoute } from "@/lib/finance";
 import { CloseIcon, HeartIcon, MenuIcon, PhoneIcon, PinIcon } from "@/components/icons";
 import { useList } from "@/components/shopping/shopping-store";
 import { DEALER, formatPhone, MAIN_NAV, telHref } from "@/lib/site";
@@ -18,13 +19,13 @@ export function MainNav() {
       <ul className="flex items-center gap-1">
         {MAIN_NAV.map((item) => (
           <li key={item.href}>
-            <Link
+            {item.href === "/finance-your-car" ? <FinanceMenu /> : <Link
               href={item.href}
               aria-current={isActive(pathname, item.href) ? "page" : undefined}
               className="inline-flex min-h-11 items-center rounded-md px-3 text-[0.9375rem] font-semibold text-paper/85 transition-colors hover:text-paper aria-[current=page]:text-cyan"
             >
               {item.label}
-            </Link>
+            </Link>}
           </li>
         ))}
         <li>
@@ -38,6 +39,23 @@ export function MainNav() {
       </ul>
     </nav>
   );
+}
+
+function FinanceMenu({ mobile = false }: { mobile?: boolean }) {
+  const ref = useRef<HTMLDetailsElement>(null);
+  const pathname = usePathname();
+  useEffect(() => { if (ref.current) ref.current.open = false; }, [pathname]);
+  useEffect(() => {
+    function closeOutside(event: PointerEvent) { if (ref.current && !ref.current.contains(event.target as Node)) ref.current.open = false; }
+    function escape(event: KeyboardEvent) { if (event.key === "Escape" && ref.current?.open) { ref.current.open = false; ref.current.querySelector("summary")?.focus(); } }
+    document.addEventListener("pointerdown", closeOutside);
+    document.addEventListener("keydown", escape);
+    return () => { document.removeEventListener("pointerdown", closeOutside); document.removeEventListener("keydown", escape); };
+  }, []);
+  return <details ref={ref} className="relative" onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) event.currentTarget.open = false; }}>
+    <summary className={`${mobile ? "min-h-12 text-lg" : "min-h-11 text-[0.9375rem]"} flex cursor-pointer list-none items-center justify-between gap-2 rounded-md px-3 font-semibold hover:text-paper ${isFinanceRoute(pathname) ? "text-cyan" : "text-paper/85"}`}>Finance <span aria-hidden="true" className="text-xs">⌄</span></summary>
+    <ul className={mobile ? "ml-3 border-l border-graphite-3 pl-2" : "absolute left-0 top-full z-50 w-80 rounded-xl border border-graphite-3 bg-graphite p-2 shadow-xl"}>{FINANCE_LINKS.map((item) => <li key={item.href}><Link href={item.href} aria-current={pathname === item.href ? "page" : undefined} className="flex min-h-11 items-center rounded-md px-3 py-3 text-sm font-semibold text-paper/85 hover:bg-graphite-2 hover:text-paper aria-[current=page]:text-cyan">{item.label}</Link></li>)}</ul>
+  </details>;
 }
 
 export function SavedLink() {
@@ -104,13 +122,13 @@ export function MobileMenu() {
               {[...MAIN_NAV, { label: "Saved vehicles", href: "/saved" }, { label: "Contact", href: "/contact-us" }].map(
                 (item) => (
                   <li key={item.href}>
-                    <Link
+                    {item.href === "/finance-your-car" ? <FinanceMenu mobile /> : <Link
                       href={item.href}
                       aria-current={isActive(pathname, item.href) ? "page" : undefined}
                       className="flex min-h-12 items-center rounded-md px-3 text-lg font-semibold hover:bg-graphite-2 aria-[current=page]:text-cyan"
                     >
                       {item.label}
-                    </Link>
+                    </Link>}
                   </li>
                 ),
               )}

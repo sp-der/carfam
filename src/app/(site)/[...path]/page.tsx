@@ -5,7 +5,8 @@ import type { Metadata } from "next";
 import { readdirSync } from "node:fs";
 import path from "node:path";
 import { DemoForm } from "@/components/forms/demo-form";
-import { FinanceCalculator } from "@/components/forms/finance-calculator";
+import { FinancePages } from "@/components/finance/finance-pages";
+import { isFinanceRoute } from "@/lib/finance";
 import { getRepository } from "@/lib/data";
 import { isShoppable } from "@/lib/inventory/search";
 import { calculatorDisclosure, salePriceCents } from "@/lib/inventory/pricing";
@@ -36,7 +37,10 @@ export default async function ContentPage({ params }: Props) {
   const page = SITE_PAGES[route] ?? guide;
   if (!page) notFound();
   const kind = "kind" in page ? page.kind : "guide";
-  const calculatorVehicles = kind === "finance" ? (await getRepository().listVehicles()).filter(isShoppable).map((v) => ({ id: v.id, title: v.title, price: salePriceCents(v.pricing), disclosure: calculatorDisclosure(v.pricing) })) : [];
+  if (isFinanceRoute(route)) {
+    const vehicles = (await getRepository().listVehicles()).filter(isShoppable).map((v) => ({ id: v.id, title: v.title, price: salePriceCents(v.pricing), disclosure: calculatorDisclosure(v.pricing) }));
+    return <FinancePages route={route} vehicles={vehicles} />;
+  }
   return (
     <>
       <section className="on-dark bg-graphite py-14 text-paper sm:py-20">
@@ -54,7 +58,6 @@ export default async function ContentPage({ params }: Props) {
             {page.intro}
           </p>
         </div>
-      {kind === "finance" && <FinanceCalculator vehicles={calculatorVehicles} />}
     </section>
       <section className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16">
         {(kind === "contact" ||
@@ -63,60 +66,6 @@ export default async function ContentPage({ params }: Props) {
           <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
             <DemoForm kind={kind} />
             <DealerPanel />
-          </div>
-        )}
-        {(kind === "finance" ||
-          kind === "provider" ||
-          kind === "provider-es") && (
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="space-y-5">
-              <h2 className="font-display text-2xl">
-                {kind === "provider-es"
-                  ? "Solo demostración"
-                  : "Explore your next steps"}
-              </h2>
-              <p>
-                Provider applications stay with the financing provider. This
-                preview collects no date of birth, SSN, income, banking details
-                or credit authorization.
-              </p>
-              <ol className="list-decimal space-y-3 pl-5">
-                <li>
-                  Choose a vehicle and review its complete listed sale price.
-                </li>
-                <li>Discuss your financing needs with the dealership.</li>
-                <li>
-                  Review eligibility, rates and terms with the actual provider.
-                </li>
-              </ol>
-              <div className="rounded-xl bg-amber-bg p-5 text-amber">
-                Integration unconfigured. No preapproval or lending decision is
-                available. Later provider application steps were not inspected
-                in the original audit.
-              </div>
-              <Link className="button-secondary" href="/contact-us">
-                Ask a financing question
-              </Link>
-            </div>
-            <div className="space-y-4">
-              <Link className="page-card" href="/finance-your-car/pre-approved">
-                <h2 className="font-display text-xl">
-                  English application preview
-                </h2>
-                <p>RouteOne · Demo only</p>
-              </Link>
-              <Link className="page-card" href="/solicitar-financiacion">
-                <h2 className="font-display text-xl">Solicitar financiación</h2>
-                <p>RouteOne · Solo demostración</p>
-              </Link>
-              <Link
-                className="page-card"
-                href="/capital-one-pre-qualify-then-shop"
-              >
-                <h2 className="font-display text-xl">Capital One preview</h2>
-                <p>Separate provider · Not connected</p>
-              </Link>
-            </div>
           </div>
         )}
         {kind === "about" && (
