@@ -42,6 +42,8 @@ The owner's supplied React Bits BranchedMenu source/CSS was adapted to the exist
 
 ## Remaining before sign-off
 
+The homepage opening animation uses the existing transparent logo, CSS transform/opacity light sweeps and a 1.5-second fade. It plays once per tab session on direct homepage entry, has a skip button, dismisses on pointer/keyboard navigation and bypasses reduced motion. It never waits for inventory loading. Executable browser tests cover timing, repeat visits, skip, reduced motion and direct inventory entry; these remain unexecuted because of the existing browser restriction. Smoothness and appearance have not been visually verified here.
+
 1. Run `npx playwright install chromium` and `npm run test:browser` on an environment permitting local browser access. Review desktop and 375/390/430px screenshots, navigation, accessibility and interactions; fix any failures before calling Phase 6 complete.
 2. Configure an approved `ANTHROPIC_API_KEY` and `ANTHROPIC_MODEL` to test the optional live provider. No paid model call was made here. Per-process rate/cost guards are demo safeguards, not durable production billing controls.
 3. Confirm dealership facts, research claims, legal wording and asset rights flagged in the recon/Phase 0 plan. Draft FAQs remain unapproved.
