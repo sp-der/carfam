@@ -30,7 +30,7 @@ describe("Financing experience and demo boundaries", () => {
   it("uses the shared fee-inclusive calculator for the department and bad credit pages", () => {
     for (const href of ["/finance-your-car", "/bad-credit-financing-in-bloomington-ca"]) {
       const html = render(href);
-      expect(html).toContain("$15,085");
+      expect(html).toContain('value="15085"');
       expect(html).toContain("Doc and smog included; tax and registration excluded.");
       expect(html).toContain("APR you want to try");
       expect(html).toContain("not a lender rate or an offer");
@@ -58,6 +58,10 @@ describe("Financing experience and demo boundaries", () => {
     const html = render("/bad-credit-financing-in-bloomington-ca");
     expect(html).toContain("Start where you are.");
     expect(html).toContain("nothing is guaranteed");
-    expect(html).toContain("Carfam is located in Rialto");
+    expect(html).toContain("Visit Carfam in Rialto");
+    for (const concern of ["Multiple credit report inquiries", "Bankruptcy filings", "Foreclosures", "High debt-to-income ratios", "Repossessions"]) expect(html).toContain(concern);
+    expect(html).toContain("Why visit Carfam for bad credit car loans?");
+    expect(html).toContain("Explore financing at the dealership or online.");
+    expect(html).toContain('/brand/bad-credit-financing.jpg');
   });
 });
