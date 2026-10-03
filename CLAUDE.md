@@ -64,6 +64,7 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - **Saved vehicles and comparison** live in `localStorage` on the device (compare max 3), looked up via `/api/inventory/vehicles?ids=`. Clearing either offers Undo.
 - **Image optimization is off by default** (`images.unoptimized`; `CARFAM_IMAGE_OPTIMIZER=on` re-enables). On this Windows machine the Next 16.3.8 optimizer intermittently left some image/width requests hanging forever (root cause not found). Instead, `npm run photos:variants` pre-generates `{n}-480.webp` and `{n}-960.webp` beside every committed `public/vehicles/{id}/{n}.jpg` (committed; ~64 MB). `VehiclePhoto` serves them: cards use `<picture>` so phones (< 640px) always get the 480px file; the detail gallery uses the full srcset; the lightbox uses the 1200px original. `tests/photo-variants.test.ts` fails if a variant is missing. Re-run the script after adding photos.
 - `agentRules: false` in `next.config.ts` stops `next dev` appending generated text to this file.
+- Owner-selected React Bits BranchedMenu styling is adapted in the shared `FilterPanel`: animated curved branches, independent multi-select paths, 44px checkbox rows, foldable groups and reduced-motion support. Existing URL filters, counts, ranges, mobile staging and chatbot behavior are unchanged. No new icon dependency is needed.
 
 ## Open items
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).

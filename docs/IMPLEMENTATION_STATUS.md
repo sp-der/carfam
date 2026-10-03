@@ -15,8 +15,8 @@ The owner authorized publishing to `main` and proceeding through the remaining p
 `npm run typecheck` and `npm run lint` exited successfully. `npm test` reported:
 
 ```text
-Test Files  12 passed (12)
-Tests       172 passed (172)
+Test Files  14 passed (14)
+Tests       179 passed (179)
 ```
 
 `npm run build` reported:
@@ -35,6 +35,10 @@ HTTP verification complete: 54 checks passed. Sample lead and archived test vehi
 These checks cover public routes/404/noindex, demo permissions, contact persistence and lead assignment, live inventory changes reflected in assistant searches, strict budgets, draft FAQ restrictions and serving all generated upload photo variants. They are not browser tests.
 
 The cloud browser refused `http://localhost:3000` with `ERR_BLOCKED_BY_CLIENT`. No alternate browser access was used to bypass that restriction. The new Playwright suite has not run here and no new screenshots were captured. Earlier handoff browser results do not verify the new work.
+
+### Filter styling follow-up
+
+The owner's supplied React Bits BranchedMenu source/CSS was adapted to the existing shared desktop/mobile filter panel. It retains native multi-select checkboxes, facet counts, selected zero-match values and arbitrary URL/chat budgets. Selected branches animate independently; groups fold with hidden controls inert, visible focus styles and a reduced-motion override. The original single-active navigation model was not substituted for the existing filter state. Geometry and server-rendered markup tests were added, plus an executable browser flow for keyboard expansion, multi-select, mobile staging, URL history and reduced motion. Browser interaction/appearance remains unverified under the same blocker below.
 
 ## Remaining before sign-off
 
