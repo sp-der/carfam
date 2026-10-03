@@ -46,6 +46,10 @@ The homepage opening animation uses the existing transparent logo, CSS transform
 
 Startup correction: background-tab hydration now waits for visibility rather than cancelling permanently; initial element focus no longer suppresses the reveal. `/?intro=1` is the explicit replay URL (reduced motion still bypasses animation). Five lifecycle unit tests cover visible-frame duration, background entry, hiding before the scheduled frame, duplicate events and cancellation. Vercel confirmed the original animation commit `a086899` was already READY; the issue was not a missing GitHub commit. The public production alias is accessible to the cloud browser; localhost browser testing remains blocked.
 
+### Hosted opening verification
+
+Vercel reported `110a16a58fceb2fa8c7f9df3d5974e27111d2570` READY on the production alias. The timing adapter preserves the window receiver for animation-frame APIs, resolving an `Illegal invocation` error caught by the live browser during the startup refactor. On `https://carfam.vercel.app/?intro=1`, the cloud browser verified visible opening markup, captured the logo reveal, observed automatic removal and the normal homepage, replayed the intro and tested Skip intro (opening count 0, homepage heading visible). The captured frame is `screenshots/carfam-logo-reveal-verified.jpg`. This is desktop hosted verification, not completion of the full Playwright/mobile/reduced-motion suite.
+
 1. Run `npx playwright install chromium` and `npm run test:browser` on an environment permitting local browser access. Review desktop and 375/390/430px screenshots, navigation, accessibility and interactions; fix any failures before calling Phase 6 complete.
 2. Configure an approved `ANTHROPIC_API_KEY` and `ANTHROPIC_MODEL` to test the optional live provider. No paid model call was made here. Per-process rate/cost guards are demo safeguards, not durable production billing controls.
 3. Confirm dealership facts, research claims, legal wording and asset rights flagged in the recon/Phase 0 plan. Draft FAQs remain unapproved.
