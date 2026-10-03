@@ -15,8 +15,8 @@ The owner authorized publishing to `main` and proceeding through the remaining p
 `npm run typecheck` and `npm run lint` exited successfully. `npm test` reported:
 
 ```text
-Test Files  14 passed (14)
-Tests       179 passed (179)
+Test Files  15 passed (15)
+Tests       184 passed (184)
 ```
 
 `npm run build` reported:
@@ -43,6 +43,8 @@ The owner's supplied React Bits BranchedMenu source/CSS was adapted to the exist
 ## Remaining before sign-off
 
 The homepage opening animation uses the existing transparent logo, CSS transform/opacity light sweeps and a 1.5-second fade. It plays once per tab session on direct homepage entry, has a skip button, dismisses on pointer/keyboard navigation and bypasses reduced motion. It never waits for inventory loading. Executable browser tests cover timing, repeat visits, skip, reduced motion and direct inventory entry; these remain unexecuted because of the existing browser restriction. Smoothness and appearance have not been visually verified here.
+
+Startup correction: background-tab hydration now waits for visibility rather than cancelling permanently; initial element focus no longer suppresses the reveal. `/?intro=1` is the explicit replay URL (reduced motion still bypasses animation). Five lifecycle unit tests cover visible-frame duration, background entry, hiding before the scheduled frame, duplicate events and cancellation. Vercel confirmed the original animation commit `a086899` was already READY; the issue was not a missing GitHub commit. The public production alias is accessible to the cloud browser; localhost browser testing remains blocked.
 
 1. Run `npx playwright install chromium` and `npm run test:browser` on an environment permitting local browser access. Review desktop and 375/390/430px screenshots, navigation, accessibility and interactions; fix any failures before calling Phase 6 complete.
 2. Configure an approved `ANTHROPIC_API_KEY` and `ANTHROPIC_MODEL` to test the optional live provider. No paid model call was made here. Per-process rate/cost guards are demo safeguards, not durable production billing controls.

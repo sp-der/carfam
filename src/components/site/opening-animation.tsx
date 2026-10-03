@@ -1,35 +1,35 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import "./opening-animation.css";
+import { scheduleOpening } from "./opening-lifecycle";
 
-const SESSION_KEY = "carfam-opening-seen-v1";
-const DURATION = 1500;
+const SESSION_KEY = "carfam-opening-seen-v2";
 // Covers unavailable sessionStorage while this site layout stays mounted.
 let shownInMemory = false;
 
 export function OpeningAnimation() {
   const pathname = usePathname();
+  const replay = useSearchParams().get("intro") === "1";
   const entryPath = useRef(pathname);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     // Only an entry at the homepage gets an intro; navigating back never starts one.
-    if (entryPath.current !== "/" || shownInMemory) return;
+    if (entryPath.current !== "/" || (shownInMemory && !replay)) return;
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (motion.matches) return;
     try {
-      if (sessionStorage.getItem(SESSION_KEY)) return;
+      if (sessionStorage.getItem(SESSION_KEY) && !replay) return;
     } catch {
       // Storage can be disabled; the in-memory guard still prevents repeat playback.
     }
 
-    let timer: ReturnType<typeof setTimeout> | undefined;
-    let cancelled = false;
+    let stop = () => {};
     const dismiss = () => {
-      cancelled = true;
+      stop();
       setVisible(false);
     };
     const keyboard = (event: KeyboardEvent) => {
@@ -39,31 +39,35 @@ export function OpeningAnimation() {
       if (motion.matches) dismiss();
     };
     // No server overlay: content remains usable without JS or if initialization fails.
-    const frame = requestAnimationFrame(() => {
-      if (
-        cancelled ||
-        document.visibilityState !== "visible" ||
-        document.activeElement !== document.body
-      )
-        return;
-      shownInMemory = true;
-      try {
-        sessionStorage.setItem(SESSION_KEY, "1");
-      } catch {}
-      setVisible(true);
-      timer = setTimeout(dismiss, DURATION);
+    stop = scheduleOpening({
+      isVisible: () => document.visibilityState === "visible",
+      frame: requestAnimationFrame,
+      cancelFrame: cancelAnimationFrame,
+      observeVisibility: (start) => {
+        document.addEventListener("visibilitychange", start);
+        return () => document.removeEventListener("visibilitychange", start);
+      },
+      timeout: setTimeout,
+      clearTimeout,
+      show: () => {
+        shownInMemory = true;
+        try {
+          sessionStorage.setItem(SESSION_KEY, "1");
+        } catch {}
+        setVisible(true);
+      },
+      hide: dismiss,
     });
     window.addEventListener("keydown", keyboard);
     window.addEventListener("click", dismiss, { once: true });
     motion.addEventListener("change", onMotionChange);
     return () => {
-      cancelAnimationFrame(frame);
-      if (timer) clearTimeout(timer);
+      stop();
       window.removeEventListener("keydown", keyboard);
       window.removeEventListener("click", dismiss);
       motion.removeEventListener("change", onMotionChange);
     };
-  }, []);
+  }, [replay]);
 
   if (pathname !== "/" || !visible) return null;
   return (

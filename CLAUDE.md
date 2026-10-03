@@ -66,6 +66,7 @@ Build spec: `SPEC.md`; its "Demo mode" section overrides the rest. Phase 0 plan:
 - `agentRules: false` in `next.config.ts` stops `next dev` appending generated text to this file.
 - Owner-selected React Bits BranchedMenu styling is adapted in the shared `FilterPanel`: animated curved branches, independent multi-select paths, 44px checkbox rows, foldable groups and reduced-motion support. Existing URL filters, counts, ranges, mobile staging and chatbot behavior are unchanged. No new icon dependency is needed.
 - Owner-approved homepage opening: 1.5-second cyan light sweep and existing logo reveal on graphite, subtle pink halo, then fade. Once per tab session; direct non-home entries skip it. Skip, pointer interaction, Escape/Tab and reduced motion dismiss/bypass it. It has no server-rendered overlay or content loading dependency. Browser visual verification remains pending.
+- Opening startup follow-up: wait for tab visibility instead of abandoning the reveal; remove the focus-at-hydration check. `/?intro=1` explicitly replays it, while respecting reduced motion. Session marker version 2 lets visitors review the corrected intro once after this release. Visibility scheduling/cancellation has focused unit coverage.
 
 ## Open items
 See `docs/PHASE0_PLAN.md` §8 (owner-review conflicts) and §9 (gaps).

@@ -34,3 +34,18 @@ test("opening is immediately skippable", async ({ page }) => {
   await page.getByRole("button", { name: "Skip intro" }).click();
   await expect(page.getByTestId("carfam-opening")).toHaveCount(0);
 });
+
+test("explicit replay works after the intro has already played", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.getByTestId("carfam-opening")).toBeVisible();
+  await expect(page.getByTestId("carfam-opening")).toHaveCount(0, {
+    timeout: 3000,
+  });
+  await page.goto("/?intro=1");
+  await expect(page.getByTestId("carfam-opening")).toBeVisible();
+  await expect(page.getByTestId("carfam-opening")).toHaveCount(0, {
+    timeout: 3000,
+  });
+});
